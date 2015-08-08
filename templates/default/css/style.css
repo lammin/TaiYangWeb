@@ -1,0 +1,691 @@
+/*  @charset "utf-8";  */
+body,div,ul,ol,li,dl,dt,dd,p,span,h1,h2,h3,h4,h5,h6,form,pre,fieldset,legend,table,tr,td,th,input,textarea,img{margin:0;padding:0;}
+body {color: #000000;font-size:12px;  /*filter:gray;*/  }
+div,ul,ol,li,dd,dl,dt {list-style:none;}
+table {border-collapse:collapse;border:0;}
+td,tr,th {font-size:12px;}
+img {border:none;}
+select,input,img {vertical-align:middle;}
+textarea {vertical-align:middle;resize:none;}
+em {font-style:normal;}
+h1,h2,h3 {font-weight:bold;font-size:16px;}
+h4,h5,h6 {font-weight:bold;font-size:12px;}
+
+a:link,a:visited  {color:#0076BE;text-decoration:none;}
+a:hover,a:active  {color:#FF0000;text-decoration:underline;}
+
+a.sethome:link,a.sethome:visited {color:#23344E;font-size:12px;text-decoration:none;}
+a.sethome:hover,a.sethome:active {color:#FF0000;font-size:12px;text-decoration:underline;}
+
+a.links:link,a.links:visited   {color:#666666;font-size:12px;text-decoration:none;}
+a.links:hover,a.links:active   {color:#FF0000;font-size:12px;text-decoration:underline;}
+
+a.top2:link,a.top2:visited     {color:#FFFFFF;font-size:12px;text-decoration:none;font-weight:normal;}
+a.top2:hover,a.top2:active     {color:#FF0000;font-size:12px;text-decoration:none;font-weight:normal;}
+
+a.white:link,a.white:visited   {color:#FFFFFF;font-size:12px;text-decoration:none;}
+a.white:hover,a.white:active   {color:#FF0000;font-size:12px;text-decoration:none;}
+
+a.black:link,a.black:visited   {color:#333333;font-size:12px;text-decoration:none;}
+a.black:hover,a.black:active   {color:#FF0000;font-size:12px;text-decoration:none;}
+
+a.black2:link,a.black2:visited {color:#6E6E75;font-size:12px;text-decoration:none;}
+a.black2:hover,a.black2:active {color:#FF0000;font-size:12px;text-decoration:none;}
+
+a.black3:link,a.black3:visited {color:#333333;font-size:12px;text-decoration:none;font-weight:bold;}
+a.black3:hover,a.black3:active {color:#FF0000;font-size:12px;text-decoration:none;font-weight:bold;}
+
+a.detail:link,a.detail:visited {color:#000000;font-size:12px;text-decoration:none;font-weight:normal;}
+a.detail:hover,a.detail:active {color:#FF0000;font-size:12px;text-decoration:none;font-weight:normal;}
+
+a.newslist:link,a.newslist:visited   {color:#666666;font-size:13px;text-decoration:none;}
+a.newslist:hover,a.newslist:active   {color:#FF0000;font-size:13px;text-decoration:none;}
+
+a.newslist2:link,a.newslist2:visited {color:#666666;font-size:12px;text-decoration:none;}
+a.newslist2:hover,a.newslist2:active {color:#FF0000;font-size:12px;text-decoration:none;}
+
+a.newslist3:link,a.newslist3:visited {color:#666666;font-size:12px;text-decoration:none;}
+a.newslist3:hover,a.newslist3:active {color:#FF0000;font-size:12px;text-decoration:none;}
+
+/* ProductClass */
+a.prolist:link,a.prolist:visited   {color:#133F7E;font-size:12px;text-decoration:none; font-family:Microsoft YaHei;}      
+a.prolist:hover,a.prolist:active   {color:#FF0000;font-size:12px;text-decoration:none; font-family:Microsoft YaHei;}
+
+/* ProductClass */
+a.prolist2:link,a.prolist2:visited {color:#615B5B;font-size:12px;text-decoration:none;font-weight:normal;}  
+a.prolist2:hover,a.prolist2:active {color:#FF0000;font-size:12px;text-decoration:none;font-weight:normal;}
+
+/* ProductClassShow */
+a.prolist3:link,a.prolist3:visited {color:#333333;font-size:12px;text-decoration:none;}
+a.prolist3:hover,a.prolist3:active {color:#FF0000;font-size:12px;text-decoration:none;}
+
+a.job:link,a.job:visited {color:#333333;font-size:12px;text-decoration:none;}
+a.job:hover,a.job:active {color:#FF0000;font-size:12px;text-decoration:none;}
+
+a.botmenu:link,a.botmenu:visited {color:#FFFFFF;font-size:13px;text-decoration:none;margin:0px 8px 0px 7px;}
+a.botmenu:hover,a.botmenu:active {color:#FFFF00;font-size:13px;text-decoration:none;margin:0px 8px 0px 7px;}
+
+.clear,.cl {clear:both;}
+.b { font-weight:bold; }
+.tl { text-align:left;}
+.tr { text-align:right;}
+.tc { text-align:center; }
+.fl,.l { float:left;}
+.fr,.r { float:right;}
+.mt5  { margin-top:5px;}
+.mt10 { margin-top:10px;}
+.mt15 { margin-top:15px;}
+.mt20 { margin-top:20px;}
+.mb5  { margin-bottom:5px;}
+.mb10 { margin-bottom:10px;}
+.h20 {height:20px;line-height:20px;}
+.h22 {height:22px;line-height:22px;}
+
+.bridgeCode{width:990px;margin:0 auto;text-align:center;clear:both;padding:0px 0px 5px 0px;}
+.common { font-size:12px;line-height:20px;}
+.common_1 {margin-top:10px;}
+.button{ border:1px solid #000000;padding-top:1px;font-weight:normal;font-size:12px;
+    color:#000000;background-color:Transparent; cursor:pointer;vertical-align:middle; }
+.button_submit{ border:0px solid #000000;padding-bottom:2px;font-weight:normal;font-size:12px;
+    color:#000000;background-color:Transparent;width:50px;height:22px;cursor:pointer;
+    vertical-align:middle;background:url('../images/btn_submit.gif')/*tpa=http://www.taiyangjx.com/templates/default/images/btn_submit.gif*/ no-repeat;}
+.button_submit2{ border:0px solid #000000;padding-bottom:2px;font-weight:normal;font-size:12px;
+    color:#000000;background-color:Transparent;width:70px;height:22px;cursor:pointer;
+    vertical-align:middle;background:url('../images/btn_submit2.gif')/*tpa=http://www.taiyangjx.com/templates/default/images/btn_submit2.gif*/ no-repeat;}   
+.button_submit3{ border:0px solid #000000;padding-bottom:2px;font-weight:normal;font-size:12px;
+    color:#000000;background-color:Transparent;width:52px;height:22px;cursor:pointer;
+    vertical-align:middle;background:url('../images/bt-sub.jpg')/*tpa=http://www.taiyangjx.com/templates/default/images/bt-sub.jpg*/ no-repeat;} 
+.button_submit5{ border:0px solid #000000;padding-bottom:0px;font-weight:normal;font-size:12px;
+     color:black;background-color:Transparent;width:103px;height:30px;cursor:pointer; 
+     background-image:url('../images/add_cart.gif')/*tpa=http://www.taiyangjx.com/templates/default/images/add_cart.gif*/;background-repeat:no-repeat;vertical-align:middle;}
+.button_submit6{ border:0px solid #000000;padding-bottom:2px;font-weight:normal;font-size:12px;
+    color:#FFFFFF;background-color:Transparent;width:115px;height:26px;cursor:pointer;
+    vertical-align:middle;background:url('../../../image/index18.png')/*tpa=http://www.taiyangjx.com/image/index18.png*/ no-repeat;}
+.button_submit8{ border:0px solid #000000;padding-bottom:2px;font-weight:normal;font-size:12px;
+    color:#000000;background-color:Transparent;width:142px;height:36px;cursor:pointer;
+    vertical-align:middle;background:url('../images/btn-submit.jpg')/*tpa=http://www.taiyangjx.com/templates/default/images/btn-submit.jpg*/ no-repeat;}
+.button_submit9{ background:url('../../../image/index32.png')/*tpa=http://www.taiyangjx.com/image/index32.png*/ no-repeat; width:144px; height:41px; display:block; cursor:pointer;}
+.btncss{ width: 194px;height:50px;border-width:0px;background-color:Transparent;font-size:14px;
+    font-weight:bold;color:#666666;background-repeat:no-repeat;display:block;cursor:pointer;}
+
+/**********************************************************************************************/
+.main{ width:100%;margin:0 auto;line-height:20px;}
+.topCon{ width:980px;margin:0 auto;}
+.indexTop{ width:100%;margin:0 auto;line-height:20px;}
+.indexLeft { float:left;width:224px;line-height:20px;}
+.indexLeft1{ float:left;width:224px;line-height:20px;}
+.indexBottom{ width:100%;margin:0 auto;line-height:20px;padding:0px 0px 0px 0px;clear:both;}
+.indexCenter{ width:990px;margin:0 auto;line-height:20px;padding:5px 0px 0px 0px;}
+.indexCenter table{ line-height:20px;}
+.indexCenter2{width:980px;margin:0 auto;line-height:20px;padding:5px 0px 0px 0px;}
+.indexRight{ float:right;width:747px;}
+.indexRight2{ float:left;width:464px;line-height:20px;padding:5px 0px 0px 7px;}
+.indexMain{ float:right;width:730px;line-height:20px;} 
+.indexRightVideo{ float:right;width:253px;line-height:20px;padding-bottom:5px;}
+
+.topCon_1 {float:left;width:100%;}
+.topCon_2 {float:left;width:100%;height:125px;text-align:left;background-repeat:no-repeat;}
+
+/* bottom.ascx */
+.divBottom{ width:100%;line-height:20px;}   /* Dont't add float:left */
+.divBottom_1 { width:100%; text-align:center; height:32px; background:url('../../../image/index26.jpg')/*tpa=http://www.taiyangjx.com/image/index26.jpg*/ repeat-x;font-size:12px;
+    line-height:32px;color:#FFFFFF;vertical-align:middle;padding:px 0px 0px 0px; margin-top:20px;}
+.divBottom_2   { width:100%; height:98px; color:#FFFFFF;padding-top:25px; background:url('../../../image/index27.jpg')/*tpa=http://www.taiyangjx.com/image/index27.jpg*/ repeat-x;}
+.divBottom_3 { float:left;width:988px;background-color:#E1E8ED;border:1px solid #A7A6A6;padding:10px 0px 10px 0px; }
+
+/* Links */
+.yqlj {margin:0 auto;width:970px;padding:35px 0px 0px 10px; height:52px; background:url('../../../image/index25.png')/*tpa=http://www.taiyangjx.com/image/index25.png*/ no-repeat; line-height:25px;clear:both;}
+.yqlj span {float:left;width:80px;font-weight:bold;height:30px;margin-right:0px;text-align:left;
+    font-size:14px;color:#4F4949;}
+.yqlj div {float:left;width:900px;} 
+.yqlj div a,.yqlj div a:visited {margin:0px 10px 0px 0px;}
+
+.sendmessages {float:right;width:250px;height:258px;border:1px solid #2A8EE6;
+    background:url('../images/index_11.gif')/*tpa=http://www.taiyangjx.com/templates/default/images/index_11.gif*/ no-repeat left -10px;}
+.userlogin2 {width:110px;height:16px;line-height:16px;border:1px solid #999999;}
+.userloginname {font-weight:bold;}
+.lanyuds{height:30px;font-size:12px;}
+.lanyuds2{height:30px;font-size:13px;color:#00000F;font-weight:bold;}
+.txtinput {width:200px;border:0px solid #100F0F;height:28px; line-height:28px; background:url('../../../image/index3.png')/*tpa=http://www.taiyangjx.com/image/index3.png*/ no-repeat; color:#666;font-size:12px;padding-left:8px;}
+.InputBorder {width:98%;border:solid 1px #8A8484;padding:2px;font-size:12px;}
+.form-txt{font-size:12px;color:#333333;line-height:20px;}
+.table01 {table-layout:fixed;border-collapse:collapse; border:1px solid #CCCCCC;} 
+.loginemail { border:1px solid #C0C0C0;background-color:#EBEBEB;font-size:13px;}
+.hui666 {color:#666666;font-size:12px;line-height:20px;}
+.DisplayNone { display:none; }
+.DisplayShow { display:block; }
+.text  { border:1px solid #8A8484;height:20px;line-height:20px;width:130px;}
+.text2 { border:1px solid #8A8484;height:20px;line-height:20px;width:180px;}
+.text01 { font-size:12px;line-height:20px; }
+.textcode {border:1px solid #27B3FE;width:50px;height:18px;line-height:18px;vertical-align:middle;}
+.imgcode {width:60px;height:22px;vertical-align:middle;cursor:pointer;}
+.isLogin {color: #0B8202;font-size:12px;}
+.Company    { padding:10px 10px 10px 10px;line-height:22px;color:#666666;font-size:12px; border:1px solid #CCCCCC; overflow:hidden;}
+.divAboutUs  { padding:10px 10px 10px 10px;line-height:20px;color:#333333;font-size:12px;overflow:hidden;}
+.divContactUs { padding:10px 10px 10px 10px;line-height:20px;color:#333333;font-size:12px;overflow:hidden;}
+
+/* Banner */
+#picBox { width:990px;height:260px;overflow:hidden;position:relative;}
+#picBox ul#show_pic { width:6550px;position:absolute;}
+#picBox ul#show_pic li { float:left;display:inline;}
+#picBox ul#show_pic li img { width:730px;display:block;}
+#icon_num { position:absolute;bottom:10px;right:10px;}
+#icon_num li { float:left;width:15px;height:15px;overflow:hidden;font-size:0px;cursor:pointer;
+	background:url('../images/dots1.png')/*tpa=http://www.taiyangjx.com/templates/default/images/dots1.png*/;background-position:0 -15px;}
+#icon_num li on,#icon_num li:hover,#icon_num li.active { width:15px;height:15px;font-size:0px;background-position:0 -30px;}
+
+.banner1 {width:990px;height:260px;overflow:hidden;position:relative;}
+.slider1 {width:6550px;position:absolute;}
+.slider1 li {float:left;display:inline;}
+.slider1 img {width:730px;display:block;}
+.num1 {position:absolute;bottom:10px;right:10px;}
+.num1 li {float:left;width:15px;height:15px;overflow:hidden;font-size:0px;cursor:pointer;
+    background:url('../images/dots2.png')/*tpa=http://www.taiyangjx.com/templates/default/images/dots2.png*/;background-position:0 -15px;}
+.num1 li.on,.num1 li:hover,.num1 li.active {width:15px;height:15px;font-size:0px;background-position:0 -30px;}
+
+.banner2 {width:990px;height:260px;overflow:hidden;position:relative;}
+.slider2 {width:6550px;position:absolute;}
+.slider2 li {float:left;display:inline;}
+.slider2 img {width:730px;display:block;}
+.num2 {position:absolute;bottom:5px;right:5px;}
+.num2 li {float:left;width:15px;color:#FFFFFF;background:url('../images/dots_01.gif')/*tpa=http://www.taiyangjx.com/templates/default/images/dots_01.gif*/ no-repeat;
+	height:14px;line-height:14px;text-align:center;font-size:12px;cursor:pointer;padding-bottom:5px;margin-right:5px;
+	display:inline;filter:alpha(opacity=80);opacity:0.8;}
+.num2 li.on,.num2 li:hover,.num2 li.active {color:#FFFFFF;background:url('../images/dots_02.gif')/*tpa=http://www.taiyangjx.com/templates/default/images/dots_02.gif*/ no-repeat;
+    height:14px;line-height:14px;font-size:12px;filter:alpha(opacity=80);opacity:0.8;}
+
+#player {position:relative;width:240px;height:200px;text-align:center;overflow:hidden;}
+#player a{color:#333333;}
+.playera {display:block;background:#FFFFFF;width:240px;height:200px;text-align:center;}
+#player .Limg{position:relative;float:left;width:230px;height:200px;left:5px;top:5px;text-align:center;}
+#player .Limg li{position:absolute;top:0;left:0;background:#FFFFFF;width:230px;height:170px;cursor:pointer;}
+#player .Limg li img{width:200px;}
+#player .Nubbt{position:absolute;z-index:9;right:5px;bottom:0px;line-height:25px;}
+#player .Nubbt span{border:1px solid #FF0000;padding:1px 5px;margin:0px 2px;font-style:normal;cursor:pointer;}
+#player .Nubbt span.on{background:#FF0000;color:#FFFFFF;}
+
+.BannerBox{position:relative;float:left;width:274px;}
+.AD_S4{width:274px;height:259px;position:relative;overflow:hidden;}
+.AD_S4 .AD_List{position:relative;overflow:hidden;z-index:12;}
+.AD_S4 .AD_List,.AD_S4 .AD_List li,.AD_S4 .AD_List img{width:274px;height:259px;float:left;}
+.AD_S4 .AD_List ul{width:9999px;position:absolute;}
+.AD_S4 .AD_Text_BG{position:absolute;left:0;bottom:0;width:100%;height:26px;background:#000000;
+    filter:alpha(opacity=40);opacity:0.4;z-index:9;}
+.AD_S4 .AD_Text{position:absolute;bottom:0px;left:5px;height:20px;font-size:12px;color:#FFFFFF;z-index:10;}
+.AD_S4 .AD_Text a{color:#FFFFFF;cursor:pointer;}
+.AD_S4 .AD_Text b{font-size:14px;display:block;}
+.AD_S4 .ADNum{bottom:3px;right:5px;position:absolute;z-index:13;}
+.AD_S4 .ADNum li{float:left;width:10px;height:10px;overflow:hidden;margin:2px 2px;border:0 solid #000000;
+    text-indent:-999em;background-color:#CCCCCC;cursor:pointer;border-radius:5px;filter:alpha(opacity=60);opacity:0.6;}
+.AD_S4 .ADNum li.On{background-color:#000000;filter:alpha(opacity=100);opacity:1;}
+#AD_S4_TV_Pre,#AD_S4_TV_Next{background:url('../images/h_ADArr.gif')/*tpa=http://www.taiyangjx.com/templates/default/images/h_ADArr.gif*/ 0 0;width:30px;height:40px;cursor:pointer;
+    filter:alpha(opacity=60);opacity:0.6;text-indent:-999em;position:absolute;top:110px;right:0;z-index:15;}
+#AD_S4_TV_Pre{background-position:-30px 0;left:0;}
+
+/* Move Left */
+#demo{ width:960px;overflow:hidden;border:0px solid #666666;padding:10px 10px 10px 10px; }
+#demo img{ text-align:center;padding:0px 0px 0px 0px;overflow:hidden; }
+#indemo  { float:left;width:1000%; }
+#demo1 { float:left;}
+#demo2 { float:left;}
+
+.promarquee {float:left;width:140px;padding:10px 5px 5px 5px;text-align:center;}
+.promarquee_1 {width:140px;height:110px;border:1px solid #CCCCCC;text-align:center;}
+.promarquee_1 img { text-align:center;padding:5px 5px 5px 5px;cursor:pointer;}
+.promarquee_2 {clear:both;height:25px;line-height:25px;text-align:center;margin-bottom:10px;}
+
+#LPdemo{ width:652px;overflow:hidden;border:0px solid #666666;padding:10px 10px 0px 10px;margin-left:10px; }
+#LPdemo img{  text-align:center;padding:5px 5px 0px 5px;overflow:hidden; }
+#LPindemo  {  float:left;width:1000%;}
+#LPdemo1 { float:left;}
+#LPdemo2 { float:left;}
+
+/* Move Right */
+#Rdemo{ width:960px;overflow:hidden;border:0px solid #666666;padding:10px 10px 10px 10px; }
+#Rdemo img{ text-align:center;padding:5px 5px 5px 5px;overflow:hidden; }
+#Rindemo  { float:left;width:1000%;}
+#Rdemo1 { float:left;}
+#Rdemo2 { float:left;}
+
+/* Move Up   Height:450 = 3 * 150 */
+#Udemo {width:210px;height:250px;padding:8px 8px 8px 8px;overflow:hidden;text-align:center;}
+#Udemo img{ text-align:center;padding:5px 5px 5px 5px;overflow:hidden; }
+#Uindemo  { text-align:center; }
+#Udemo1 {width:210px;height:450px;padding-top:10px;overflow:hidden;text-align:center;}
+#Udemo2 {width:210px;height:450px;padding-top:10px;overflow:hidden;text-align:center;}
+
+#ticker { float:left;width:240px;height:270px;text-align:center;overflow:hidden;}
+#ticker dt { text-align:center;overflow:hidden;}
+#ticker dt img {padding:5px 5px 5px 5px;text-align:center;}
+
+/* qqonline */ 
+.QQbox{ width:128px;height:auto;position:absolute;overflow:visible;right:0;top:100px;
+	color:#000000;font-size:12px;letter-spacing:0px;z-index:999;}
+.qqlv{ width:26px;overflow:visible;position:relative;float:right;z-index:50;}
+.qqkf{ width:128px;height:auto;overflow:visible;right:0;top:0;z-index:99;background:#FFFFFF;}
+.qqkfDiv { padding-top:15px;vertical-align:middle;text-align: center; 
+    background:url('../../../images/QQOnline/QQ_Online_02.gif')/*tpa=http://www.taiyangjx.com/images/QQOnline/QQ_Online_02.gif*/ no-repeat top center;}
+.qqkfDiv table td { font-size: 12px;height:25px;}
+.QQboxTd1 { height:48px;background:url('../../../images/QQOnline/QQ_Online_01.gif')/*tpa=http://www.taiyangjx.com/images/QQOnline/QQ_Online_01.gif*/ no-repeat;color:#FFFFFF;
+    font-size:15px;font-weight:bold;padding-top:0px;}
+
+/* qqonline2 */    
+.QQbox2 { z-index:999;position:absolute;right:1px;width:128px;top:100px;}
+.QQbox2 .press { right:0px;width:26px;cursor:pointer;border-top-style:none;border-right-style:none;
+    border-left-style:none;position:absolute;height:136px;border-bottom-style:none;top:1px;}
+.QQbox2 .Qlist { right:0px;width:128px;position:absolute;}
+.QQbox2Td1 { background:url('../../../images/QQOnline/qq_02.gif')/*tpa=http://www.taiyangjx.com/images/QQOnline/qq_02.gif*/ repeat-y;}
+.QQbox2Td2 { height:44px;line-height:30px;padding-top:5px;background:url('../../../images/QQOnline/qq_03.gif')/*tpa=http://www.taiyangjx.com/images/QQOnline/qq_03.gif*/ no-repeat;}
+.QQbox2Td3 { height:36px;line-height:28px;background:url('../../../images/QQOnline/qq_01.gif')/*tpa=http://www.taiyangjx.com/images/QQOnline/qq_01.gif*/ no-repeat;color:#FFFFFF;
+    padding-left:15px;}
+.QQbox2Div { padding-top:5px;vertical-align: middle;text-align:center;}
+.QQbox2Div table td { font-size:12px;height:25px;}
+
+.news_2Td {font-size:12px;line-height:25px;padding:10px;}
+.pages {height:30px;color:#666666;margin-top:5px;text-align:center;}
+.pages a:link,.pages a:visited {color:#666666;}
+.pages a,.pages a:link { text-decoration:none;padding:2px 5px;border:1px solid #DDDDDD;
+    background:#FFFFFF;margin:0px 2px;font-size:12px;color:#666666;text-align:center;}
+.pages a:hover { background-color:#FB9007;color:#FFFFFF;border:1px solid #E61636; 
+    text-decoration:none;text-align:center;padding:2px 5px;}
+.pages .cpb { font-weight:bold;color:#FFFFFF;background:#FB9007; 
+    border:1px solid #E61636;text-align:center;margin:0px 2px;padding:2px 5px;}
+.pages .intext {width:30px;border:1px solid #7F9DB9;height:19px;line-height:19px;}
+
+/* Register.aspx */
+.divReg   {float:left;width:680px;margin-left:10px;display:inline;}
+.divReg_2 {float:left;width:100%;height:30px;line-height:30px;border-bottom:3px solid #AA0410;}
+.divReg_2 span {font-size:18px;padding-left:10px;color:#777777;}
+.divReg_1 {float:left;width:680px;background-color:#FFFFFF;}
+.divReg_1 ul {float:left;list-style:none; }
+.divReg_1 ul li { line-height:35px;}
+.divReg_1Span {padding-left:2px;color:#6A6A6A;}
+.divRegLi1 {float:left;width:100px;padding-left:0px;text-align:right;}
+.divRegLi2 {float:left;width:580px;}
+.divRegLi3 {width:660px;background-color:#EEEEEE;height:30px;line-height:30px;padding-left:10px;margin:20px 0px 10px 0px;}
+.divRegLi3 span {font-size:13px;font-weight:bold;}
+.divRegLi4 {width:60px;height:18px;line-height:18px;border:1px solid #8A8484;vertical-align:middle;}
+
+#biz_title{float:left;width:710px;background-color:#FFFFFF;}
+#biz_title ul{height:30px;margin:0px 0px 0px 20px;list-style-type:none;}
+.biz_top {width:365px;height:26px;color:#000000;text-align:left;font-size:14px;font-weight:bold;
+    background:url('../images/index_32.gif')/*tpa=http://www.taiyangjx.com/templates/default/images/index_32.gif*/ no-repeat;}
+.biz_top ul{float:left;line-height:25px;list-style-type:none;}
+.tabon{float:left;width:100px;height:30px;font-weight:bold;font-size:14px;background-color:#736C6C;
+    line-height:30px;color:#FFFFFF;padding-top:0px;text-align:center;cursor:pointer;}
+.taboff{float:left;width:100px;height:30px;font-weight:bold;font-size:14px;background-color:#EBE5E5;
+    line-height:30px;color:#00000F;padding-top:0px;text-align:center;cursor:pointer;}
+.tdbody{float:left;width:687px;border:1px solid #CEC7C7;padding:10px 10px 10px 10px;
+    background-color:#FFFFFF;}
+.gqxx{list-style-type:none;}
+.gqxx li{float:left;width:642px;line-height:20px;}
+
+.img_01 { float:left;margin:10px 5px 5px 5px;}
+.div { text-align:center;}
+.div img { border:0px #666666 solid;margin:0px;cursor:pointer;}
+.showPic { }
+
+.divHonor   {float:left;width:180px;padding:10px;overflow:hidden;}
+.divHonor_1 {width:180px;height:130px;text-align:center;}
+.divHonor_2 {text-align:center;line-height:20px;}
+.divHonorGuest   {float:left;width:130px;padding:15px 15px 15px 15px;overflow:hidden;}
+.divHonorGuest_1 {width:130px;height:110px;text-align:center;}
+.divHonorGuest_2 {text-align:center;line-height:20px;}
+.divPhoto   {float:left;width:190px;padding:10px;overflow:hidden;}
+.divPhoto_1 {width:190px;height:130px;text-align:center;}
+.divPhoto_2 {text-align:center;line-height:20px;}
+.divProject {float:left;width:190px;padding:10px;overflow:hidden;}
+.divProject_1 {width:190px;height:130px;text-align:center;}
+.divProject_2 {text-align:center;line-height:20px;}
+.divHonorShow   {float:left;width:180px;padding:10px;overflow:hidden;}
+.divHonorShow_1 {width:180px;height:130px;text-align:center;}
+.divHonorShow_2 {text-align:center;line-height:20px;}
+
+.case_item  {height:160px;padding:5px 0px 5px 0px;text-align:center;}
+.case_item_1 {text-align:center;overflow: hidden;}
+.case_item_1 img {text-align:center;padding:3px;border:1px solid #C1C1C1;}
+.divHonorImg {text-align:center;padding:5px 5px 5px 5px;overflow:hidden;}
+
+/* navigation */
+.nav{ width:100%;margin:0 auto;background:#1D6BBC;height:45px;clear:both;}
+.linav{ width:990px;margin:0 auto;line-height:45px;clear:both;}
+.linav_ul { float:left;list-style:none;}
+.linav_ul div {float:left;width:20px;}
+.linav_ul li{ float:left;width:86px;color:#FFFFFF;font-size:14px;font-weight:bold; font-family:Microsoft YaHei; text-align:center;}
+.linav_ul li.select{ background:url('../../../image/index4.jpg')/*tpa=http://www.taiyangjx.com/image/index4.jpg*/ repeat-x center center;}
+.linav_ul li.select a:link,.linav_ul li.select a:visited {color:#FFFFFF;font-size:14px;font-weight:bold; font-family:Microsoft YaHei;}
+.linav_ul li a:link,.linav_ul li a:visited {color:#FFFFFF;font-size:14px;font-weight:bold; font-family:Microsoft YaHei;}
+.linav_ul li a:hover {color:#FFFF00;font-size:14px;text-decoration:none;font-weight:bold;}
+.select{ background:url('../images/index_04a.gif')/*tpa=http://www.taiyangjx.com/templates/default/images/index_04a.gif*/ no-repeat center 0px;}
+.select a:link,.select a:visited {color:#FFFFFF;font-size:13px;font-weight:bold;}
+ 
+/* Product Category */
+#masterdiv {float:left;padding:50px 0px 0px 12px;}
+.menudiv  { float:left;margin-top:0px;}
+.menutitle{ width:176px;text-align:left;height:27px;line-height:27px;color:#133F7E;cursor:pointer;
+    font-size:12px; font-family:Microsoft YaHei; display:block;padding-left:20px;overflow:hidden;
+    background:url('../../../image/index7.jpg')/*tpa=http://www.taiyangjx.com/image/index7.jpg*/ no-repeat center center;}
+.menutitleSub{ width:176px;text-align:left;height:27px;line-height:27px;color:#133F7E;cursor:pointer;
+    font-size:12px; font-family:Microsoft YaHei; display:block;padding-left:20px;overflow:hidden;
+    background:url('../../../image/index7.jpg')/*tpa=http://www.taiyangjx.com/image/index7.jpg*/ no-repeat center center;}
+.menutitleSub a,.menutitleSub a:visited {color:Blue;text-decoration:none;font-size:12px;
+    font-weight:bold;}
+.menutitleSub a:hover {color:#FF0000;text-decoration:none;font-size:12px;font-weight:bold;}
+
+.submenu { width:220px;color:#135294;display:block;font-size:12px;list-style:none;overflow:hidden;}
+.submenu li.checkstyle { padding-left:25px;background-color:#FFFFFF;line-height:22px; height:22px;
+    overflow:hidden;background:url('../images/icon.gif')/*tpa=http://www.taiyangjx.com/templates/default/images/icon.gif*/ no-repeat 13px 6px;}
+.submenu li.checkstyle a,.submenu li.checkstyle a:visited {color:#615B5B;text-decoration:none;
+    font-size:12px;font-weight:normal;}
+.submenu li.checkstyle a:hover {color:Red;text-decoration:none;font-size:12px;font-weight:normal;}
+.submenu li.checkstyleSel { padding-left:25px;background-color:#DDDDDD;line-height:22px; height:22px;
+    overflow:hidden;background:url('../images/icon.gif')/*tpa=http://www.taiyangjx.com/templates/default/images/icon.gif*/ no-repeat 13px 6px;}
+.submenu li.checkstyleSel a,.submenu li.checkstyleSel a:visited {color:Blue;text-decoration:none;
+    font-size:12px;font-weight:normal;}
+.submenu li.checkstyleSel a:hover {color:#FF0000;text-decoration:none;font-size:12px;font-weight:normal;}
+
+.productcategory { float:left;width:235px;border:solid 3px #FDDDB4; }
+.productcategory .class-item{ margin:1px 0px 0px 0px;font-size:14px;height:33px;line-height:33px;position:relative;}
+.productcategory .class-item .item-class-head{ float:left;width:192px;height:33px;position:relative; 
+    background:#FFF0C8 url('../images/dote.jpg')/*tpa=http://www.taiyangjx.com/templates/default/images/dote.jpg*/ no-repeat 5px center;padding-left:13px;}
+.productcategory .class-item .item-class-head .name:link { font-size:13px;}    
+.productcategory .class-item .item-class-head .name:hover{ font-weight:bold;}
+.productcategory .class-item .class-more{ float:right;width:30px;position:relative;font-family:宋体;font-weight:bold;
+    color:#FFA500;background-color:#FFF0C8;}
+.productcategory .class-item .child-list{ display:none;position:absolute;left:200px;top:0px;width:410px;padding:10px;
+    background-color:#FFFFFF;border:solid 1px #FFDE75;line-height:22px;font-size:12px; }
+.productcategory .class-item .child-list li{ float:left;width:115px;padding:3px 5px;margin-right:10px;overflow:hidden;
+    white-space:nowrap;}
+.productcategory .class-item-hover { z-index:2000;}
+.productcategory .class-item-hover .class-more{ display:none;}
+.productcategory .class-item-hover .item-class-head{ width:192px;height:33px;background-color:#FFFFFF;z-index:1500;
+    border-top:1px solid #FFDE75;border-bottom:1px solid #FFDE75; }
+.productcategory .class-item-hover .child-list{ display:block;z-index:1400;}
+ 
+/* ProductClassShow.aspx */
+.proContent{clear:both;padding:10px 0px 0px 20px;}
+.proList{ list-style:none;padding-left:8px;}
+.proList li{float:left;width:160px;text-align:center;padding:10px 8px 10px 0px;}
+.proList li img{ width:140px;margin:3px;border:0px solid #CCCCCC;}
+.proList li .div1{width:150px;height:115px;border:1px solid #CCCCCC;overflow:hidden;}
+.proList li .div2{width:150px;height:25px;line-height:25px;border:0px solid #CCCCCC;overflow:hidden;}
+
+.showctr{clear:both;text-align:right;line-height:20px;padding:3px 20px 3px 0px;_padding:5px 20px 5px 0px;
+     margin:20px 10px 0px 20px;background:#F3F3F3;}
+#view_gallery,#view_list{cursor:pointer;}
+
+.probox{width:160px;float:left;margin:10px 6px 10px 5px;height:160px;overflow:hidden;border:0px solid #CCCCCC;}
+.probox span{ display:block;text-align:center;}
+.probox h2{font-size:11px;font-weight:normal;line-height:16px;text-align:center;clear:both;}
+.proimg{width:150px;height:120px;margin:0 auto;background:#FFFFFF;line-height:120px;vertical-align:middle;
+    position:relative;text-align:center;display:table-cell;border:1px solid #CCCCCC;overflow:hidden;}
+.proimg p{position:static;_position:absolute;top:50%;vertical-align:middle;}
+.proimg img{margin-top:3px;position:static;_position:relative;top:-50%;left:-50%;vertical-align:middle;}
+.protext{padding-top:10px;height:35px;overflow:hidden;text-align:center;clear:both;}
+.protext a{color:#333333;}
+.protext a:hover{color:#FF7700;}
+
+.proboxlist{clear:both;margin:5px 10px;border-bottom:1px dotted #CECECE;}
+.proboxlist span{ margin:0px 10px;}
+.proboxlist .proimg{ float:right;width:140px;height:140px;border:0px solid #CCCCCC;}
+.proboxlist .proimg img{vertical-align:top;}
+.proboxlist .protext{ background:none;margin:0px 0px 5px 0px;width:100%;height:20px;text-align:left;}
+.proboxlist .protext a{color:#CC3333;}
+.proboxlist .protext a:hover{ color:#FF0000;text-decoration:underline;}
+.proboxlist .prodes{float:left;width:400px;height:170px;overflow:hidden;text-align:left;}
+
+.shuk{ float:left;width:456px;border:0px solid #DEDDDD;}
+.shutop{ background:url('../images/index_10.gif')/*tpa=http://www.taiyangjx.com/templates/default/images/index_10.gif*/ repeat-x;height:33px;line-height:33px; 
+    padding:0px 10px;background-color:#FFFFFF;}
+.shutop strong{ float:left;display:block;padding:0px 5px;color:#000000;font-size:14px;}
+.shutop strong span {color:#E05E40;padding-left:10px;font-size:12px;}
+.shucon{ float:left;width:454px;overflow:hidden;border-left:1px solid #DEDDDD;
+    border-right:1px solid #DEDDDD;border-bottom:1px solid #DEDDDD;}
+.shucon dl{ float:left;width:140px;height:135px;padding:5px 5px 5px 5px;display:inline;}
+.shucon dt{ margin-bottom:3px;height:110px;border:1px solid #CCC6C6;text-align:center;}
+.shucon dt img{ width:130px;padding:3px 0px 3px 0px;border:0px solid #CCC6C6;}
+.shucon dd { line-height:20px;text-align:center;}
+.shucon dl li {float:left;width:80px;color:#666;text-align:center;background-color:#6C3720;}
+
+.shucon2{ float:left;width:454px;overflow:hidden;border-left:1px solid #DEDDDD;
+    border-right:1px solid #DEDDDD;border-bottom:1px solid #DEDDDD;}
+.shucon2 dl{ float:left;width:140px;height:110px;padding:10px 5px 10px 5px;display:inline;}
+.shucon2 dt{ margin-bottom:3px;height:110px;border:1px solid #CCC6C6;text-align:center;}
+.shucon2 dt img{ width:130px;padding:3px 0px 3px 0px;border:0px solid #CCC6C6;}
+.shucon2 dd { line-height:20px;text-align:center;}
+.shucon2 ul {float:left;width:220px;background:url('../images/dote.gif')/*tpa=http://www.taiyangjx.com/templates/default/images/dote.gif*/ no-repeat 8px center;}
+.shucon2 ul li {float:left;width:205px;padding-left:15px;line-height:24px;}
+
+.shucon3{ float:left;width:250px;overflow:hidden;}
+.shucon3 dl{ float:left;width:110px;height:110px;padding:10px 5px 10px 8px;display:inline;}
+.shucon3 dt{ margin-bottom:3px;height:85px;border:1px solid #CCC6C6;text-align:center;padding-top:3px;}
+.shucon3 dt img{ width:100px;padding:3px 0px 3px 0px;}
+.shucon3 dd { line-height:20px;height:20px;text-align:center;overflow:hidden;}
+
+.msgbox{ width:500px;height:480px;border:1px solid #9C0000;z-index:10001;background:#FFFFFF;margin:0 auto;}
+.msgboxhead{ background:url('../images/dpbox.gif')/*tpa=http://www.taiyangjx.com/templates/default/images/dpbox.gif*/ repeat-x;height:23px;font-weight:bold; 
+    line-height:23px;overflow:hidden; color:#FFFFFF; padding:0px 5px;background-color:#C31825;}
+.msgboxhead span{ float:left;display:inline;font-weight:bold;}
+.msgboxhead a,.msgboxhead a:link{ float:right;display:inline;color:#FFFFFF;font-weight:normal;}
+.msgboxhead img{ display:block;margin-top:5px;padding:0px 5px;}
+.lib_Contentbox{width:500px;clear:both;border-top:none;padding-top:8px;color:#000000;text-align:center;}
+
+.right_1 {margin:5px 0px 0px 0px;}
+.right_2 {float:left;width:682px;margin-bottom:10px;border-bottom:5px solid #5D7CBA;}
+.right_3 {float:left;padding-left:10px;}
+.right_4 {width:682px;margin-bottom:10px;border-bottom:5px solid #5D7CBA;margin-left:18px;}
+.right_5 {padding-left:10px;}
+.right_2a {float:left;width:940px;margin:0px 20px 10px 20px;border-bottom:5px solid #5D7CBA;}
+.left {float:left;width:100%;padding-bottom:5px;padding-top:5px;}
+.lefta {float:left;width:100%;padding-bottom:5px;padding-top:5px;}
+.left_1 {float:left;width:100%;background: url('../images/index_05.jpg')/*tpa=http://www.taiyangjx.com/templates/default/images/index_05.jpg*/ no-repeat;}
+.left_1More {float:left;padding-left:35px;font-size:14px; font-weight:bold;}
+.left_1About {float:left;width:213px;border-bottom:1px solid #CDCCCB;padding-bottom:5px;padding-top:5px;
+     border-left:1px solid #CDCCCB;border-right:1px solid #CDCCCB;}
+.left_1About ul {padding:10px 0px 5px 0px;}
+.left_1About ul li {line-height:25px;font-size:13px;}
+.left_1About ul li a {padding-left:32px;font-size:13px;background:url('../images/tag1.gif')/*tpa=http://www.taiyangjx.com/templates/default/images/tag1.gif*/ no-repeat 10px center;}
+.left_1About ul li a:hover {font-size:13px;background:url('../images/tb1.gif')/*tpa=http://www.taiyangjx.com/templates/default/images/tb1.gif*/ no-repeat 11px center;}
+.left_1About ul li a.on {color:#49B2F4;font-weight:bold;background:url('../images/tb1.gif')/*tpa=http://www.taiyangjx.com/templates/default/images/tb1.gif*/ no-repeat 11px center;}
+
+.left_2 {float:left;width:246px;padding:5px 0px 10px 5px;border:1px solid #C2C2C2;}
+.left_3 {float:left;width:100%;background-color:#D2D1D1;height:33px;margin-top:0px;}
+.left_3a {float:left;width:100%;background-color:#D2D1D1;height:33px;margin-top:0px;}
+.left_3_1 {float:left;width:100px;padding-left:10px;font-size:14px;line-height:33px;
+    font-weight:bold;color:#FFFFFF;}
+.left_3_1More {float:right;line-height:33px;padding-right:15px;}
+.left_4 {float:left;width:251px;border:1px solid #C2C2C2;padding:5px 0px 5px 0px;}
+.left_4 ul { padding:0px 0px 0px 10px;}
+.left_4 ul li {padding-left:8px;background:url('../images/index_09.gif')/*tpa=http://www.taiyangjx.com/templates/default/images/index_09.gif*/ no-repeat left center;
+    line-height:24px;}
+.left_4Image {padding:3px;border:1px solid #CFCFCF;}
+.left_4Video {width:240px;height:150px;padding:5px 0px 5px 5px;overflow:hidden;text-align:center;}
+.left_4Honor {float:left;width:251px;border:1px solid #C2C2C2;padding-bottom:5px;padding-top:5px;}
+
+/* SiteMap.aspx */
+.sitemap {width:990px;margin:0 auto;line-height:20px;background-color:#FFFFFF;}
+.sitemap_1 {line-height:20px;padding-top:20px;}
+.sitemap_1 span {font-size:16px;font-weight:bold;}
+.sitemap_2 {width:100%;border:0;border-bottom:1px solid #333333;color:#333333;height:1px;}
+.sitemap_3 {line-height: 21px;margin-top:10px;}
+.sitemap_3 ul {float:left;margin-left:10px;color:#062851;list-style:none;}
+.sitemap_3 ul li {}
+
+/* JoinUs.aspx */
+.joinus {line-height:25px;color:#666666;}
+.joinus_1 {padding-top:10px;line-height:25px;}
+.joinus_2 {font-weight:bold;line-height:25px;}
+.joinus_3 {padding-left:10px;line-height:25px;}
+.joinus_4 {padding-right:40px;overflow:hidden;}
+.joinus_5 {padding-right:20px;}
+
+.video,.download,.case {padding:5px 4px 4px 4px;}
+.video table,.case table {width:100%;line-height:25px;color:#062851;}
+
+/* Download.aspx */
+.downloadTd1 {border-bottom:#9F9F9F 1px solid;border-top:#9F9F9F 1px solid;line-height:20px;background-color:#F2F2F2;}
+.downloadTd2 {line-height:20px;font-size:12px;padding:5px 10px 0px 0px;}
+.downloadTd3 {padding-left:10px;font-size:12px;font-weight:bold;}
+.downloadTd4 {padding:12px;}
+.downloadTd5 {line-height:30px;height:30px;font-size:12px;background-color:#F7F7F7;}
+.downloadTd6 {border-bottom:#9F9F9F 1px solid;border-top:#9F9F9F 2px solid;background-color:#F2F2F2;}
+.downloadTd6 span {padding-left:10px;}
+
+.down_1 {float:left;width:100%;color:#062851;text-align:left;font-size:12px;padding:5px 0px 20px 0px;}
+.down_1 ul {float:left;list-style:none;}
+.down_1 ul li {float:left;line-height:25px;height:25px;border-bottom:1px dashed #CCCCCC;}
+.download_list { float:left;width:100%;text-align:left;}
+.download_list .content {float:left;width:100%;padding:20px 0 10px 0px;border-bottom:1px solid #E5E5E5;}
+.download_list .content .Dleft {float:left;padding:0px 0 0px 10px;}
+.download_list .content .Dleft_1 {float:left;width:130px;min-height:100px;_height:100px;}
+.download_list .content .Dleft_1 img {width:120px;}
+.download_list .content .Dleft_2 {float:left;width:420px;color:#666666;line-height:20px;}
+.download_list .content .Dleft_2 a:link,.download_list .content .Dleft_2 a:visited { color:#0076BE;font-weight:bold;}
+.download_list .content .Dright {float:right;padding:0px 5px 0px 0px;}
+.download_list .content .Dright img {margin-top:20px;}
+    
+.caseTd1 {border-bottom:#9F9F9F 1px solid;border-top:#9F9F9F 1px solid;line-height:20px;background-color:#F2F2F2;}
+.caseTd2 {line-height:20px;font-size:12px;padding:5px 10px 0px 0px;}
+.caseTd3 {padding-top:20px;padding-bottom:20px;}
+.caseTd4 {font-weight:bold;padding-top:2px;padding-left:15px;border-bottom:1px solid #E0E0E0;color:#000000;
+    background:url('../images/select_card_li_hover.gif')/*tpa=http://www.taiyangjx.com/templates/default/images/select_card_li_hover.gif*/ no-repeat; }
+.caseTd5 {padding:10px 20px 10px 20px;border:1px solid #E0E0E0;overflow:hidden;font-size:12px;background-color:#FAFAFA;}
+
+.neiye_line2,.neiye_line,.neiye_line2Video  { float:right;width:682px;border:1px solid #DEDEDE;
+    padding:20px;background:url('../images/bg_xa.png')/*tpa=http://www.taiyangjx.com/templates/default/images/bg_xa.png*/ repeat-x 0 0 #FFFFFF;overflow:hidden;}
+.neiye_line3  { float:right;width:712px;border:1px solid #DEDEDE;padding:20px 10px 20px 0px; 
+    background:url('../images/bg_xa.png')/*tpa=http://www.taiyangjx.com/templates/default/images/bg_xa.png*/ repeat-x 0 0 #FFFFFF;overflow:hidden;}
+.contentMessage {float:left;width:680px;padding-left:20px;}
+
+.news_4 {float:left;width:95%;padding:5px 15px 15px 15px;}
+.zixun {float:left;width:100%;margin:10px 0px 10px 0px;font-weight:normal;display:inline;}
+.zixun ul {padding:0px 10px 0px 10px;}
+.zixun ul li {line-height:30px;background:url('../images/dote.jpg')/*tpa=http://www.taiyangjx.com/templates/default/images/dote.jpg*/ no-repeat left center;
+    padding-left:10px;border-bottom:1px dashed #CCCCCC;color:#555555;}
+.zixun ul li em{color:#555555;}
+
+.news_con { float:left;width:98%; border:1px solid #CCCCCC;  margin:0 auto;padding:15px 5px;}  
+.news_con dl {font-size:13px;color:#666666;padding:0px 5px;line-height:22px;}
+.news_con dl dt { margin-bottom:3px;}
+.news_con dl .dt_1 { height:20px;background:url('../images/ico10-1.gif')/*tpa=http://www.taiyangjx.com/templates/default/images/ico10-1.gif*/ no-repeat 0px 9px;
+   padding-left:10px;display:block;float:left;text-decoration:underline; }
+.news_con dl .dt_1:hover {background:url('../images/ico7-1.gif')/*tpa=http://www.taiyangjx.com/templates/default/images/ico7-1.gif*/ no-repeat 0px 9px; }
+.news_con dl .dt_2 { font-size:13px;color:#555555;margin:0 20px; }
+.news_con dl dd { font-size:12px;color:#777777;padding:0px 10px 0px 10px;overflow:hidden;margin-bottom:20px;}
+
+.zx_top{text-align:center;border-bottom:1px dashed #D4D4D1;padding-bottom:5px;}
+.zx_top h3{font-size:20px;font-weight:bold;}
+.zx_top p{margin-top:15px;color:#333333;}
+.zx_top p span{margin-right:10px;}
+.zx_txt{color:#666666;padding:0px 10px 10px 10px;line-height:25px;}
+.zx_txt h4{color:#FF9900;font-size:14px;}
+
+.zx_middle {float:left;width:100%;padding-bottom:10px;}
+.zx_from  {float:left;width:70%;}
+.zx_from p{margin-top:5px;color:#333333;}
+.zx_from p span{margin-right:20px;}
+.zx_from2  {float:right;width:30%;text-align:right;}
+.zx_from2 p {margin-top:5px;color:#333333;}
+.zx_from2 a,.zx_from2 a:visited {color:#333333;}
+.zx_print {float:left;width:100%;height:25px;padding-top:15px;text-align:center;}
+.zx_print a,.zx_print a:visited {color:#273843;}
+
+.sxyip {}
+.sxyip p{color:#D50404;margin-top:3px;margin-bottom:3px;}
+.sxyip .gjaz { padding:7px 0px 5px 0px;color:#666;background-color:#FFFFFF;border:1px solid #CCCCCC;
+    margin-bottom:15px;margin-top:5px;}
+.sxyip .gjaz span{color:#555555;font-size:13px;background:url('../images/tag.jpg')/*tpa=http://www.taiyangjx.com/templates/default/images/tag.jpg*/ no-repeat 5px center;
+    padding-left:30px;}
+.sxyip .gjaz a{margin-right:5px;font-weight:normal;}
+
+.tjdy{margin-top:10px;text-align:center;color:#333333;padding-top:10px;}
+.xgxz{float: left;width: 745px;border: 1px solid #C3C3C0;margin-top: 20px;background: #FFFFFF; margin-bottom:10px;}
+.xgxz h3{height:30px;line-height:30px;background:#EAEAE8;padding-left:20px;font-size:14px;}
+.xgxz2 {width:100%;border-bottom:0px solid #EAEAE8;}
+.xgxz2 ul{float:left;width:677px;padding:10px 0px 10px 15px;line-height:22px;border-top:1px solid #EAEAE8;
+    margin-top:1px;}
+.xgxz2 ul li{float:left;width:325px;background:url('../images/dote.jpg')/*tpa=http://www.taiyangjx.com/templates/default/images/dote.jpg*/ no-repeat left center;
+    padding-left:10px;}
+
+.details_1 {padding:0px;}
+.details_1_3 {float:left;width:100%;background-color:#FFFFFF;padding-top:20px;}
+.details_1_4 {width:65px;font-weight:bold;clear:both;padding-left:15px;padding-top:2px;
+    border-bottom:1px solid #E0E0E0;color:#000000;font-size:12px;line-height:20px;
+    background:url('../images/select_card_li_hover.gif')/*tpa=http://www.taiyangjx.com/templates/default/images/select_card_li_hover.gif*/ no-repeat;}
+.details_1_5 {float:left;width:672px;border:1px solid #CEC7C7;padding:10px 10px 10px 10px;
+    background-color:#FFFFFF;}
+.details_1_6 {float:left;width:660px;padding:15px 25px 15px 10px;overflow:hidden;line-height:22px;
+    font-size:12px;background-color:#FAFAFA;color:#D50404;}
+.details_1_6 .gjazP { width:682px;padding:7px 0px 5px 0px;color:#666;background-color:#FFFFFF;border:1px solid #CCCCCC;
+    margin-bottom:5px;margin-top:5px;}
+.details_1_6 .gjazP span{color:#555555;font-size:13px;background:url('../images/tag.jpg')/*tpa=http://www.taiyangjx.com/templates/default/images/tag.jpg*/ no-repeat 5px center;
+    padding-left:30px;}
+.details_1_6 .gjazP a{margin-right:5px;font-weight:normal;}
+
+.details_1_7 {float:left;width:694px;background-color:#FFFFFF;border:1px solid #024897;
+    margin:30px 0px 10px 0px;}
+.details_1_7_1 {float:left;width:100%;border-bottom:3px solid #024897;}
+.details_1_7_2 {float:left;width:90px;height:30px;margin:10px 0px 0px 20px;display:inline;background-color:#024897;
+    color:#FFFFFF;line-height:30px;font-size:14px;font-weight:bold;text-align:center;}
+.details_1_8 {float:left;width:100%;height:140px;overflow:hidden;}
+.details_1_8 dl {float:left;width:130px;}
+.details_1_8 dt {float:left;width:130px;text-align:center;}
+.details_1_8 dt img {width:120px;border:0;}
+.details_1_8 dd {float:left;width:130px;text-align:center;height:30px;line-height:30px;}
+
+.details_2 {padding:10px 5px 10px 13px; border:1px solid #CCCCCC;}
+.details_2_1 {padding-left:100px;color:#4565B5;height:35px;line-height:35px;}
+.details_2_1 h3 {font-size:22px;font-weight:bold;}
+.details_3 {width:100%;border:0px solid #C0DCFF;padding-top:5px;}
+.details_3_1 {float:left;width:100%;line-height:25px;color:#062851;}
+
+/* top.ascx */
+.wraptop_1 {float:left;width:100%;height:32px;background:url('../images/index_08.gif')/*tpa=http://www.taiyangjx.com/templates/default/images/index_08.gif*/ repeat-x;}
+.wraptop_1_1 {float:left;width:690px;text-align:left;line-height:32px;font-size:14px;}
+.wraptop_1_2 {float:right;width:280px;line-height:32px;color:#000;text-align:right;padding-right:5px;
+    _padding:8px 5px 0px 0px;}
+.wraptop_2 {float:left;width:100%;height:120px;}
+.wraptop_2_1 {float:left;width:600px;text-align:left;}
+.wraptop_2_2 {float:right;width:390px;}
+.wraptop_2_3 {float:right;width:350px;text-align:right;padding:5px 10px 0px 0px;}
+.wraptop_2_3 span {float:right;text-align:right;}
+.wraptop_2_4 {float:right;width:350px;text-align:right;padding-top:5px;}
+.wraptop_3 {float:left;width:990px;height:32px;background:url('../images/index_08.gif')/*tpa=http://www.taiyangjx.com/templates/default/images/index_08.gif*/ no-repeat left center;text-align:left;}
+.wraptop_3_1 {float:left;width:210px;padding:5px 0px 0px 15px;}
+.wraptop_3_1 img {border:0;cursor:pointer;}
+.wraptop_3_2 {float:left;width:760px;padding:5px 0px 0px 0px;}
+.wraptop_3_2 span {color:#000000; font-size:13px;font-weight:bold;}
+
+.font1{ font-family:Microsoft YaHei; color:#133F7E;}
+.shucon4{ float:left;width:730px;overflow:hidden; padding:15px 0px 0px 20px;}
+.shucon4 dl{ float:left;width:226px;padding:0px 13px 13px 0px;}
+.shucon4 dt{ width:226px; height:187px; overflow:hidden; position:relative; line-height:25px; color:#000000;}
+.shucon4 dt img{ width:224px; height:185px; border:1px solid #CCCCCC; padding:0px;}
+.shucon4 dd { width:226px; line-height:30px; text-align:center;}
+
+.index_news3{width:306px; padding: 0px 0px 0px 0px; line-height:28px;overflow: hidden;}
+.index_news3 ul{ width:306px;}
+.index_news3 ul li {float:left; width:276px;  border-bottom:1px dashed #CCC;padding:0px 10px 0px 20px; color:#666;background:url('../../../image/index23.png')/*tpa=http://www.taiyangjx.com/image/index23.png*/ no-repeat 3px center;}
+.index_news3 ul li a {color:#666;}
+
+.imgS{border:1px solid #CCCCCC; margin: 0;padding: 0;_width:369px;max-width:369px;_width:expression(this.width>369?"369px":"");overflow:hidden; _height:317px;max-height:317px;_height:expression(this.height>317?"317px":"");overflow:hidden;}
+.indextop1{width:100%; height:28px; background:url('../../../image/index3.jpg')/*tpa=http://www.taiyangjx.com/image/index3.jpg*/ repeat-x;}
+.topbanner{width:100%; height:377px; background:url('../../../image/index6.jpg')/*tpa=http://www.taiyangjx.com/image/index6.jpg*/ repeat-x;}
+.indexproduct1{width:100%; height:276px; background:url('../../../image/index5.png')/*tpa=http://www.taiyangjx.com/image/index5.png*/ no-repeat;}
+.indexsubmit{width:100%; height:179px; padding-top:45px; background:url('../../../image/index7.png')/*tpa=http://www.taiyangjx.com/image/index7.png*/ no-repeat;}
+.indexproduct2{float:right; width:747px; height:502px; background:url('../../../image/index6.png')/*tpa=http://www.taiyangjx.com/image/index6.png*/ no-repeat;}
+.indexpic{width:100%; height:1160px; background:url('../../../image/index19.jpg')/*tpa=http://www.taiyangjx.com/image/index19.jpg*/ repeat-x;}
+.indexabout{width:100%; height:303px; background:url('../../../image/index19.png')/*tpa=http://www.taiyangjx.com/image/index19.png*/ no-repeat;}
+.indexa{display:block; width:40px; height:25px; float:right;}
+.indexnews{width:100%; height:376px; background:url('../../../image/index22.png')/*tpa=http://www.taiyangjx.com/image/index22.png*/ no-repeat;}
+.indexcontact{padding:10px 10px 0px 20px; background:url('../../../image/index24.png')/*tpa=http://www.taiyangjx.com/image/index24.png*/ no-repeat 200px 120px; line-height:28px;}
+
+.proclass_detail{ padding-left:35px;}
+.promessage{ padding:75px 0px 0px 15px; width:715px; height:127px; background:url('../../../image/index31.png')/*tpa=http://www.taiyangjx.com/image/index31.png*/ no-repeat; }
+.promessage table{ float:left;}
+.promessage input{border: 1px solid #666666; background:#D3D3D3;  height:24px; margin-right:10px;}
+.promessage_txt{font-size:14px; font-family:Microsoft YaHei;}
+.promessage table tr{ height:35px; vertical-align:middle;}
+.promessage_submit{ float:right; padding:50px 20px 0px 0px;}
+
+.proabout{ padding:10px;}

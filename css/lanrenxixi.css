@@ -1,0 +1,32 @@
+
+.js {
+	POSITION: relative; WIDTH: 980px; HEIGHT: 377px;
+	margin:0 auto;
+}
+.jsNav { background:#F6F6F6;
+	
+}
+.prevBtn {
+	BACKGROUND: url(../images/jsNav.png)/*tpa=http://www.taiyangjx.com/images/jsNav.png*/ no-repeat
+}
+.nextBtn {
+	BACKGROUND: url(../images/jsNav.png)/*tpa=http://www.taiyangjx.com/images/jsNav.png*/ no-repeat
+}
+.imgSelected {
+	BACKGROUND: url(../images/jsNav.png)/*tpa=http://www.taiyangjx.com/images/jsNav.png*/ no-repeat
+}
+.jsNav {
+	POSITION: absolute;  BOTTOM: 1px; FONT-FAMILY: Arial, Helvetica, sans-serif; HEIGHT: 30px; RIGHT: 10px; FONT-WEIGHT: bold
+}
+.jsNav A {
+	TEXT-ALIGN: center; LINE-HEIGHT: 30px; WIDTH: 25px; FLOAT: left; VERTICAL-ALIGN: middle
+}
+.prevBtn {
+	DISPLAY: block; BACKGROUND-POSITION: 0px -30px; HEIGHT: 30px
+}
+.nextBtn {
+	DISPLAY: block; BACKGROUND-POSITION: -100px -30px; HEIGHT: 30px
+}
+.imgSelected {
+	BACKGROUND-POSITION: 1px -60px; COLOR: #000
+}

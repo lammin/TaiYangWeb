@@ -1,0 +1,149 @@
+/* @charset "utf-8"; */
+body,div,ul,ol,li,dl,dt,dd,p,h1,h2,h3,h4,h5,h6,form,pre,fieldset,table,td,th,input,textarea,img {margin:0;padding:0;font-size:12px;}
+ul, ol, li, dl, dt, dd{padding: 0px;margin: 0px;list-style-type: none;}
+a{text-decoration: none;}
+
+.menu{width:676px;height:100%;margin:0 auto;position:relative;background-color:White;float:left;
+	height:38px;line-height:38px;}
+.menu a{float:left;display:block;padding-right:15px;padding-left:15px;color:#FFFFFF;}
+.menu a:hover{padding-right:15px;color:#FFFF00;}
+.menu .select{padding-right:15px;background:url('../images/nav_link.jpg')/*tpa=http://www.taiyangjx.com/images/nav_link.jpg*/ repeat-x left top;}
+
+.span { padding-left:15px;font-size:14px;font-weight:bold;line-height:30px;}
+.menuLeft{float:left;width:676px;height:38px;line-height:38px;background-color:#714F40;}
+.menuLeft li{list-style:none;float:left;text-align:center;}
+.menuRight{float:right;width:294px;padding-left:20px;text-align:left;vertical-align:middle;
+	height:38px;line-height:38px;background-color:#9C7563;}
+.menuRight li{list-style:none;vertical-align:middle;height:38px;line-height:38px;}
+
+div.menu-list{display:none;width:100px;border:#d6d6d6 1px solid;padding:0px 0px 5px 0px;
+	background:#FFFFFF;position:absolute;z-index:101;top:0px;right:0px;opacity:0.9;filter:alpha(opacity=90);}
+div.menu-list ul{padding:0px;margin:0px;}
+div.menu-list ul li{margin:5px 5px 0px;padding:0px;list-style-type:none;}
+div.menu-list ul li a{display:block;width:100%;cursor:pointer;color:#000;line-height:25px;
+	height:25px;text-align:center;text-decoration:none;}
+div.menu-list ul li a span{display:block;width:100%;height:100%;}
+div.menu-list ul li a:hover{color:#FFFFFF;background:url('../images/nav_hover.jpg')/*tpa=http://www.taiyangjx.com/images/nav_hover.jpg*/ repeat-x left top;}
+
+.button_tijiao{ border:0px solid #000000;padding-bottom:0px;font-weight:normal;font-size:12px;
+     color:black;background-color:Transparent;width:120px;height:34px;cursor:pointer; 
+     background:url('../images/button_tjdd.gif')/*tpa=http://www.taiyangjx.com/images/button_tjdd.gif*/ no-repeat;vertical-align:middle;} 
+.button_jiezhang{ border:0px solid #000000;padding-bottom:0px;font-weight:normal;font-size:12px;
+     color:black;background-color:Transparent;width:128px;height:38px;cursor:pointer; 
+     background:url('../images/btn-next.gif')/*tpa=http://www.taiyangjx.com/images/btn-next.gif*/ no-repeat;vertical-align:middle;} 
+
+/* Cart Step1 Step2 */
+.floatLeft{float:left;padding-top:10px;padding-bottom:10px;}
+.floatRight{float:right;padding-top:10px;padding-bottom:10px;}
+.floatNone{float:none;}
+.division{background:#fff;padding:7px;margin:7px 0px 7px 0px;}
+.division1{padding:5px 0px 5px 0px;border:0px solid #CCCCCC;margin-bottom:10px;font-size:12px;}
+.division2{padding:5px 0px 5px 0px;border:0px solid #CCCCCC;font-size:12px;}
+.section {clear:both;overflow:hidden;border-left:1px solid #E1E1E1;border-right:1px solid #E1E1E1;}
+.span-auto{float:left;margin-right:10px;}
+.inputnumber { width:70px;}
+
+.actbtn{width:126px;height:36px;cursor:pointer;margin-top:5px;border:0;display:block;}
+.btn-return{background:url('../images/btn-return.gif')/*tpa=http://www.taiyangjx.com/images/btn-return.gif*/;background-repeat:no-repeat;width:90px;
+     height:40px;border:0;cursor:pointer;float:left;}
+.btn-buy{background:url('../images/btn-buy.gif')/*tpa=http://www.taiyangjx.com/images/btn-buy.gif*/ no-repeat;width:90px;height:40px;
+     border:0;cursor:pointer;}
+.btn-clearcat{background:url('../images/btn-clearcat.gif')/*tpa=http://www.taiyangjx.com/images/btn-clearcat.gif*/ no-repeat;width:90px;
+     height:40px;border:0;cursor:pointer;}
+.btn-register{background:url('../images/btn-register.gif')/*tpa=http://www.taiyangjx.com/images/btn-register.gif*/ no-repeat;width:90px;
+     height:40px;border:0;cursor:pointer;}
+.btn-next{background:url('../images/btn-next.gif')/*tpa=http://www.taiyangjx.com/images/btn-next.gif*/ no-repeat;width:130px;height:40px;
+     border:0;cursor:pointer;}
+.btn-next2 { float:right; }
+.btn-login{background:url('../images/btn-login.gif')/*tpa=http://www.taiyangjx.com/images/btn-login.gif*/ no-repeat;width:90px;height:40px;
+     border:0;cursor:pointer;}  
+.CartBtn table{margin:0 auto;}
+.inputstyle{border:1px solid #CCCCCC;padding:3px 5px;}
+.buttonstyle{padding:1px 5px;font-size:14px;}
+
+.liststyle {border:1px solid #999999;width:100%;margin:0;color:#666666;font-weight:normal;}
+.liststyle a{padding-right:5px;text-decoration:underline;}
+.liststyle a.lnk{text-decoration:none;}
+.liststyle th,.liststyle td{padding:4px;text-align:center;border:1px solid #999999;overflow:hidden;}
+
+.liststyle2 {border:1px solid #999999;width:60%;margin:0;color:#666666;font-weight:normal;}
+.liststyle2 a{padding-right:5px;text-decoration:underline;}
+.liststyle2 a.lnk{text-decoration:none;}
+.liststyle2 th,.liststyle2 td{padding:4px;border:1px solid #999999;overflow:hidden;}
+
+/* Login */
+.msgbox{ width:380px;border:1px solid #9c0000;z-index:10001;background:#FFFFFF;margin:0 auto;height:370px;}
+.msgboxhead{ background:url('../images/dpbox.gif')/*tpa=http://www.taiyangjx.com/images/dpbox.gif*/ repeat-x;height:23px;font-weight:bold; 
+    line-height:23px;overflow:hidden;color:#FFFFFF;padding:0px 5px;}
+.msgboxhead span{ display:inline;float:left;}
+.msgboxhead a{ display:inline;float:right;color:#FFFFFF;font-weight:normal;}
+.msgboxhead img{ display:block;margin-top:5px;padding:0px 5px;}
+
+.lib_Menubox {height:36px;line-height:36px;position:relative;border-bottom:1px solid #d7d7d7;}
+.lib_Menubox ul{list-style:none;position:absolute;left:108px;height:25px;text-align:center;top:0px;}
+.lib_Menubox li{float:left;display:block;cursor:pointer;width:85px;color:#959595;
+    height:36px;border-right:1px solid #d7d7d7;font:bold 18px/36px;border-left:1px solid #d7d7d7;
+    border-top:1px solid #d7d7d7;text-align:center;}
+.lib_Menubox li.hover{width:85px;color:#333333;height:36px;line-height:36px;
+    background:url('../images/loginbg.gif')/*tpa=http://www.taiyangjx.com/images/loginbg.gif*/ repeat-x;}
+.lib_Contentbox{clear:both;margin-top:0px;border-top:none;padding-top:8px;width:380px;}
+
+.menubox {position:relative;float:left;width:120px;height:188px;border-right:1px solid #95C9E1;}
+.menubox ul{list-style:none;position:absolute;top:0;left:6px;height:25px;width:120px;}
+.menubox li{display:block;cursor:pointer;width:114px;height:25px;line-height:25px;color:#949694; 
+    margin-bottom:2px;background-color:#E4F2FD;text-align:center;}
+.menubox li.hover{background:#FFFFFF;width:114px;height:25px;line-height:25px;border:1px solid #95C9E1;
+    border-right:0;color:#739242;}
+.contentbox{ float:left;width:378px;height:187px;border:1px solid #95C9E1;border-left:0;}
+
+.blank0{clear:both;display:block;font-size:1px;visibility:hidden;height:0;line-height:0;}
+.blank5{clear:both;display:block;font-size:1px;overflow:hidden;height:5px;}
+.blank8{clear:both;display:block;font-size:1px;overflow:hidden;height:8px;}
+.blank10{clear:both;display:block;font-size:1px;overflow:hidden;height:10px;}
+.blank12{clear:both;display:block;font-size:1px;overflow:hidden;height:12px;}
+.blank15{clear:both;display:block;font-size:1px;overflow:hidden;height:15px;}
+.blank20{clear:both;display:block;font-size:1px;overflow:hidden;height:20px;}
+.blank25{clear:both;display:block;font-size:1px;overflow:hidden;height:25px;}
+
+.regSetTabBox {width:343px;padding-left:18px;}
+.regSetTabMenu {border-bottom:1px solid #A10000;height:24px;width:343px;}
+#one1, #one2 {background:url('../images/menuBg.gif')/*tpa=http://www.taiyangjx.com/images/menuBg.gif*/ no-repeat scroll 0 0 transparent;
+    color:#949494;cursor:pointer;display:inline;float:left;height:24px;line-height:24px;
+    margin:0 5px 0 0;padding:0;text-align:center;width:74px;}
+#one1.hover, #one2.hover { color:#FFFFFF;
+	background:url('../images/menuHover.gif')/*tpa=http://www.taiyangjx.com/images/menuHover.gif*/ no-repeat scroll 0 0 transparent;}
+.regSetTabCon {background:none repeat scroll 0 0 #FAFAFA;width:343px;}
+.FTextArea input {display:inline;float:left;text-align:left;}
+.FTextArea span {float:left;display:block;line-height:22px;text-align:right;width:84px;}
+.FTextArea input {border:1px solid #A5AFC3;height:20px;line-height:20px;width:202px;}
+.btnReg button {background:url('../images/btnReg.gif')/*tpa=http://www.taiyangjx.com/images/btnReg.gif*/ no-repeat scroll 0 0 transparent;
+    border:medium none;cursor:pointer;display:inline;float:left;height:25px;margin-left:94px;width:80px;}
+.btnReg input {background:url('../images/btnReg.gif')/*tpa=http://www.taiyangjx.com/images/btnReg.gif*/ no-repeat scroll 0 0 transparent;
+    border:medium none;cursor:pointer;display:inline;float:left;height:25px;margin-left:94px;width:80px;}
+.btnLogin {background:url('../images/btnReg.gif')/*tpa=http://www.taiyangjx.com/images/btnReg.gif*/ no-repeat scroll 0 0 transparent;
+    border:medium none;cursor:pointer;display:inline;float:left;height:25px;margin-left:94px;width:80px;}
+.btnReg span {display:inline;float:left;margin-left:12px;padding-top:12px;}
+.tishiHead {color:#A10000;font-size:12px;font-weight:bold;margin-bottom:5px;}
+.tishiArea{ padding-left:20px;color:#969696; text-align:left;}
+.tishiArea li{line-height:22px;}
+
+.regbox{ padding-left:10px;text-align:right;padding-right:30px;}
+.regbox input {border:1px solid #A5AFC3;height:19px;line-height:19px;width:200px;}
+.regbox {width:343px;}
+.regbox p {margin:0;padding-left:65px;}
+.regbox ul {margin:0;padding:0;}
+.regbox li {list-style:none outside none;margin:0;width:340px;padding:0 0 10px;}
+.regbox .sty08 {color:#666666;padding-top:0;}
+.regbox .sty088 {color:#666666;padding-top:0;}
+.regbox .sty10  {padding-top:6px; text-align:center;}
+.regbox .pwdli span {float:left;line-height:17px;margin:0;padding-left:137px;color:#999999;}
+.regbox .emailli {height:45px;}
+.regbox .newusername {height:25px;}
+.regbox .agreement{ padding:10px 0px;text-align:center;}
+.Reginput {display:block;height:16px;line-height:140%;margin-top:2px;text-align:center;
+    vertical-align:middle;}
+.Error {background-color:#F5F5F5;border:1px solid #A10000;}
+.errorword {clear:both;display:block;height:16px;line-height:140%;margin:0 0 5px 114px;
+    text-align:center;width:200px;}
+.rihtReg {background-color:#F5F5F5;border:1px solid #08A63A;color:#08A63A;}
+#Agreement{width:auto;border:0px;vertical-align:middle;}

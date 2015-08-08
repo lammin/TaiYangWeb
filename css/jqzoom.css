@@ -1,0 +1,100 @@
+/*jqzoom*/
+.jqzoom{ width:340px;position:relative;}
+.zoomdiv{ left:859px;width:320px;}
+
+.jqzoom{ position:relative;padding:0;text-align:center;overflow:hidden;}
+.zoomdiv{ width:320px;z-index:100;position:absolute;top:1px;left:0px;display:none;
+    border:1px solid #e4e4e4;text-align:center;overflow:hidden;
+    background:url('../images/loading2.gif')/*tpa=http://www.taiyangjx.com/images/loading2.gif*/ #FFFFFF no-repeat center center;}
+.bigimg{ width:800px;height:800px;}
+.jqZoomPup{ width:50px;height:50px;z-index:10;position:absolute;top:0px;left:0px;
+    border:1px solid #AAA;background:#FFF 50% top no-repeat;opacity:0.5;-moz-opacity:0.5;
+    -khtml-opacity:0.5;filter:alpha(Opacity=50);cursor:pointer;visibility:hidden;}
+.imgInit { width:340px;border:0px #666666 solid;margin:0px;text-align:center;}
+
+/* jqzoomPage  */
+.product1 { float:left;width:350px;padding:5px;overflow:hidden;border:1px solid #E0E0E0;
+    text-align:center;}
+.product1_1{ width:340px;text-align:center;}
+.product2 { float:left;width:320px;overflow:hidden;padding-left:10px;}
+.product2 table { float:left;width:320px;padding-left:10px;border: 1px solid #E0E0E0; 
+    background-color:#FFF;line-height:22px;}
+.product2 table td { height:30px;}
+.product2TableTd1 { color:#397601;font-size:14px;font-weight:bold;padding:10px 5px 5px 5px; 
+    border-bottom:1px solid #E0E0E0;}
+.product2TableTd2 { color:#333333;padding-left:10px;font-size:13px;}
+.product3 { float:left;width:90%;padding:10px 0px 10px 20px;}
+.product3_1 { float:left;width:340px;text-align:center;}
+.product3_1 img {cursor: pointer;border:0px solid #666;margin-right:10px;}
+.product3_2 { float:left;width:100%;height:25px;margin-top:10px;}
+
+/* caigou */
+.caigou { float:left;width:687px;background:#065FA5;color:white;padding:5px;margin:5px 0;font-size:12px;} 
+.caigou strong { font-size:14px;font-weight:bold;padding-left:5px;}
+.caigou .span_1 { float:right;padding-right:5px;}
+
+.caigou_div { float:left;width:100%;}
+.caigou_tab { line-height:25px;margin-bottom:10px;color:#666;}
+.caigou_tab td { height:25px;}
+.caigou_tab .tt { vertical-align:top;text-align:right;}
+.caigou_tab .span_b { font-weight:bold;color:#CE0404; }
+.caigou_tab .textarea { margin-top:3px;border:1px solid #8A8484;}
+.red_x { color:#F78608;display:inline;font-size:12px;}
+.b15,.b16,.b19,.b20,.b21,.b22 { background: url('../images/SkinsVIBtn.jpg')/*tpa=http://www.taiyangjx.com/images/SkinsVIBtn.jpg*/ no-repeat;
+     border:0;cursor:pointer;overflow:hidden;}
+.b15 { background-position:-79px -650px;width:60px;height:24px;line-height:24px;color:#FBF8FD; 
+     font-size:14px;font-weight:bold; }
+.b16 { background-position:-184px -650px;width:60px;height:24px;line-height:24px;color:#FBF8FC; 
+     font-size:14px;font-weight:bold; }
+.b19 { background-position:-882px -294px;width:80px;height:22px;line-height:22px;padding-left:11px; 
+     color:#666;}
+.b20 { background-position:-882px -326px;width:82px;height:22px;line-height:22px;padding-left:11px;
+     color:#666;}
+.b21 { background-position:-183px -295px;width:80px;height:22px;line-height:22px;padding-left:11px; 
+     color:#666;}
+.b22 { background-position:-542px -294px;width:80px;height:22px;line-height:22px;padding-left:11px;
+     color:#666;}
+a.probuy,a.probuy:visited,a.probuy:hover,a.probuy:active { width:126px;height:34px;line-height:34px;
+     background:url('../images/btnbuy1.gif')/*tpa=http://www.taiyangjx.com/images/btnbuy1.gif*/ no-repeat;font-size:14px;color:#333;
+     display:block;text-decoration:none;}
+
+/* RSS */
+channel{ width:100%;font-size:12px;background:#FFFFFF;padding:10px 10px 15px 10px;
+	font-family:verdana, arial, helvetica, sans-serif;margin: 0px auto;text-align:center;}
+channel title{ display:block;font-weight:bold;font-size:18px;z-index:1;position:relative;height:auto;}
+item{ width:90%;line-height:100%;padding:10px 10px 2px 10px;display: block;font-size:14px;
+    margin:20px 0px;text-align:left;}
+rss, item title, item link, item description, item pubDate, item author, item{
+	display:block;font-weight:normal;font-size:14px;margin:5px;background:#F0F8FB;}
+item title { font-weight:bold;font-size:16px;display:block;height:auto;position:relative;z-index:1;}
+item link { margin-bottom:0; }
+link { display:block;color:Blue;text-decoration:underline; }
+info { display:block;margin:3em 4em 3em 4em;color:Black;text-align:center;padding:1.5em; 
+    font-family:mono;font-size:small; }
+managingEditor, webMaster, title, link, description, copyright, lastBuildDate, pubDate { 
+	display:block;font-size:14px;line-height:150%; }
+
+/* Review */
+.Review { float:left;width:100%;padding-top:10px;}
+.Review_1 { font-size:12px;line-height:20px;padding-right:10px;}
+.Review_2 { width:692px;border:1px solid #E0E0E0;margin:10px 5px 0px 0px;line-height:20px;}
+.Review_2_1 { border-bottom:1px solid #E0E0E0;padding-left:10px;}
+.Review_2_1 span { font-size:12px;font-weight:bold;}
+.Review_2_2 { padding-left:10px;padding-right:10px;padding-bottom:10px;}
+#LatestReview { width:100%;overflow:hidden;font-size:12px;line-height: 20px;}
+
+.Review_11 { width:692px;height:180px;border:1px solid #E0E0E0;line-height:20px;}
+.Review_11_1 { padding-left:10px;line-height:30px;}
+.Review_11_1Span1 { font-size:12px;font-weight:bold;}
+.Review_11_1Span2 { font-size:11px;color:#999999;padding-left:20px;}
+.Review_11_2 { padding-left:10px;height:32px;}
+.Review_11_2 span { padding-right:10px;}
+.Review_11_3 { float:left;width:100%;height:143px;}
+.Review_11_3_1 { float:left;width:370px;padding:5px 10px 5px 10px;height:105px;}
+.Review_11_3_1 textarea { width:360px;height:90px;border:solid 1px #E0E0E0;color:#666666;
+    font-size:12px;padding:3px;}
+.Review_11_3_2 { float:right;width:290px;height:105px;padding-right:10px;}
+.Review_11_3_3 { float:left;width:90%;text-align:left;padding-left:10px;}
+.Review_11_3_3Code { width:50px;height:17px;vertical-align:middle;border:1px solid #E0E0E0;}
+.Review_11_3_3Img { width:60px;height:22px;vertical-align:middle;cursor:pointer;}
+.Review_11_3_2Td { padding-bottom:10px;}
