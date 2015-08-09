@@ -1,7 +1,7 @@
-// å›¾ç‰‡æŒ‰æ¯”ä¾‹ç¼©æ”¾
+// ¹Ï¤ù«ö¤ñ¨ÒÁY©ñ
 var flag=false;
 function DrawImage(ImgD,iwidth,iheight){
-    //å‚æ•°(å›¾ç‰‡,å…è®¸çš„å®½åº¦,å…è®¸çš„é«˜åº¦)
+    //°Ñ¼Æ(¹Ï¤ù,¤¹³\ªº¼e«×,¤¹³\ªº°ª«×)
     var image=new Image();
     image.src=ImgD.src;
     if(image.width>0 && image.height>0){
@@ -14,7 +14,7 @@ function DrawImage(ImgD,iwidth,iheight){
                 ImgD.width=image.width;  
                 ImgD.height=image.height;
             }
-            //ImgD.alt=image.width+"Ã—"+image.height;
+            //ImgD.alt=image.width+"¡Ñ"+image.height;
         }
         else{
             if(image.height>iheight){  
@@ -24,12 +24,12 @@ function DrawImage(ImgD,iwidth,iheight){
                 ImgD.width=image.width;  
                 ImgD.height=image.height;
             }
-            //ImgD.alt=image.width+"Ã—"+image.height;
+            //ImgD.alt=image.width+"¡Ñ"+image.height;
         }
     }
 } 
 
-// ç”¨æ³•ï¼š<img src='' alt='' onload="resizeimage(this)" />
+// ¥Îªk¡G<img src='' alt='' onload="resizeimage(this)" />
 function resizeimage(objImg)
 {
     var w0=0;

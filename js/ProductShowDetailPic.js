@@ -1,6 +1,6 @@
 function ImgShow(evt){
    var imgTag=(window.event)?event.srcElement:evt.target;
-   var imgPath=imgTag.src.replace("a.jpg"/*tpa=http://www.taiyangjx.com/js/a.jpg*/,".jpg");//å–å¾—å¼¹å‡ºçš„å¤§å›¾url
+   var imgPath=imgTag.src.replace("a.jpg"/*tpa=http://www.taiyangjx.com/js/a.jpg*/,".jpg");//¨ú±o¼u¥Xªº¤j¹Ïurl
    var tagTop=Math.max(document.documentElement.scrollTop,document.body.scrollTop);
    var tag=document.createElement("div");
 var bWidth=parseInt(document.documentElement.scrollWidth); 
@@ -8,20 +8,20 @@ var bHeight=parseInt(document.documentElement.scrollHeight);
    //alert(bHeight);
    //xwxc.style.name="showPic";
     tag.style.cssText="width:100%; height:"+bHeight+"px; position:absolute; background:black; top:0; filter:Alpha(Opacity=80);Opacity:0.8;";
-    tag.ondblclick=function(){var clsOK=confirm("ç¡®å®šè¦å–æ¶ˆå›¾ç‰‡æ˜¾ç¤ºå—?"); if(clsOK){closes();}};
+    tag.ondblclick=function(){var clsOK=confirm("½T©w­n¨ú®ø¹Ï¤ùÅã¥Ü¶Ü?"); if(clsOK){closes();}};
    var tagImg=document.createElement("div");
     tagImg.style.cssText="font:12px /18px verdana;overflow:auto;text-align:center;position:absolute;width:200px;border:5px solid gray;background:gray;color:white;left:"+(parseInt(document.body.offsetWidth)/2-100)+"px;top:"+(document.documentElement.clientHeight/3+tagTop)+"px;"
     tagImg.innerHTML="<div style='padding:10px;background:#cccccc;border:1px solid white'><img src='' /><br /><br /><b style='color:#999999;font-weight:normal'>Image loading...</b><br /></div>";
    var closeTag=document.createElement("div");
     closeTag.style.cssText="display:none;position:absolute;left:10px;top:10px;background:red;border:1px solid white;yellow:white;filter:Alpha(Opacity=50);Opacity:0.5;cursor:pointer;";
-    closeTag.innerHTML="<b> å…³é—­ </b>";
+    closeTag.innerHTML="<b> Ãö³¬ </b>";
     closeTag.onclick=closes;
    document.body.appendChild(tag);
    document.body.appendChild(tagImg);
    var img=new Image();
     img.src=imgPath;
     img.style.cssText="border:1px solid #cccccc;filter: Alpha(Opacity=0);Opacity:0;";
-    tagImg.oncontextmenu=function(){var clsOK=confirm("ç¡®å®šè¦å–æ¶ˆå›¾ç‰‡æ˜¾ç¤ºå—?"); if(clsOK){closes();};return false};
+    tagImg.oncontextmenu=function(){var clsOK=confirm("½T©w­n¨ú®ø¹Ï¤ùÅã¥Ü¶Ü?"); if(clsOK){closes();};return false};
    var barShow,imgTime;
    img.complete?ImgOK():img.onload=ImgOK;
    function ImgOK(){
@@ -65,12 +65,12 @@ var bHeight=parseInt(document.documentElement.scrollHeight);
     tagImg.innerHTML="";
     tagImg.appendChild(closeTag);
     if(ix>xx||iy>yy){
-     img.alt="æŒ‰ä½å·¦é”®æ‹–åŠ¨,åŒå‡»æ”¾å¤§/ç¼©å°";
+     img.alt="«ö¦í¥ªÁä©ì°Ê,ÂùÀ»©ñ¤j/ÁY¤p";
      img.ondblclick=function (){
       if(tagImg.offsetWidth<img.offsetWidth||tagImg.offsetHeight<img.offsetHeight){
        img.style.width="auto";
        img.style.height="00%";
-       img.alt="åŒå‡»100%æ”¾å¤§";
+       img.alt="ÂùÀ»100%©ñ¤j";
        img.onmousedown=null;
        closeTag.style.top="10px";
        closeTag.style.left="10px";
@@ -80,7 +80,7 @@ var bHeight=parseInt(document.documentElement.scrollHeight);
       }else{
        img.style.width=ix+"px";
        img.style.height=iy+"px";
-       img.alt="åŒå‡»å¯ä»¥ç¼©å°";
+       img.alt="ÂùÀ»¥i¥HÁY¤p";
        img.onmousedown=dragDown;
        tagImg.style.overflow="auto";
        tagImg.style.width=xx+"px";

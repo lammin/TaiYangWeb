@@ -21,25 +21,25 @@ function checkNewsReview()
     var evaluation = $("input[name='RadioButtonList1']:checked").val();
     content = content.replace(reg, "");
     if(content=="") {
-        alert("è¯·è¾“å…¥è¯„è®ºå†…å®¹ï¼");
+        alert("½Ğ¿é¤Jµû½×¤º®e¡I");
         document.getElementById("txtContent").focus();
         return false;
     }
     else if(strlen(document.getElementById("txtContent").value)>200)
     {
-        alert("æœ€å¤šä¸è¶…è¿‡200ä¸ªå­—ç¬¦");
+        alert("³Ì¦h¤£¶W¹L200­Ó¦r²Å");
         document.getElementById("txtContent").focus();
         return false;
     }
-    else if(content=="è¯·è¾“å…¥è¯„è®ºå†…å®¹(200å­—ä»¥å†…)") 
+    else if(content=="½Ğ¿é¤Jµû½×¤º®e(200¦r¥H¤º)") 
     {
-        alert("è¯·è¾“å…¥è¯„è®ºå†…å®¹ï¼");
+        alert("½Ğ¿é¤Jµû½×¤º®e¡I");
         document.getElementById("txtContent").focus();
         return false;
     }  
     else if(document.getElementById("ChkCode").value=="")
     {
-        alert("è¯·è¾“å…¥éªŒè¯ç ");
+        alert("½Ğ¿é¤JÅçÃÒ½X");
         document.getElementById("ChkCode").focus();
         return false;
     } 
@@ -59,12 +59,12 @@ function checkNewsReview()
         success: function(re) {
             if(re.d=="0")
             {
-                alert("éªŒè¯ç é”™è¯¯ï¼ï¼");
+                alert("ÅçÃÒ½X¿ù»~¡I¡I");
                 document.getElementById("ChkCode").focus();
             }
             else if(re.d=="-2")
             {
-                alert("è¯„è®ºå¤±è´¥ï¼");
+                alert("µû½×¥¢±Ñ¡I");
                 document.getElementById("txtContent").focus();
             }
             else
@@ -72,7 +72,7 @@ function checkNewsReview()
                 document.getElementById("txtContent").value="";
                 document.getElementById("ChkCode").value="";
                 $("#imgCode").click();
-                alert("è¯„è®ºæˆåŠŸï¼"); 
+                alert("µû½×¦¨¥\¡I"); 
                 
                 var html="";
                 var list = eval(re.d);
@@ -80,7 +80,7 @@ function checkNewsReview()
                 $.each(list,function(entryIndex,entry){
                     html += "<table width='100%' cellpadding='0' cellspacing='0' style='table-layout:fixed;'><tr><td rowspan='2' valign='top' width='60' style='padding-top:10px;'>"+
                         "<img src='../images/FacePic/bodyface.gif'/*tpa=http://www.taiyangjx.com/images/FacePic/bodyface.gif*/ alt='' /></td><td width='30%' align='left'>"+entry[0]+"</td><td align='left'>"+entry[1]+
-                        "&nbsp;&nbsp;è¯„ä»·ï¼š<span style='color:#333333;'>"+entry[2]+"</span>&nbsp;&nbsp;<img src='"+entry[3]+
+                        "&nbsp;&nbsp;µû»ù¡G<span style='color:#333333;'>"+entry[2]+"</span>&nbsp;&nbsp;<img src='"+entry[3]+
                         "' alt='' />"+"</td></tr><tr><td colspan='2' align='left' valign='top' style='padding-right: 5px;word-break:break-all;'>"+entry[4]+
                         "</td></tr><tr><td height='3' colspan='3'></td></tr><tr><td height='1' colspan='3' background='../images/line4.gif'/*tpa=http://www.taiyangjx.com/images/line4.gif*/></td></tr></table>";
                 });
@@ -160,7 +160,7 @@ function checkNewsReviewEn()
                 $.each(list,function(entryIndex,entry){
                     html += "<table width='100%' cellpadding='0' cellspacing='0' style='table-layout:fixed;'><tr><td rowspan='2' valign='top' width='60' style='padding-top:10px;'>"+
                         "<img src='../images/FacePic/bodyface.gif'/*tpa=http://www.taiyangjx.com/images/FacePic/bodyface.gif*/ alt='' /></td><td width='30%' align='left'>"+entry[0]+"</td><td align='left'>"+entry[1]+
-                        "&nbsp;&nbsp;Evaluateï¼š<span style='color:#333333;'>"+entry[2]+"</span>&nbsp;&nbsp;<img src='"+entry[3]+
+                        "&nbsp;&nbsp;Evaluate¡G<span style='color:#333333;'>"+entry[2]+"</span>&nbsp;&nbsp;<img src='"+entry[3]+
                         "' alt='' />"+"</td></tr><tr><td colspan='2' align='left' valign='top' style='padding-right: 5px;word-break:break-all;'>"+entry[4]+
                         "</td></tr><tr><td height='3' colspan='3'></td></tr><tr><td height='1' colspan='3' background='../images/line4.gif'/*tpa=http://www.taiyangjx.com/images/line4.gif*/></td></tr></table>";
                 });
@@ -181,25 +181,25 @@ function checkProductReview()
     var evaluation = $("input[name='RadioButtonList1']:checked").val();
     content = content.replace(reg, "");
     if(content=="") {
-        alert("è¯·è¾“å…¥è¯„è®ºå†…å®¹ï¼");
+        alert("½Ğ¿é¤Jµû½×¤º®e¡I");
         document.getElementById("txtContent").focus();
         return false;
     }
     else if(strlen(document.getElementById("txtContent").value)>200)
     {
-        alert("æœ€å¤šä¸è¶…è¿‡200ä¸ªå­—ç¬¦");
+        alert("³Ì¦h¤£¶W¹L200­Ó¦r²Å");
         document.getElementById("txtContent").focus();
         return false;
     }
-    else if(content=="è¯·è¾“å…¥è¯„è®ºå†…å®¹(200å­—ä»¥å†…)") 
+    else if(content=="½Ğ¿é¤Jµû½×¤º®e(200¦r¥H¤º)") 
     {
-        alert("è¯·è¾“å…¥è¯„è®ºå†…å®¹ï¼");
+        alert("½Ğ¿é¤Jµû½×¤º®e¡I");
         document.getElementById("txtContent").focus();
         return false;
     }  
     else if(document.getElementById("ChkCode").value=="")
     {
-        alert("è¯·è¾“å…¥éªŒè¯ç ");
+        alert("½Ğ¿é¤JÅçÃÒ½X");
         document.getElementById("ChkCode").focus();
         return false;
     } 
@@ -219,12 +219,12 @@ function checkProductReview()
         success: function(re) {
             if(re.d=="0")
             {
-                alert("éªŒè¯ç é”™è¯¯ï¼ï¼");
+                alert("ÅçÃÒ½X¿ù»~¡I¡I");
                 document.getElementById("ChkCode").focus();
             }
             else if(re.d=="-2")
             {
-                alert("è¯„è®ºå¤±è´¥ï¼");
+                alert("µû½×¥¢±Ñ¡I");
                 document.getElementById("txtContent").focus();
             }
             else
@@ -232,7 +232,7 @@ function checkProductReview()
                 document.getElementById("txtContent").value="";
                 document.getElementById("ChkCode").value="";
                 $("#imgCode").click();
-                alert("è¯„è®ºæˆåŠŸï¼"); 
+                alert("µû½×¦¨¥\¡I"); 
                 
                 var html="";
                 var list = eval(re.d);
@@ -240,7 +240,7 @@ function checkProductReview()
                 $.each(list,function(entryIndex,entry){
                     html += "<table width='100%' cellpadding='0' cellspacing='0' style='table-layout:fixed;'><tr><td rowspan='2' valign='top' width='60' style='padding-top:10px;'>"+
                         "<img src='../images/FacePic/bodyface.gif'/*tpa=http://www.taiyangjx.com/images/FacePic/bodyface.gif*/ alt='' /></td><td width='30%' align='left'>"+entry[0]+"</td><td align='left'>"+entry[1]+
-                        "&nbsp;&nbsp;è¯„ä»·ï¼š<span style='color:#333333;'>"+entry[2]+"</span>&nbsp;&nbsp;<img src='"+entry[3]+
+                        "&nbsp;&nbsp;µû»ù¡G<span style='color:#333333;'>"+entry[2]+"</span>&nbsp;&nbsp;<img src='"+entry[3]+
                         "' alt='' />"+"</td></tr><tr><td colspan='2' align='left' valign='top' style='padding-right: 5px;word-break:break-all;'>"+entry[4]+
                         "</td></tr><tr><td height='3' colspan='3'></td></tr><tr><td height='1' colspan='3' background='../images/line4.gif'/*tpa=http://www.taiyangjx.com/images/line4.gif*/></td></tr></table>";
                 });
@@ -320,7 +320,7 @@ function checkProductReviewEn()
                 $.each(list,function(entryIndex,entry){
                     html += "<table width='100%' cellpadding='0' cellspacing='0' style='table-layout:fixed;'><tr><td rowspan='2' valign='top' width='60' style='padding-top:10px;'>"+
                         "<img src='../images/FacePic/bodyface.gif'/*tpa=http://www.taiyangjx.com/images/FacePic/bodyface.gif*/ alt='' /></td><td width='30%' align='left'>"+entry[0]+"</td><td align='left'>"+entry[1]+
-                        "&nbsp;&nbsp;Evaluateï¼š<span style='color:#333333;'>"+entry[2]+"</span>&nbsp;&nbsp;<img src='"+entry[3]+
+                        "&nbsp;&nbsp;Evaluate¡G<span style='color:#333333;'>"+entry[2]+"</span>&nbsp;&nbsp;<img src='"+entry[3]+
                         "' alt='' />"+"</td></tr><tr><td colspan='2' align='left' valign='top' style='padding-right: 5px;word-break:break-all;'>"+entry[4]+
                         "</td></tr><tr><td height='3' colspan='3'></td></tr><tr><td height='1' colspan='3' background='../images/line4.gif'/*tpa=http://www.taiyangjx.com/images/line4.gif*/></td></tr></table>";
                 });
@@ -337,38 +337,38 @@ function SendMess()
     var address="";
     if(document.getElementById("txtTitle").value=="")
     {
-        alert("è¯·è¾“å…¥ç•™è¨€ä¸»é¢˜");
+        alert("½Ğ¿é¤J¯d¨¥¥DÃD");
         document.getElementById("txtTitle").focus();
         return false;
     }
     else if(document.getElementById("txtMobile").value=="")
     {
-        alert("è¯·è¾“å…¥æ‰‹æœºå·ç ");
+        alert("½Ğ¿é¤J¤â¾÷¸¹½X");
         document.getElementById("txtMobile").focus();
         return false;
     }
     else if(!reg1.test(document.getElementById("txtMobile").value))
     {
-        alert("æ‰‹æœºå·ç æ ¼å¼ä¸æ­£ç¡®");
+        alert("¤â¾÷¸¹½X®æ¦¡¤£¥¿½T");
         document.getElementById("txtMobile").focus();
         document.getElementById("txtMobile").select();
         return false;
     }
     else if(document.getElementById("txtContent").value=="")
     {
-        alert("è¯·è¾“å…¥ç•™è¨€å†…å®¹");
+        alert("½Ğ¿é¤J¯d¨¥¤º®e");
         document.getElementById("txtContent").focus();
         return false;
     }
     else if(strlen(document.getElementById("txtContent").value)>500)
     {
-        alert("æœ€å¤šä¸è¶…è¿‡500ä¸ªå­—ç¬¦");
+        alert("³Ì¦h¤£¶W¹L500­Ó¦r²Å");
         document.getElementById("txtContent").focus();
         return false;
     }
     else if(document.getElementById("ChkCode").value=="")
     {
-        alert("è¯·è¾“å…¥éªŒè¯ç ");
+        alert("½Ğ¿é¤JÅçÃÒ½X");
         document.getElementById("ChkCode").focus();
         return false;
     } 
@@ -385,7 +385,7 @@ function SendMess()
         success: function(re) {
             if(re.d=="0")
             {
-                alert("éªŒè¯ç é”™è¯¯ï¼ï¼");
+                alert("ÅçÃÒ½X¿ù»~¡I¡I");
                 document.getElementById("ChkCode").focus();
             }
             else
@@ -404,33 +404,33 @@ function SendMess1() {
     var ip = "";
     var address = "";
     if (document.getElementById("txtCompany").value =="") {
-        alert("è¯·è¾“å…¥å…¬å¸å§“å");
+        alert("½Ğ¿é¤J¤½¥q©m¦W");
         document.getElementById("txtCompany").focus();
         return false;
     }
     else if (document.getElementById("txtMobile").value =="") {
-        alert("è¯·è¾“å…¥æ‰‹æœºå·ç ");
+        alert("½Ğ¿é¤J¤â¾÷¸¹½X");
         document.getElementById("txtMobile").focus();
         return false;
     }
     else if (!reg1.test(document.getElementById("txtMobile").value)) {
-        alert("æ‰‹æœºå·ç æ ¼å¼ä¸æ­£ç¡®");
+        alert("¤â¾÷¸¹½X®æ¦¡¤£¥¿½T");
         document.getElementById("txtMobile").focus();
         document.getElementById("txtMobile").select();
         return false;
     }
     else if (document.getElementById("txtaddress").value =="") {
-        alert("è¯·è¾“å…¥å…¬å¸æ‰€åœ¨åœ°");
+        alert("½Ğ¿é¤J¤½¥q©Ò¦b¦a");
         document.getElementById("txtaddress").focus();
         return false;
     }
     else if (document.getElementById("txtTel").value =="") {
-        alert("è¯·è¾“å…¥åº§æœº");
+        alert("½Ğ¿é¤J®y¾÷");
         document.getElementById("txtTel").focus();
         return false;
     }
     else if (document.getElementById("txtUsername").value == "") {
-        alert("è¯·è¾“å…¥è”ç³»äººåç§°");
+        alert("½Ğ¿é¤JÁpÃ´¤H¦WºÙ");
         document.getElementById("txtUsername").focus();
         return false;
     }
@@ -438,7 +438,7 @@ function SendMess1() {
         type: "POST",
         contentType: "application/json",
         url: "/WebService/Common.asmx/AddMessageShare",
-        data: "{title:'" +"åœ¨çº¿ç•™è¨€"+ "',username:'" + $("#txtUserName").val() + "',company:'" + $("#txtCompany").val() +
+        data: "{title:'" +"¦b½u¯d¨¥"+ "',username:'" + $("#txtUserName").val() + "',company:'" + $("#txtCompany").val() +
         "',tel:'" + $("#txtTel").val() + "',mobile:'" + $("#txtMobile").val() + "',fax:'" + "" + "',zip:'" + "" + "',email:'" +"" +
         "',qq:'" + "" + "',address:'" + $("#txtaddress").val() + "',content:'" + "" + "',url:'" + "" + "',industry:'" + "" +
         "',province:'" + "" + "',city:'" + "" + "',county:'" + "" + "',post:'" + "" + "',type:'1" + "',hasValiCode:'" + "0" +
@@ -524,34 +524,34 @@ function SendMess2()
     var ip = "";
     if(document.getElementById("txtUserName").value=="")
     {
-        alert("è¯·è¾“å…¥å§“å");
+        alert("½Ğ¿é¤J©m¦W");
         document.getElementById("txtUserName").focus();
         return false;
     }
     else if(document.getElementById("txtMobile").value=="")
     {
-        alert("è¯·è¾“å…¥æ‰‹æœºå·ç ");
+        alert("½Ğ¿é¤J¤â¾÷¸¹½X");
         document.getElementById("txtMobile").focus();
         return false;
     }
     else if(!reg1.test(document.getElementById("txtMobile").value))
     {
-        alert("æ‰‹æœºå·ç æ ¼å¼ä¸æ­£ç¡®");
+        alert("¤â¾÷¸¹½X®æ¦¡¤£¥¿½T");
         document.getElementById("txtMobile").focus();
         document.getElementById("txtMobile").select();
         return false;
     }
     else if(document.getElementById("txtCompany").value=="")
     {
-        alert("è¯·è¾“å…¥å…¬å¸åç§°");
+        alert("½Ğ¿é¤J¤½¥q¦WºÙ");
         document.getElementById("txtCompany").focus();
         return false;
     }
-    var title="å®¢æˆ·å¡«å†™èµ„æ–™è·å–ä¼˜æƒ åˆ¸";
+    var title="«È¤á¶ñ¼g¸ê®ÆÀò¨úÀu´f¨é";
     var tel="";
     var qq="";
     var post="";
-    var content="å®¢æˆ·å¡«å†™èµ„æ–™è·å–ä¼˜æƒ åˆ¸";
+    var content="«È¤á¶ñ¼g¸ê®ÆÀò¨úÀu´f¨é";
     var picture="";
     var picturesmall="";
     var checkcode="";
@@ -571,11 +571,11 @@ function SendMess2()
             document.getElementById("txtCompany").value="";
             if(re.d=="0")
             {
-                alert("éªŒè¯ç é”™è¯¯ï¼ï¼");
+                alert("ÅçÃÒ½X¿ù»~¡I¡I");
             }
             else
             { 
-                alert("æäº¤æˆåŠŸï¼è°¢è°¢æ‚¨å¯¹æˆ‘ä»¬çš„ä¿¡ä»»ï¼"); 
+                alert("´£¥æ¦¨¥\¡IÁÂÁÂ±z¹ï§Ú­Ìªº«H¥ô¡I"); 
             }     
         }     
     })      
@@ -644,7 +644,7 @@ function SendMess2En()
             }
             else
             { 
-                alert("Successï¼Thank you for your trust to us"); 
+                alert("Success¡IThank you for your trust to us"); 
             }     
         }     
     })      
@@ -655,34 +655,34 @@ function BuyProduct()
     var reg1 = /^1\d{10}$/;
     var ip = "";
     var qq ="";
-    var title ="é‡‡è´­äº§å“ï¼š"+document.getElementById("Hidden3").value;
+    var title ="±ÄÁÊ²£«~¡G"+document.getElementById("Hidden3").value;
     if(document.getElementById("txtUserName").value=="")
     {
-        alert("è¯·è¾“å…¥æ‚¨çš„çœŸå®å§“å");
+        alert("½Ğ¿é¤J±zªº¯u¹ê©m¦W");
         document.getElementById("txtUserName").focus();
         return false;
     }
     else if(document.getElementById("txtMobile").value=="")
     {
-        alert("è¯·è¾“å…¥æ‚¨çš„æ‰‹æœºå·ç ");
+        alert("½Ğ¿é¤J±zªº¤â¾÷¸¹½X");
         document.getElementById("txtMobile").focus();
         return false;
     }
     else if(!reg1.test(document.getElementById("txtMobile").value))
     {
-        alert("æ‰‹æœºå·ç æ ¼å¼ä¸æ­£ç¡®");
+        alert("¤â¾÷¸¹½X®æ¦¡¤£¥¿½T");
         document.getElementById("txtMobile").focus();
         return false;
     }
     else if(document.getElementById("txtConten").value=="")
     {
-        alert("è¯·è¾“å…¥é‡‡è´­æ„å‘");
+        alert("½Ğ¿é¤J±ÄÁÊ·N¦V");
         document.getElementById("txtConten").focus();
         return false;
     }
     else if(strlen(document.getElementById("txtConten").value)>500)
     {
-        alert("æœ€å¤šä¸è¶…è¿‡500ä¸ªå­—ç¬¦");
+        alert("³Ì¦h¤£¶W¹L500­Ó¦r²Å");
         document.getElementById("txtConten").focus();
         return false;
     }
@@ -698,7 +698,7 @@ function BuyProduct()
         success: function(re) {
             if(re.d=="0")
             {
-                alert("éªŒè¯ç é”™è¯¯ï¼ï¼");
+                alert("ÅçÃÒ½X¿ù»~¡I¡I");
                 document.getElementById("ChkCode").focus();
             }
             else
@@ -715,7 +715,7 @@ function BuyProductEn()
     var reg1 = /^1\d{10}$/;
     var ip = "";
     var qq ="";
-    var title ="Buyï¼š"+document.getElementById("Hidden3").value;
+    var title ="Buy¡G"+document.getElementById("Hidden3").value;
     if(document.getElementById("txtUserName").value=="")
     {
         alert("Please enter your real name");
@@ -775,19 +775,19 @@ function CheckName()
     var reg2= /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
     if(document.getElementById("txtLoginName").value=="")
     {
-        alert("è¯·è¾“å…¥ç™»å½•å");
+        alert("½Ğ¿é¤Jµn¿ı¦W");
         document.getElementById("txtLoginName").focus();
         return false;
     }
     else if(document.getElementById("txtPassword").value=="")
     {
-        alert("è¯·è¾“å…¥å¯†ç ");
+        alert("½Ğ¿é¤J±K½X");
         document.getElementById("txtPassword").focus();
         return false;
     }
     else if(document.getElementById("ChkCode").value=="")
     {
-        alert("è¯·è¾“å…¥éªŒè¯ç ");
+        alert("½Ğ¿é¤JÅçÃÒ½X");
         document.getElementById("ChkCode").focus();
         return false;
     }
@@ -801,26 +801,26 @@ function CheckName()
         success: function(re) {
             if(re.d=="0")
             {
-                alert("éªŒè¯ç é”™è¯¯ï¼ï¼");
+                alert("ÅçÃÒ½X¿ù»~¡I¡I");
                 document.getElementById("ChkCode").focus();
             }
             else if(re.d=="-1")
             {
-                alert("ç™»å½•åæˆ–å¯†ç é”™è¯¯ï¼ï¼");
+                alert("µn¿ı¦W©Î±K½X¿ù»~¡I¡I");
                 document.getElementById("txtLoginName").value="";
                 document.getElementById("txtPassword").value="";
                 document.getElementById("txtLoginName").focus();
             }
             else if(re.d=="-2")
             {
-                alert("è¯¥ä¼šå‘˜æœªç»ç®¡ç†å‘˜å®¡æ ¸ï¼Œè¯·å¾…å®¡æ ¸é€šè¿‡åå†ç™»å½•ï¼ï¼");
+                alert("¸Ó·|­û¥¼¸gºŞ²z­û¼f®Ö¡A½Ğ«İ¼f®Ö³q¹L«á¦Aµn¿ı¡I¡I");
                 document.getElementById("txtLoginName").value="";
                 document.getElementById("txtPassword").value="";
                 document.getElementById("txtLoginName").focus();
             }
             else
             {
-                alert("ç™»å½•æˆåŠŸï¼"); 
+                alert("µn¿ı¦¨¥\¡I"); 
                 window.location.href="http://www.taiyangjx.com/Member"; 
             }       
         }
@@ -889,13 +889,13 @@ function CheckName2()
     var reg2= /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
     if(document.getElementById("txtLoginName").value=="")
     {
-        alert("è¯·è¾“å…¥ç™»å½•å");
+        alert("½Ğ¿é¤Jµn¿ı¦W");
         document.getElementById("txtLoginName").focus();
         return false;
     }
     else if(document.getElementById("txtPassword").value=="")
     {
-        alert("è¯·è¾“å…¥å¯†ç ");
+        alert("½Ğ¿é¤J±K½X");
         document.getElementById("txtPassword").focus();
         return false;
     }
@@ -909,19 +909,19 @@ function CheckName2()
         success: function(re) {
             if(re.d=="0")
             {
-                alert("éªŒè¯ç é”™è¯¯ï¼ï¼");
+                alert("ÅçÃÒ½X¿ù»~¡I¡I");
                 document.getElementById("ChkCode").focus();
             }
             else if(re.d=="-1")
             {
-                alert("ç™»å½•åæˆ–å¯†ç é”™è¯¯ï¼ï¼");
+                alert("µn¿ı¦W©Î±K½X¿ù»~¡I¡I");
                 document.getElementById("txtLoginName").value="";
                 document.getElementById("txtPassword").value="";
                 document.getElementById("txtLoginName").focus();
             }
             else if(re.d=="-2")
             {
-                alert("è¯¥ä¼šå‘˜æœªç»ç®¡ç†å‘˜å®¡æ ¸ï¼Œè¯·å¾…å®¡æ ¸é€šè¿‡åå†ç™»å½•ï¼ï¼");
+                alert("¸Ó·|­û¥¼¸gºŞ²z­û¼f®Ö¡A½Ğ«İ¼f®Ö³q¹L«á¦Aµn¿ı¡I¡I");
                 document.getElementById("txtLoginName").focus();
             }
             else
@@ -989,19 +989,19 @@ function CheckNameCart()
     var reg2= /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
     if(document.getElementById("txtLoginName").value=="")
     {
-        alert("è¯·è¾“å…¥ç™»å½•å");
+        alert("½Ğ¿é¤Jµn¿ı¦W");
         document.getElementById("txtLoginName").focus();
         return false;
     }
     else if(document.getElementById("txtPassword").value=="")
     {
-        alert("è¯·è¾“å…¥å¯†ç ");
+        alert("½Ğ¿é¤J±K½X");
         document.getElementById("txtPassword").focus();
         return false;
     }
     else if(document.getElementById("ChkCode").value=="")
     {
-        alert("è¯·è¾“å…¥éªŒè¯ç ");
+        alert("½Ğ¿é¤JÅçÃÒ½X");
         document.getElementById("ChkCode").focus();
         return false;
     }
@@ -1015,26 +1015,26 @@ function CheckNameCart()
         success: function(re) {
             if(re.d=="0")
             {
-                alert("éªŒè¯ç é”™è¯¯ï¼ï¼");
+                alert("ÅçÃÒ½X¿ù»~¡I¡I");
                 document.getElementById("ChkCode").focus();
             }
             else if(re.d=="-1")
             {
-                alert("ç™»å½•åæˆ–å¯†ç é”™è¯¯ï¼ï¼");
+                alert("µn¿ı¦W©Î±K½X¿ù»~¡I¡I");
                 document.getElementById("txtLoginName").value="";
                 document.getElementById("txtPassword").value="";
                 document.getElementById("txtLoginName").focus();
             }
             else if(re.d=="-2")
             {
-                alert("è¯¥ä¼šå‘˜æœªç»ç®¡ç†å‘˜å®¡æ ¸ï¼Œè¯·å¾…å®¡æ ¸é€šè¿‡åå†ç™»å½•ï¼ï¼");
+                alert("¸Ó·|­û¥¼¸gºŞ²z­û¼f®Ö¡A½Ğ«İ¼f®Ö³q¹L«á¦Aµn¿ı¡I¡I");
                 document.getElementById("txtLoginName").value="";
                 document.getElementById("txtPassword").value="";
                 document.getElementById("txtLoginName").focus();
             }
             else
             {
-                //alert("ç™»å½•æˆåŠŸï¼"); 
+                //alert("µn¿ı¦¨¥\¡I"); 
                 window.location.href="../flash/Error.html-aspxerrorpath=-js-Cart.aspx.htm"/*tpa=http://www.taiyangjx.com/js/Cart.aspx*/; 
             }       
         }
@@ -1048,49 +1048,49 @@ function OrderProduct()
     var ip = "";
     if(document.getElementById("txtProductName").value=="")
     {
-        alert("è¯·è¾“å…¥äº§å“åç§°");
+        alert("½Ğ¿é¤J²£«~¦WºÙ");
         document.getElementById("txtProductName").focus();
         return false;
     }
     else if(document.getElementById("txtNumber").value=="")
     {
-        alert("è¯·è¾“å…¥è®¢è´­æ•°é‡");
+        alert("½Ğ¿é¤J­qÁÊ¼Æ¶q");
         document.getElementById("txtNumber").focus();
         return false;
     }
     else if(!reg2.test(document.getElementById("txtNumber").value))
     {
-        alert("è®¢è´­æ•°é‡æ ¼å¼ä¸æ­£ç¡®");
+        alert("­qÁÊ¼Æ¶q®æ¦¡¤£¥¿½T");
         document.getElementById("txtNumber").focus();
         return false;
     }
     else if(document.getElementById("txtCompany").value=="")
     {
-        alert("è¯·è¾“å…¥å…¬å¸åç§°");
+        alert("½Ğ¿é¤J¤½¥q¦WºÙ");
         document.getElementById("txtCompany").focus();
         return false;
     }
     else if(document.getElementById("txtName").value=="")
     {
-        alert("è¯·è¾“å…¥å§“å");
+        alert("½Ğ¿é¤J©m¦W");
         document.getElementById("txtName").focus();
         return false;
     }
     else if(document.getElementById("txtPhone").value=="")
     {
-        alert("è¯·è¾“å…¥ç”µè¯å·ç ");
+        alert("½Ğ¿é¤J¹q¸Ü¸¹½X");
         document.getElementById("txtPhone").focus();
         return false;
     }
     else if(document.getElementById("txtAddress").value=="")
     {
-        alert("è¯·è¾“å…¥è¯¦ç»†åœ°å€");
+        alert("½Ğ¿é¤J¸Ô²Ó¦a§}");
         document.getElementById("txtAddress").focus();
         return false;
     }
     else if(document.getElementById("ChkCode").value=="")
     {
-        alert("è¯·è¾“å…¥éªŒè¯ç ");
+        alert("½Ğ¿é¤JÅçÃÒ½X");
         document.getElementById("ChkCode").focus();
         return false;
     } 
@@ -1106,12 +1106,12 @@ function OrderProduct()
         success: function(re) {
             if(re.d=="0")
             {
-                alert("éªŒè¯ç é”™è¯¯ï¼ï¼");
+                alert("ÅçÃÒ½X¿ù»~¡I¡I");
                 document.getElementById("ChkCode").focus();
             }
             else if(re.d=="-1")
             {
-                alert("æ‚¨è¾“å…¥çš„äº§å“ä¸å­˜åœ¨ï¼ï¼");
+                alert("±z¿é¤Jªº²£«~¤£¦s¦b¡I¡I");
                 document.getElementById("txtProductName").focus();
             }
             else
@@ -1215,19 +1215,19 @@ function OrderProduct2()
     var reg2 = /^\d{1,9}$/;
     if(document.getElementById("txtCompany").value=="")
     {
-        alert("è¯·è¾“å…¥å…¬å¸åç§°");
+        alert("½Ğ¿é¤J¤½¥q¦WºÙ");
         document.getElementById("txtCompany").focus();
         return false;
     }
     else if(document.getElementById("txtPhone").value=="")
     {
-        alert("è¯·è¾“å…¥è”ç³»ç”µè¯");
+        alert("½Ğ¿é¤JÁpÃ´¹q¸Ü");
         document.getElementById("txtPhone").focus();
         return false;
     }
     else if(document.getElementById("ChkCode").value=="")
     {
-        alert("è¯·è¾“å…¥éªŒè¯ç ");
+        alert("½Ğ¿é¤JÅçÃÒ½X");
         document.getElementById("ChkCode").focus();
         return false;
     } 
@@ -1249,12 +1249,12 @@ function OrderProduct2()
         success: function(re) {
             if(re.d=="0")
             {
-                alert("éªŒè¯ç é”™è¯¯ï¼ï¼");
+                alert("ÅçÃÒ½X¿ù»~¡I¡I");
                 document.getElementById("ChkCode").focus();
             }
             else if(re.d=="-1")
             {
-                alert("æ‚¨è¾“å…¥çš„äº§å“ä¸å­˜åœ¨ï¼ï¼");
+                alert("±z¿é¤Jªº²£«~¤£¦s¦b¡I¡I");
                 document.getElementById("txtProductName").focus();
             }
             else
@@ -1331,43 +1331,43 @@ function AddFriendLink()
     var selType = $('input[name="rdoState"]:checked').val();
     if(document.getElementById("txtName").value=="")
     {
-        alert("è¯·è¾“å…¥ç½‘ç«™åç§°");
+        alert("½Ğ¿é¤Jºô¯¸¦WºÙ");
         document.getElementById("txtName").focus();
         return false;
     }
     else if(document.getElementById("txtUrl").value=="")
     {
-        alert("è¯·è¾“å…¥ç½‘ç«™åœ°å€");
+        alert("½Ğ¿é¤Jºô¯¸¦a§}");
         document.getElementById("txtUrl").focus();
         return false;
     }
     else if(!reg2.test(document.getElementById("txtUrl").value.replace(/\ /g,"")))
     {
-        alert("æ ¼å¼ä¸æ­£ç¡®");
+        alert("®æ¦¡¤£¥¿½T");
         document.getElementById("txtUrl").focus();
         return false;
     }
     else if(!reg2.test(document.getElementById("txtLogo").value) && document.getElementById("txtLogo").value!="")
     {
-        alert("æ ¼å¼ä¸æ­£ç¡®");
+        alert("®æ¦¡¤£¥¿½T");
         document.getElementById("txtLogo").focus();
         return false;
     }
     else if(document.getElementById("txtQQ").value=="")
     {
-        alert("è¯·è¾“å…¥QQå·ç ");
+        alert("½Ğ¿é¤JQQ¸¹½X");
         document.getElementById("txtQQ").focus();
         return false;
     }
     else if(!reg1.test(document.getElementById("txtQQ").value))
     {
-        alert("æ ¼å¼ä¸æ­£ç¡®");
+        alert("®æ¦¡¤£¥¿½T");
         document.getElementById("txtQQ").focus();
         return false;
     }
     else if(document.getElementById("ChkCode").value=="")
     {
-        alert("è¯·è¾“å…¥éªŒè¯ç ");
+        alert("½Ğ¿é¤JÅçÃÒ½X");
         document.getElementById("ChkCode").focus();
         return false;
     } 
@@ -1382,7 +1382,7 @@ function AddFriendLink()
         success: function(re) {
             if(re.d=="0")
             {
-                alert("éªŒè¯ç é”™è¯¯ï¼ï¼");
+                alert("ÅçÃÒ½X¿ù»~¡I¡I");
                 document.getElementById("ChkCode").focus();
             }
             else
@@ -1475,31 +1475,31 @@ function SendJob()
     var ip = "";
     if(document.getElementById("txtName").value=="")
     {
-        alert("è¯·è¾“å…¥å§“å");
+        alert("½Ğ¿é¤J©m¦W");
         document.getElementById("txtName").focus();
         return false;
     }
     else if(document.getElementById("txtBirthday").value=="")
     {
-        alert("è¯·è¾“å…¥å‡ºç”Ÿæ—¥æœŸ");
+        alert("½Ğ¿é¤J¥X¥Í¤é´Á");
         document.getElementById("txtBirthday").focus();
         return false;
     }
     else if(document.getElementById("txtTelephone").value=="")
     {
-        alert("è¯·è¾“å…¥è”ç³»ç”µè¯");
+        alert("½Ğ¿é¤JÁpÃ´¹q¸Ü");
         document.getElementById("txtTelephone").focus();
         return false;
     }
     else if(document.getElementById("txtResumes").value=="")
     {
-        alert("è¯·è¾“å…¥ä¸ªäººç®€å†");
+        alert("½Ğ¿é¤J­Ó¤HÂ²¾ú");
         document.getElementById("txtResumes").focus();
         return false;
     }
     else if(document.getElementById("ChkCode").value=="")
     {
-        alert("è¯·è¾“å…¥éªŒè¯ç ");
+        alert("½Ğ¿é¤JÅçÃÒ½X");
         document.getElementById("ChkCode").focus();
         return false;
     } 
@@ -1515,7 +1515,7 @@ function SendJob()
         success: function(re) {
             if(re.d=="0")
             {
-                alert("éªŒè¯ç é”™è¯¯ï¼ï¼");
+                alert("ÅçÃÒ½X¿ù»~¡I¡I");
                 document.getElementById("ChkCode").focus();
             }
             else

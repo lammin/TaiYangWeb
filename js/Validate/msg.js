@@ -1,10 +1,10 @@
-//å¯ä»¥è‡ªåŠ¨å…³é—­çš„æç¤º
+//¥i¥H¦Û°ÊÃö³¬ªº´£¥Ü
 function jsAutoMsg(msgtitle, url) {
     $("#btnSave").attr("disabled", "disabled");
     var str = "<div id=\"jsAutoMsg\" class=\"pcent correct\">" + msgtitle + "</div>";
     $("body").append(str);
     $("#jsAutoMsg").show();
-    //3ç§’åæ¸…é™¤æç¤º
+    //3¬í«á²M°£´£¥Ü
     setTimeout(function() {
         $("#jsAutoMsg").remove();
         if (url == "back") {
@@ -14,11 +14,11 @@ function jsAutoMsg(msgtitle, url) {
         }
     }, 3000);
 }
-//é®ç½©æç¤ºçª—å£
+//¾B¸n´£¥Üµ¡¤f
 function jsLayMsg(w, h, options) {
     $("#jsLayMsg").remove();
     var cssname = "";
-    //æç¤ºçª—å£çš„æ ·å¼
+    //´£¥Üµ¡¤fªº¼Ë¦¡
     switch (options.mscss) {
         case "Success":
             cssname = "icon-01";
@@ -30,7 +30,7 @@ function jsLayMsg(w, h, options) {
             cssname = "icon-03";
             break;
     }
-    //å‘é¡µé¢æ’å…¥æ ‡è®°
+    //¦V­¶­±´¡¤J¼Ğ°O
     var str = "<div id='jsLayMsg' title='" + options.title + "'><p class='" + cssname + "'>" + options.msbox + "</p></div>";
     $("body").append(str);
     $("#jsLayMsg").dialog({
@@ -43,7 +43,7 @@ function jsLayMsg(w, h, options) {
         resizable: false,
         closeOnEscape: false,
         draggable:false,
-        buttons: { "ç¡®å®š": function() { $(this).dialog("close"); }},
+        buttons: { "½T©w": function() { $(this).dialog("close"); }},
         close: function() {
             if (options.url == "back") {
                 history.back(-1);

@@ -14,7 +14,7 @@ $(function(){
 		});
 		
 		var pg = function(flag){
-			//flag:true表示前翻， false表示后翻
+			//flag:true&#6986;齓逽&#51238;alse&#6986;狕但
 			if (flag) {
 				if (curr == 0) {
 					todo = 2;
@@ -27,26 +27,23 @@ $(function(){
 			$("#jsNav .trigger").eq(todo).click();
 		};
 		
-		//前翻
+		//&#496;但
 		$("#prev").click(function(){
 			pg(true);
 			return false;
 		});
 		
-		//后翻
-		$("#next").click(function(){
+		//&#44279;&#54090;		$("#next").click(function(){
 			pg(false);
 			return false;
 		});
 		
-		//自动翻
-		var timer = setInterval(function(){
+		//&#1492;轆&#54090;		var timer = setInterval(function(){
 			todo = (curr + 1) % length;
 			$("#jsNav .trigger").eq(todo).click();
 		},5000);
 		
-		//鼠标悬停在触发器上时停止自动翻
-		$("#jsNav a").hover(function(){
+		//&#691;&#6800;&#50019;&#1306;&#18807;&#8631;&#591;&#689;&#867;&#1465;&#1492;轆&#54090;		$("#jsNav a").hover(function(){
 				clearInterval(timer);
 			},
 			function(){
@@ -60,5 +57,5 @@ $(function(){
 });
 //]]>
 
-//懒人图库 www.lanrentuku.com
+//&#523;&#892;&#63648;www.lanrentuku.com
 

@@ -38,13 +38,13 @@ function GetSession()
            if (s2 != "0" && s2 != "undefined")
            {
                 document.getElementById("login").innerHTML = "";
-                document.getElementById("showinfo").innerHTML = "æ‚¨å¥½<span>"+ s2 + 
-                "ï¼</span>&nbsp;æ¬¢è¿æ¥åˆ°æœ¬ç½‘ç«™ï¼<a href='http://www.taiyangjx.com/Member'>[æˆ‘çš„å¸æˆ·]</a>&nbsp;"+"<a href='javascript:;' onclick='javascript:Quit2()'>[é€€å‡º]</a>";
+                document.getElementById("showinfo").innerHTML = "±z¦n<span>"+ s2 + 
+                "¡I</span>&nbsp;Åwªï¨Ó¨ì¥»ºô¯¸¡I<a href='http://www.taiyangjx.com/Member'>[§Úªº±b¤á]</a>&nbsp;"+"<a href='javascript:;' onclick='javascript:Quit2()'>[°h¥X]</a>";
                 document.getElementById("shopsum").innerHTML = "<a href='../aspx/Cart.aspx.htm'/*tpa=http://www.taiyangjx.com/aspx/Cart.aspx*/>"+s3+"</a>";
            }
            else
            {
-                document.getElementById("login").innerHTML = "æ‚¨å¥½ï¼æ¬¢è¿æ¥åˆ°æœ¬ç½‘ç«™ï¼<span><a href='http://www.taiyangjx.com/Member'>[è¯·ç™»å½•]</a>ï¼Œæ–°ç”¨æˆ·ï¼Ÿ<a href='http://www.taiyangjx.com/html/Register.html' class='link-regist'>[å…è´¹æ³¨å†Œ]</a></span>";
+                document.getElementById("login").innerHTML = "±z¦n¡IÅwªï¨Ó¨ì¥»ºô¯¸¡I<span><a href='http://www.taiyangjx.com/Member'>[½Ğµn¿ı]</a>¡A·s¥Î¤á¡H<a href='http://www.taiyangjx.com/html/Register.html' class='link-regist'>[§K¶Oµù¥U]</a></span>";
                 document.getElementById("showinfo").innerHTML = "";
                 document.getElementById("shopsum").innerHTML = "<a href='../aspx/Cart.aspx.htm'/*tpa=http://www.taiyangjx.com/aspx/Cart.aspx*/>"+s3+"</a>";
            }
@@ -69,12 +69,12 @@ function GetSessionEn()
            {
                 document.getElementById("login").innerHTML = "";
                 document.getElementById("showinfo").innerHTML = "Hello<span>"+ s2 + 
-                "ï¼</span>&nbsp;welcome to our website!<a href='http://www.taiyangjx.com/En/Member'>[My Account]</a>&nbsp;"+"<a href='javascript:;' onclick='javascript:Quit2()'>[Quit]</a>";
+                "¡I</span>&nbsp;welcome to our website!<a href='http://www.taiyangjx.com/En/Member'>[My Account]</a>&nbsp;"+"<a href='javascript:;' onclick='javascript:Quit2()'>[Quit]</a>";
                 document.getElementById("shopsum").innerHTML = "<a href='../flash/Error.html-aspxerrorpath=-En-aspx-Cart.aspx.htm'/*tpa=http://www.taiyangjx.com/En/aspx/Cart.aspx*/>"+s3+"</a>";
            }
            else
            {
-                document.getElementById("login").innerHTML = "Hello!Welcome to our websiteï¼<span><a href='http://www.taiyangjx.com/En/Member'>[Login]</a>ï¼ŒNew usersï¼Ÿ<a href='http://www.taiyangjx.com/En/html/Register.html' class='link-regist'>[Register]</a></span>";
+                document.getElementById("login").innerHTML = "Hello!Welcome to our website¡I<span><a href='http://www.taiyangjx.com/En/Member'>[Login]</a>¡ANew users¡H<a href='http://www.taiyangjx.com/En/html/Register.html' class='link-regist'>[Register]</a></span>";
                 document.getElementById("showinfo").innerHTML = "";
                 document.getElementById("shopsum").innerHTML = "<a href='../flash/Error.html-aspxerrorpath=-En-aspx-Cart.aspx.htm'/*tpa=http://www.taiyangjx.com/En/aspx/Cart.aspx*/>"+s3+"</a>";
            }
@@ -89,11 +89,11 @@ function LoginOrNo()
         userName = decodeURIComponent(GetCookie("NickName",""));
         document.getElementById("login").innerHTML = "";
         document.getElementById("showinfo").innerHTML = "<span style='font-weight:bold;'>"+ userName + 
-        "</span>&nbsp;&nbsp;æ¬¢è¿æ‚¨ï¼<a href='http://www.taiyangjx.com/Member'>[æˆ‘çš„å¸æˆ·]</a>&nbsp;&nbsp;<a href='javascript:;' onclick='javascript:Quit2()'>[é€€å‡º]</a>"; 
+        "</span>&nbsp;&nbsp;Åwªï±z¡I<a href='http://www.taiyangjx.com/Member'>[§Úªº±b¤á]</a>&nbsp;&nbsp;<a href='javascript:;' onclick='javascript:Quit2()'>[°h¥X]</a>"; 
     }
     else {
-        document.getElementById("login").innerHTML = "æ‚¨å¥½ï¼Œæ¬¢è¿æ¥åˆ°æœ¬ç½‘ç«™ï¼æ‚¨è¿˜æœªç™»å½•ï¼&nbsp;|&nbsp;<a href='http://www.taiyangjx.com/Member'>[ç™»å½•]</a>"+
-        "&nbsp;|&nbsp;<a href='http://www.taiyangjx.com/html/Register.html'>[æ³¨å†Œ]</a>";
+        document.getElementById("login").innerHTML = "±z¦n¡AÅwªï¨Ó¨ì¥»ºô¯¸¡I±zÁÙ¥¼µn¿ı¡I&nbsp;|&nbsp;<a href='http://www.taiyangjx.com/Member'>[µn¿ı]</a>"+
+        "&nbsp;|&nbsp;<a href='http://www.taiyangjx.com/html/Register.html'>[µù¥U]</a>";
         document.getElementById("showinfo").innerHTML = "";
     }
 }
@@ -218,7 +218,7 @@ function GetDownloadViews()
     }
 //    else
 //    {
-//        alert("è¯·å…ˆç™»å½•å†ä¸‹è½½ï¼");
+//        alert("½Ğ¥ıµn¿ı¦A¤U¸ü¡I");
 //        window.location.href="http://www.taiyangjx.com/Member";
 //    }
 }
@@ -300,7 +300,7 @@ function IsLoginOrNo_News()
             $.each(list,function(entryIndex,entry){
                 html += "<table width='100%' cellpadding='0' cellspacing='0' style='table-layout:fixed;'><tr><td rowspan='2' valign='top' width='60' style='padding-top:10px;'>"+
                     "<img src='../images/FacePic/bodyface.gif'/*tpa=http://www.taiyangjx.com/images/FacePic/bodyface.gif*/ alt='' /></td><td width='30%' align='left'>"+entry[0]+"</td><td align='left'>"+entry[1]+
-                    "&nbsp;&nbsp;è¯„ä»·ï¼š<span style='color:#333333;'>"+entry[2]+"</span>&nbsp;&nbsp;<img src='"+entry[3]+
+                    "&nbsp;&nbsp;µû»ù¡G<span style='color:#333333;'>"+entry[2]+"</span>&nbsp;&nbsp;<img src='"+entry[3]+
                     "' alt='' />"+"</td></tr><tr><td colspan='2' align='left' valign='top' style='padding-right: 5px;word-break:break-all;'>"+entry[4]+
                     "</td></tr><tr><td height='3' colspan='3'></td></tr><tr><td height='1' colspan='3' background='../images/line4.gif'/*tpa=http://www.taiyangjx.com/images/line4.gif*/></td></tr></table>";
             });
@@ -357,7 +357,7 @@ function IsLoginOrNo_NewsEn()
             $.each(list,function(entryIndex,entry){
                 html += "<table width='100%' cellpadding='0' cellspacing='0' style='table-layout:fixed;'><tr><td rowspan='2' valign='top' width='60' style='padding-top:10px;'>"+
                     "<img src='../images/FacePic/bodyface.gif'/*tpa=http://www.taiyangjx.com/images/FacePic/bodyface.gif*/ alt='' /></td><td width='30%' align='left'>"+entry[0]+"</td><td align='left'>"+entry[1]+
-                    "&nbsp;&nbsp;Evaluateï¼š<span style='color:#333333;'>"+entry[2]+"</span>&nbsp;&nbsp;<img src='"+entry[3]+
+                    "&nbsp;&nbsp;Evaluate¡G<span style='color:#333333;'>"+entry[2]+"</span>&nbsp;&nbsp;<img src='"+entry[3]+
                     "' alt='' />"+"</td></tr><tr><td colspan='2' align='left' valign='top' style='padding-right: 5px;word-break:break-all;'>"+entry[4]+
                     "</td></tr><tr><td height='3' colspan='3'></td></tr><tr><td height='1' colspan='3' background='../images/line4.gif'/*tpa=http://www.taiyangjx.com/images/line4.gif*/></td></tr></table>";
             });
@@ -414,7 +414,7 @@ function IsLoginOrNo_Product()
             $.each(list,function(entryIndex,entry){
                 html += "<table width='100%' cellpadding='0' cellspacing='0' style='table-layout:fixed;'><tr><td rowspan='2' valign='top' width='60' style='padding-top:10px;'>"+
                     "<img src='../images/FacePic/bodyface.gif'/*tpa=http://www.taiyangjx.com/images/FacePic/bodyface.gif*/ alt='' /></td><td width='30%' align='left'>"+entry[0]+"</td><td align='left'>"+entry[1]+
-                    "&nbsp;&nbsp;è¯„ä»·ï¼š<span style='color:#333333;'>"+entry[2]+"</span>&nbsp;&nbsp;<img src='"+entry[3]+
+                    "&nbsp;&nbsp;µû»ù¡G<span style='color:#333333;'>"+entry[2]+"</span>&nbsp;&nbsp;<img src='"+entry[3]+
                     "' alt='' />"+"</td></tr><tr><td colspan='2' align='left' valign='top' style='padding-right: 5px;word-break:break-all;'>"+entry[4]+
                     "</td></tr><tr><td height='3' colspan='3'></td></tr><tr><td height='1' colspan='3' background='../images/line4.gif'/*tpa=http://www.taiyangjx.com/images/line4.gif*/></td></tr></table>";
             });
@@ -471,7 +471,7 @@ function IsLoginOrNo_ProductEn()
             $.each(list,function(entryIndex,entry){
                 html += "<table width='100%' cellpadding='0' cellspacing='0' style='table-layout:fixed;'><tr><td rowspan='2' valign='top' width='60' style='padding-top:10px;'>"+
                     "<img src='../images/FacePic/bodyface.gif'/*tpa=http://www.taiyangjx.com/images/FacePic/bodyface.gif*/ alt='' /></td><td width='30%' align='left'>"+entry[0]+"</td><td align='left'>"+entry[1]+
-                    "&nbsp;&nbsp;Evaluateï¼š<span style='color:#333333;'>"+entry[2]+"</span>&nbsp;&nbsp;<img src='"+entry[3]+
+                    "&nbsp;&nbsp;Evaluate¡G<span style='color:#333333;'>"+entry[2]+"</span>&nbsp;&nbsp;<img src='"+entry[3]+
                     "' alt='' />"+"</td></tr><tr><td colspan='2' align='left' valign='top' style='padding-right: 5px;word-break:break-all;'>"+entry[4]+
                     "</td></tr><tr><td height='3' colspan='3'></td></tr><tr><td height='1' colspan='3' background='../images/line4.gif'/*tpa=http://www.taiyangjx.com/images/line4.gif*/></td></tr></table>";
             });
@@ -519,18 +519,18 @@ function SendEmail()
     var reg2= /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
     var ip="";
     if(document.getElementById("txtEmailOrder").value==""){
-        alert("è¯·è¾“å…¥Emailå¸å·");
+        alert("½Ğ¿é¤JEmail±b¸¹");
         document.getElementById("txtEmailOrder").focus();
         return false;
     }
     else if(!reg2.test(document.getElementById("txtEmailOrder").value.replace(/\ /g,""))){
-        alert("Emailæ ¼å¼ä¸æ­£ç¡®");
+        alert("Email®æ¦¡¤£¥¿½T");
         document.getElementById("txtEmailOrder").value="";
         document.getElementById("txtEmailOrder").focus();
         return false;
     }
     else if(document.getElementById("ChkCode").value==""){
-        alert("è¯·è¾“å…¥éªŒè¯ç ");
+        alert("½Ğ¿é¤JÅçÃÒ½X");
         document.getElementById("ChkCode").focus();
         return false;
     } 
@@ -542,14 +542,14 @@ function SendEmail()
         dataType: 'json',
         success: function(re) {
             if(re.d=="-1") {
-                alert("éªŒè¯ç é”™è¯¯ï¼");
+                alert("ÅçÃÒ½X¿ù»~¡I");
                 document.getElementById("ChkCode").focus();
             }
             else if(re.d=="0") {
-                alert("æ­¤Emailå·²ç»è®¢é˜…è¿‡äº†ï¼Œä¸èƒ½é‡å¤è®¢é˜…ï¼");
+                alert("¦¹Email¤w¸g­q¾\¹L¤F¡A¤£¯à­«½Æ­q¾\¡I");
             }
             else if(re.d=="1"){
-                alert("è®¢é˜…æˆåŠŸï¼");
+                alert("­q¾\¦¨¥\¡I");
             }
             else{
                 alert(re.d); 
@@ -592,10 +592,10 @@ function SendEmailEn()
                 document.getElementById("ChkCode").focus();
             }
             else if(re.d=="0") {
-                alert("This email has been usedï¼");
+                alert("This email has been used¡I");
             }
             else if(re.d=="1"){
-                alert("Order successfulï¼");
+                alert("Order successful¡I");
             }
             else{
                 alert(re.d); 
@@ -609,17 +609,17 @@ function SendEmailEn()
 function GetPwd() {
     var ip = "";
     if (document.getElementById("txt_user").value == "") {
-        alert("è¯·è¾“å…¥ç”¨æˆ·åï¼");
+        alert("½Ğ¿é¤J¥Î¤á¦W¡I");
         document.getElementById("txt_user").focus();
         return false;
     }
     if (document.getElementById("txt_answer").value == "") {
-        alert("è¯·è¾“å…¥å¯†ç ç­”æ¡ˆ");
+        alert("½Ğ¿é¤J±K½Xµª®×");
         document.getElementById("txt_answer").focus();
         return false;
     }
     else if (document.getElementById("txt_pass").value == "") {
-        alert("è¯·è¾“å…¥éªŒè¯ç ");
+        alert("½Ğ¿é¤JÅçÃÒ½X");
         document.getElementById("txt_pass").focus();
         return false;
     }
@@ -633,21 +633,21 @@ function GetPwd() {
         dataType: 'json',
         success: function(re) {
             if (re.d == "0") {
-                alert("éªŒè¯ç é”™è¯¯ï¼ï¼");
+                alert("ÅçÃÒ½X¿ù»~¡I¡I");
                 document.getElementById("txt_user").value = "";
                 document.getElementById("txt_answer").value = "";
                 document.getElementById("txt_pass").value = "";
                 document.getElementById("txt_pass").focus();
             }
             else if (re.d == "-1") {
-                alert("å›ç­”é”™è¯¯ï¼");
+                alert("¦^µª¿ù»~¡I");
                 document.getElementById("txt_user").value = "";
                 document.getElementById("txt_answer").value = "";
                 document.getElementById("txt_pass").value = "";
                 document.getElementById("txt_user").focus();
             }
             else {
-                //alert("å¯†ç æ‰¾å›æˆåŠŸï¼");
+                //alert("±K½X§ä¦^¦¨¥\¡I");
                 document.getElementById("txt_answer").value = "";
                 document.getElementById("txt_pass").value = "";
                 document.getElementById("div1").style.display = "none";
@@ -671,7 +671,7 @@ function GoRegisterEn()
 
 function Quit()
 {
-    if(confirm("æ‚¨ç¡®å®šè¦é€€å‡ºå—ï¼Ÿ")){
+    if(confirm("±z½T©w­n°h¥X¶Ü¡H")){
         document.getElementById("txtLoginName").value="";
         document.getElementById("txtPassword").value="";
         $.ajax({
@@ -715,7 +715,7 @@ function QuitEn()
 
 function Quit2()
 {
-    if(confirm("æ‚¨ç¡®å®šè¦é€€å‡ºå—ï¼Ÿ")){
+    if(confirm("±z½T©w­n°h¥X¶Ü¡H")){
         $.ajax({
             type: "POST",
             contentType: "application/json",
@@ -725,8 +725,8 @@ function Quit2()
             success: function(re) {
                  if(re.d=="0")
                  {
-                    document.getElementById("login").innerHTML = "æ‚¨å¥½ï¼Œæ¬¢è¿æ¥åˆ°æœ¬ç½‘ç«™ï¼æ‚¨è¿˜æœªç™»å½•ï¼&nbsp;|&nbsp;<a href='http://www.taiyangjx.com/Member'>ç™»å½•</a>"+
-                        "&nbsp;|&nbsp;<a href='http://www.taiyangjx.com/html/Register.html'>æ³¨å†Œ</a>";
+                    document.getElementById("login").innerHTML = "±z¦n¡AÅwªï¨Ó¨ì¥»ºô¯¸¡I±zÁÙ¥¼µn¿ı¡I&nbsp;|&nbsp;<a href='http://www.taiyangjx.com/Member'>µn¿ı</a>"+
+                        "&nbsp;|&nbsp;<a href='http://www.taiyangjx.com/html/Register.html'>µù¥U</a>";
                     document.getElementById("showinfo").innerHTML = "";
                     window.location.href="../index.htm"/*tpa=http://www.taiyangjx.com/*/;
                  }     
@@ -759,7 +759,7 @@ function Quit2En()
 
 function Quit3()
 {
-    if(confirm("æ‚¨ç¡®å®šè¦é€€å‡ºå—ï¼Ÿ")){
+    if(confirm("±z½T©w­n°h¥X¶Ü¡H")){
         $.ajax({
             type: "POST",
             contentType: "application/json",
@@ -783,12 +783,12 @@ function checkLogin()
     var reg = /\s/g; 
     name = name.replace(reg, "");
     if(name==""){
-        alert("è¯·è¾“å…¥ç™»å½•åï¼");
+        alert("½Ğ¿é¤Jµn¿ı¦W¡I");
         document.getElementById("txtLoginName").focus();
         return false;
     }
     else if(pass==""){
-        alert("è¯·è¾“å…¥å¯†ç ï¼");
+        alert("½Ğ¿é¤J±K½X¡I");
         document.getElementById("txtPassword").focus();
         return false;
     }
@@ -823,8 +823,8 @@ function CheckInput()
     var reg = /\s/g;
     var key = document.getElementById("txtKeywords").value;
     key = key.replace(reg, ""); 
-    if(key=="" || key=="è¯·è¾“å…¥å…³é”®å­—") {
-        alert("è¯·è¾“å…¥å…³é”®å­—");
+    if(key=="" || key=="½Ğ¿é¤JÃöÁä¦r") {
+        alert("½Ğ¿é¤JÃöÁä¦r");
         document.getElementById("txtKeywords").focus();
         return false;
     }
@@ -879,7 +879,7 @@ function changeItem(id,fname,s,i,n){
 	}
 }
 
-function  AddFav() {   //åŠ å…¥æ”¶è—  
+function  AddFav() {   //¥[¤J¦¬ÂÃ  
     var ua = navigator.userAgent.toLowerCase();
     var sURL = document.URL;
     var sTitle = document.title;
@@ -895,14 +895,14 @@ function  AddFav() {   //åŠ å…¥æ”¶è—
                 window.sidebar.addPanel(sTitle, sURL, "");
             }
             catch(e){
-                alert("åŠ å…¥æ”¶è—å¤±è´¥ï¼Œè¯·ä½¿ç”¨Ctrl+Dè¿›è¡Œæ·»åŠ ");
+                alert("¥[¤J¦¬ÂÃ¥¢±Ñ¡A½Ğ¨Ï¥ÎCtrl+D¶i¦æ²K¥[");
             }
         }
    }
    return false;
 }
 
-function  AddFavEn() {   //åŠ å…¥æ”¶è—ï¼Œè‹±æ–‡ç‰ˆ
+function  AddFavEn() {   //¥[¤J¦¬ÂÃ¡A­^¤åª©
     var ua = navigator.userAgent.toLowerCase();
     var sURL = document.URL;
     var sTitle = document.title;
@@ -925,7 +925,7 @@ function  AddFavEn() {   //åŠ å…¥æ”¶è—ï¼Œè‹±æ–‡ç‰ˆ
    return false;
 }    
         
-function SetHome(obj){    //è®¾ä¸ºé¦–é¡µ  
+function SetHome(obj){    //³]¬°­º­¶  
     try{   
         obj.style.behavior='url(#default#homepage)';   
         obj.setHomePage(window.location.href);   
@@ -935,16 +935,16 @@ function SetHome(obj){    //è®¾ä¸ºé¦–é¡µ
                 netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");   
             }
             catch(e){   
-                alert("æŠ±æ­‰ï¼Œæ­¤æ“ä½œè¢«æµè§ˆå™¨æ‹’ç»ï¼\n\nè¯·åœ¨æµè§ˆå™¨åœ°å€æ è¾“å…¥â€œabout:configâ€å¹¶å›è½¦ç„¶åå°†[signed.applets.codebase_principal_support]è®¾ç½®ä¸º'true'");   
+                alert("©êºp¡A¦¹¾Ş§@³QÂsÄı¾¹©Úµ´¡I\n\n½Ğ¦bÂsÄı¾¹¦a§}Äæ¿é¤J¡uabout:config¡v¨Ã¦^¨®µM«á±N[signed.applets.codebase_principal_support]³]¸m¬°'true'");   
             }
         }
         else{   
-            alert("æŠ±æ­‰ï¼Œæ‚¨æ‰€ä½¿ç”¨çš„æµè§ˆå™¨æ— æ³•å®Œæˆæ­¤æ“ä½œã€‚\n\næ‚¨éœ€è¦æ‰‹åŠ¨å°†è¯¥ç½‘ç«™è®¾ç½®ä¸ºé¦–é¡µã€‚");   
+            alert("©êºp¡A±z©Ò¨Ï¥ÎªºÂsÄı¾¹µLªk§¹¦¨¦¹¾Ş§@¡C\n\n±z»İ­n¤â°Ê±N¸Óºô¯¸³]¸m¬°­º­¶¡C");   
         }
     } 
 }
 
-function SetHomeEn(obj){    //è®¾ä¸ºé¦–é¡µï¼Œè‹±æ–‡ç‰ˆ 
+function SetHomeEn(obj){    //³]¬°­º­¶¡A­^¤åª© 
     try{   
         obj.style.behavior='url(#default#homepage)';   
         obj.setHomePage(window.location.href);   
@@ -973,7 +973,7 @@ function closeWindow()
 		}
 		catch(e)
 		{
-			alert("è¢«æµè§ˆå™¨æ‹’ç»ï¼\nè¯·åœ¨æµè§ˆå™¨åœ°å€æ è¾“å…¥'about:config'å¹¶å›è½¦\nç„¶åå°†'dom.allow_scripts_to_close_windows'è®¾ç½®ä¸º'true'");
+			alert("³QÂsÄı¾¹©Úµ´¡I\n½Ğ¦bÂsÄı¾¹¦a§}Äæ¿é¤J'about:config'¨Ã¦^¨®\nµM«á±N'dom.allow_scripts_to_close_windows'³]¸m¬°'true'");
 			return;
 		}
 	}
@@ -982,9 +982,9 @@ function closeWindow()
 	window.close();
 }
 
-function SetCookie(name,value)  //ä¸¤ä¸ªå‚æ•°ï¼Œä¸€ä¸ªæ˜¯cookieçš„åå­ï¼Œä¸€ä¸ªæ˜¯å€¼
+function SetCookie(name,value)  //¨â­Ó°Ñ¼Æ¡A¤@­Ó¬Ocookieªº¦W¤l¡A¤@­Ó¬O­È
 {
-    var Days = 30;              //æ­¤cookieå°†è¢«ä¿å­˜30å¤©
+    var Days = 30;              //¦¹cookie±N³Q«O¦s30¤Ñ
     var exp  = new Date();      //new Date("December 31, 9998");
     exp.setTime(exp.getTime() + Days*24*60*60*1000);
     document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString();
@@ -1019,7 +1019,7 @@ function GetCookie(cookie_name, key) {
 		return null;
 }
 
-function delCookie(name)    //åˆ é™¤cookie
+function delCookie(name)    //§R°£cookie
 {
     var exp = new Date();
     exp.setTime(exp.getTime() - 1);

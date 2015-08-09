@@ -5,17 +5,17 @@ $(function() {
         $(this).removeClass("focus");
     });
 
-    //è¾“å…¥æ¡†æç¤º,è·å–æ‹¥æœ‰HintTitle,HintInfoå±æ€§çš„å¯¹è±¡
+    //¿é¤J®Ø´£¥Ü,Àò¨ú¾Ö¦³HintTitle,HintInfoÄİ©Êªº¹ï¶H
     $("[HintTitle],[HintInfo]").focus(function(event) {
-        $("*").stop(); //åœæ­¢æ‰€æœ‰æ­£åœ¨è¿è¡Œçš„åŠ¨ç”»
-		$("#HintMsg").remove(); //å…ˆæ¸…é™¤ï¼Œé˜²æ­¢é‡å¤å‡ºé”™
-        var HintHtml = "<ul id=\"HintMsg\"><li class=\"HintTop\"></li><li class=\"HintInfo\"><b>" + $(this).attr("HintTitle") + "</b>" + $(this).attr("HintInfo") + "</li><li class=\"HintFooter\"></li></ul>"; //è®¾ç½®æ˜¾ç¤ºçš„å†…å®¹
-        var offset = $(this).offset(); //å–å¾—äº‹ä»¶å¯¹è±¡çš„ä½ç½®
-        $("body").append(HintHtml); //æ·»åŠ èŠ‚ç‚¹
-        $("#HintMsg").fadeTo(0, 0.85); //å¯¹è±¡çš„é€æ˜åº¦
-        var HintHeight = $("#HintMsg").height(); //å–å¾—å®¹å™¨é«˜åº¦
+        $("*").stop(); //°±¤î©Ò¦³¥¿¦b¹B¦æªº°Êµe
+		$("#HintMsg").remove(); //¥ı²M°£¡A¨¾¤î­«½Æ¥X¿ù
+        var HintHtml = "<ul id=\"HintMsg\"><li class=\"HintTop\"></li><li class=\"HintInfo\"><b>" + $(this).attr("HintTitle") + "</b>" + $(this).attr("HintInfo") + "</li><li class=\"HintFooter\"></li></ul>"; //³]¸mÅã¥Üªº¤º®e
+        var offset = $(this).offset(); //¨ú±o¨Æ¥ó¹ï¶Hªº¦ì¸m
+        $("body").append(HintHtml); //²K¥[¸`ÂI
+        $("#HintMsg").fadeTo(0, 0.85); //¹ï¶Hªº³z©ú«×
+        var HintHeight = $("#HintMsg").height(); //¨ú±o®e¾¹°ª«×
         $("#HintMsg").css({ "top": offset.top - HintHeight + "px", "left": offset.left + "px" }).fadeIn(500);
     }).blur(function(event) {
-        $("#HintMsg").remove(); //åˆ é™¤UL
+        $("#HintMsg").remove(); //§R°£UL
     });
 });

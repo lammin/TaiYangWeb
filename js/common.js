@@ -2,21 +2,21 @@ var PTN_EMAIL = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/;
 var PTN_FLOAT = /\d+(\.\d+)?/
 
 /********************
-* æ ¹æ®IDè·å–jQueryå¯¹è±¡
-* elmId : å…ƒç´ ID
+* ®Ú¾ÚIDÀò¨újQuery¹ï¹³
+* elmId : ¤¸¯ÀID
 ********************/
 function $j(elmId) { return $("#" + elmId); }
 
 /********************
-* è·å–å…ƒç´ é€‰ä¸­çŠ¶æ€ï¼ˆå¤é€‰æ¡†ã€å•é€‰æ¡†ï¼‰
-* elmId : å…ƒç´ ID
+* Àò¨ú¤¸¯À¿ï¤¤ª¬ºA¡]´_¿ï®Ø¡B³æ¿ï®Ø¡^
+* elmId : ¤¸¯ÀID
 ********************/
 function getChecked(elmId) { return $("#" + elmId).attr("checked"); }
 
 /********************
-* ä»å®¹å™¨æŸ¥æ‰¾å•é€‰æ¡†ï¼Œå½“valueä¸valç›¸ç­‰åˆ™é€‰ä¸­ä¹‹
-* val : å€¼
-* cntrId : å®¹å™¨ID
+* ±q®e¾¹¬d§ä³æ¿ï®Ø¡A·ívalue»Pval¬Ûµ¥«h¿ï¤¤¤§
+* val : ­È
+* cntrId : ®e¾¹ID
 ********************/
 function checkRadio(val, cntrId) {
     var rdos;
@@ -41,9 +41,9 @@ function getSelectedText(ddlElmId) {
 }
 
 /********************
-* éšè—ä¸‹æ‹‰æ¡†å‡½æ•°
-* é‡è½½1 : å¦‚æœä¸ä¼ é€’cntrIdï¼Œåˆ™ä»¥bodyä¸ºå®¹å™¨
-* cntrId : å®¹å™¨ID
+* ÁôÂÃ¤U©Ô®Ø¨ç¼Æ
+* ­«¸ü1 : ¦pªG¤£¶Ç»¼cntrId¡A«h¥Hbody¬°®e¾¹
+* cntrId : ®e¾¹ID
 ********************/
 function hideDdl(cntrId) {
     var arrTags = ["select", "iframe", "applet", "object"];
@@ -61,7 +61,7 @@ function hideDdl(cntrId) {
 }
 
 /********************
-* éšè—ä¸‹æ‹‰æ¡†å‡½æ•°
+* ÁôÂÃ¤U©Ô®Ø¨ç¼Æ
 ********************/
 function showDdl() {
     var arrTags = ["select", "iframe", "applet", "object"];
@@ -71,9 +71,9 @@ function showDdl() {
 }
 
 /********************
-* é™åˆ¶æ–‡æœ¬æ¡†å­—ç¬¦é•¿åº¦ï¼Œä¸€ä¸ªä¸­æ–‡å ä¸¤ä¸ªé•¿åº¦ï¼ˆè¯¥å‡½æ•°ä¸€èˆ¬ç”¨äºå¤šè¡Œæ–‡æœ¬æ¡†ï¼‰
-* src : è§¦å‘äº‹ä»¶çš„æºå…ƒç´ 
-* ä½¿ç”¨æ–¹æ³•å¦‚ <textarea max="100" onkeyup="limitLength(this)"></textarea>
+* ­­¨î¤å¥»®Ø¦r²Åªø«×¡A¤@­Ó¤¤¤å¦û¨â­Óªø«×¡]¸Ó¨ç¼Æ¤@¯ë¥Î©ó¦h¦æ¤å¥»®Ø¡^
+* src : Ä²µo¨Æ¥óªº·½¤¸¯À
+* ¨Ï¥Î¤èªk¦p <textarea max="100" onkeyup="limitLength(this)"></textarea>
 ********************/
 function limitLength(src) {
     var value = src.value;
@@ -82,7 +82,7 @@ function limitLength(src) {
     var newvalue = value.replace(/[^\x00-\xff]/g, "**");
     var length = newvalue.length;
 
-    //å½“å¡«å†™çš„å­—èŠ‚æ•°å°äºè®¾ç½®çš„å­—èŠ‚æ•°
+    //·í¶ñ¼gªº¦r¸`¼Æ¤p©ó³]¸mªº¦r¸`¼Æ
     if (length * 1 <= byteLength * 1) {
         return;
     }
@@ -96,39 +96,39 @@ function limitLength(src) {
         }
     }
     var size = 0;
-    var istar = newvalue.substr(byteLength * 1 - 1, 1); //æ ¡éªŒç‚¹æ˜¯å¦ä¸ºâ€œÃ—â€
+    var istar = newvalue.substr(byteLength * 1 - 1, 1); //®ÕÅçÂI¬O§_¬°¡u¡Ñ¡v
 
-    //if åŸºç‚¹æ˜¯Ã—; åˆ¤æ–­åœ¨åŸºç‚¹å†…æœ‰Ã—ä¸ºå¶æ•°è¿˜æ˜¯å¥‡æ•° 
+    //if °òÂI¬O¡Ñ; §PÂ_¦b°òÂI¤º¦³¡Ñ¬°°¸¼ÆÁÙ¬O©_¼Æ 
     if (count % 2 == 0) {
-        //å½“ä¸ºå¶æ•°æ—¶
+        //·í¬°°¸¼Æ®É
         size = count / 2 + (byteLength * 1 - count);
         limitvalue = value.substr(0, size);
     } else {
-        //å½“ä¸ºå¥‡æ•°æ—¶
+        //·í¬°©_¼Æ®É
         size = (count - 1) / 2 + (byteLength * 1 - count);
         limitvalue = value.substr(0, size);
     }
-    alert("æœ€å¤§è¾“å…¥" + byteLength + "ä¸ªå­—èŠ‚ï¼ˆç›¸å½“äº" + byteLength / 2 + "ä¸ªæ±‰å­—ï¼‰ï¼");
+    alert("³Ì¤j¿é¤J" + byteLength + "­Ó¦r¸`¡]¬Û·í©ó" + byteLength / 2 + "­Óº~¦r¡^¡I");
     document.getElementById(attribute).value = limitvalue;
     return;
 }
 
 /********************
-* æ ¹æ®å…ƒç´ IDè·å–å…ƒç´ å¯¹è±¡(document.getElementById)
-* elmId : å…ƒç´ ID
+* ®Ú¾Ú¤¸¯ÀIDÀò¨ú¤¸¯À¹ï¹³(document.getElementById)
+* elmId : ¤¸¯ÀID
 ********************/
 function $g(elmId) { return document.getElementById(elmId); }
 
 /********************
-* æ ¹æ®å…ƒç´ åç§°è·å–å…ƒç´ å¯¹è±¡é›†(document.getElementsByName)
-* nm : å…ƒç´ name
+* ®Ú¾Ú¤¸¯À¦WºÙÀò¨ú¤¸¯À¹ï¹³¶°(document.getElementsByName)
+* nm : ¤¸¯Àname
 ********************/
 function $name(nm) { return document.getElementsByName(nm); }
 
 /********************
-* æ ¹æ®å…ƒç´ æ ‡ç­¾ä»æŒ‡å®šå®¹å™¨è·å–å…ƒç´ å¯¹è±¡é›†(document.getElementsByTagName)
-* cntr : å®¹å™¨ï¼Œå¯ä»¥æ˜¯å…ƒç´ å¯¹è±¡ã€å…ƒç´ ID
-* tagName : æ ‡ç­¾åç§°
+* ®Ú¾Ú¤¸¯À¼ĞÅÒ±q«ü©w®e¾¹Àò¨ú¤¸¯À¹ï¹³¶°(document.getElementsByTagName)
+* cntr : ®e¾¹¡A¥i¥H¬O¤¸¯À¹ï¹³¡B¤¸¯ÀID
+* tagName : ¼ĞÅÒ¦WºÙ
 ********************/
 function $tag(cntr, tagName) {
     var o = cntr;
@@ -137,7 +137,7 @@ function $tag(cntr, tagName) {
 }
 
 /********************
-* é™åˆ¶æ–‡æœ¬æ¡†åªèƒ½è¾“å…¥æ•°å­—(æ•°å­—é”®)
+* ­­¨î¤å¥»®Ø¥u¯à¿é¤J¼Æ¦r(¼Æ¦rÁä)
 * e : event
 ********************/
 function digiKeyOnly(e) {
@@ -151,20 +151,20 @@ function digiKeyOnly(e) {
 }
 
 /********************
-* é™åˆ¶æ–‡æœ¬æ¡†åªèƒ½è¾“å…¥æ•°å­—
-* src : è§¦å‘äº‹ä»¶çš„æºå…ƒç´ 
-* ä½¿ç”¨æ–¹æ³•å¦‚ <input onkeyup="digiOnly(this)" />
+* ­­¨î¤å¥»®Ø¥u¯à¿é¤J¼Æ¦r
+* src : Ä²µo¨Æ¥óªº·½¤¸¯À
+* ¨Ï¥Î¤èªk¦p <input onkeyup="digiOnly(this)" />
 ********************/
 function digiOnly(src) {
     src.value = src.value.replace(/[^0-9]/g, '');
 }
 
 /********************
-* æ‰“å¼€çª—å£
+* ¥´¶}µ¡¤f
 * url : URL
-* w : çª—å£å®½åº¦ï¼ˆä¸ä¼ é€’åˆ™é»˜è®¤ä¸º300pxï¼‰
-* h : çª—å£é«˜åº¦ï¼ˆä¸ä¼ é€’åˆ™é»˜è®¤ä¸º300pxï¼‰
-* features : å…³äºçª—å£çš„æ›´å¤šå±æ€§ï¼ˆå¯å…ˆï¼Œä¸ä¼ é€’è¯¥å‚æ•°æˆ–ä¼ é€’nullåˆ™é»˜è®¤ä¸ºæ— å·¥å…·æ ã€æ— èœå•æ ã€å¯æ‹–æ”¾ã€æœ‰æ»šåŠ¨æ¡ã€çºµæ¨ªåæ ‡ä¸º0ï¼‰
+* w : µ¡¤f¼e«×¡]¤£¶Ç»¼«hÀq»{¬°300px¡^
+* h : µ¡¤f°ª«×¡]¤£¶Ç»¼«hÀq»{¬°300px¡^
+* features : Ãö©óµ¡¤fªº§ó¦hÄİ©Ê¡]¥i¥ı¡A¤£¶Ç»¼¸Ó°Ñ¼Æ©Î¶Ç»¼null«hÀq»{¬°µL¤u¨ãÄæ¡BµLµæ³æÄæ¡B¥i©ì©ñ¡B¦³ºu°Ê±ø¡BÁa¾î§¤¼Ğ¬°0¡^
 ********************/
 function $open(url, w, h, features) {
     if (url == null || url == "")
@@ -183,8 +183,8 @@ function $open(url, w, h, features) {
 }
 
 /********************
-* æ¸…ç©ºæ–‡æœ¬æ¡†å†…å®¹
-* cntrId : å®¹å™¨IDï¼Œä¸ä¼ é€’åˆ™ä»¥bodyä¸ºå®¹å™¨
+* ²MªÅ¤å¥»®Ø¤º®e
+* cntrId : ®e¾¹ID¡A¤£¶Ç»¼«h¥Hbody¬°®e¾¹
 ********************/
 function emptyText(cntrId) {
     var jTxts;
@@ -213,8 +213,8 @@ function emptyText(cntrId) {
 }
 
 /********************
-* æŸ¥è¯¢URLå‚æ•°ï¼ˆæŸ¥è¯¢å¤±è´¥åˆ™è¿”å›ç©ºå­—ç¬¦ä¸²ï¼‰
-* paraNm : å‚æ•°å
+* ¬d¸ßURL°Ñ¼Æ¡]¬d¸ß¥¢±Ñ«hªğ¦^ªÅ¦r²Å¦ê¡^
+* paraNm : °Ñ¼Æ¦W
 ********************/
 function $qs(paraNm) {
     var args = new Object();
@@ -232,9 +232,9 @@ function $qs(paraNm) {
 }
 
 /********************
-* å…¨é€‰å¤é€‰æ¡†æˆ–å–æ¶ˆå…¨é€‰ï¼ˆæ ¹æ®è§¦å‘äº‹ä»¶çš„æºå¯¹è±¡çš„é€‰ä¸­çŠ¶æ€è€Œå®šï¼‰
-* src : è§¦å‘äº‹ä»¶çš„æºå¯¹è±¡
-* cntrId : å®¹å™¨ID
+* ¥ş¿ï´_¿ï®Ø©Î¨ú®ø¥ş¿ï¡]®Ú¾ÚÄ²µo¨Æ¥óªº·½¹ï¶Hªº¿ï¤¤ª¬ºA¦Ó©w¡^
+* src : Ä²µo¨Æ¥óªº·½¹ï¹³
+* cntrId : ®e¾¹ID
 ********************/
 function selectAll(src, cntrId) {
     var chks = $tag(cntrId, "input");
@@ -244,8 +244,8 @@ function selectAll(src, cntrId) {
 }
 
 /********************
-* åé€‰å¤é€‰æ¡†
-* cntrId : å®¹å™¨ID
+* ¤Ï¿ï´_¿ï®Ø
+* cntrId : ®e¾¹ID
 ********************/
 function invertSelect(cntrId) {
     var chks = $tag(cntrId, "input");
@@ -276,9 +276,9 @@ function getIntactRawUrl() {
 }
 
 /********************
-* é™„åŠ å‚æ•°åˆ°ç°URl
-* name : å‚æ•°å
-* val : å‚æ•°å€¼
+* ªş¥[°Ñ¼Æ¨ì²{URl
+* name : °Ñ¼Æ¦W
+* val : °Ñ¼Æ­È
 ********************/
 function toggleArg(name, val) {
     var url = $$.intactRawUrl();
@@ -290,7 +290,7 @@ function toggleArg(name, val) {
         var path = url.substring(0, pos);
         var patten = new RegExp("&?" + name + "=?\\w*\\[?\\w*\\]?\\|?\\d?", "i");
         args = args.replace(patten, "");
-        if (args.length == 1) {//æ²¡æœ‰ä»»ä½•å‚æ•°ï¼Œåªæœ‰?
+        if (args.length == 1) {//¨S¦³¥ô¦ó°Ñ¼Æ¡A¥u¦³?
             args += name + "=" + val;
         } else {
             args += "&" + name + "=" + val;
@@ -300,9 +300,9 @@ function toggleArg(name, val) {
 };
 
 /********************
-* æ ¹æ®å€¼é€‰ä¸­ä¸‹æ‹‰åˆ—è¡¨é¡¹
-* ddlId : ä¸‹æ‹‰åˆ—è¡¨å…ƒç´ ID
-* val : å€¼
+* ®Ú¾Ú­È¿ï¤¤¤U©Ô¦Cªí¶µ
+* ddlId : ¤U©Ô¦Cªí¤¸¯ÀID
+* val : ­È
 ********************/
 function setSelectByValue(ddlId, val) {
     var ddl = $g(ddlId);
@@ -313,8 +313,8 @@ function setSelectByValue(ddlId, val) {
 }
 
 /********************
-* æ”¾å¤§å­—ä½“
-* el : æ”¾å¤§/ç¼©å°
+* ©ñ¤j¦rÅé
+* el : ©ñ¤j/ÁY¤p
 ********************/
 function enlarge(el, elmId) {
     if (el == null)
@@ -328,42 +328,42 @@ function enlarge(el, elmId) {
     o.css("font-size", newFontSize + "px");
 }
 
-//è·³è½¬åˆ°æŸé¡µ
-//å‚æ•°ï¼šå‚è®­å‚æ•°
-//		å‚æ•°å€¼
+//¸õÂà¨ì¬Y­¶
+//°Ñ¼Æ¡G°Ñ°V°Ñ¼Æ
+//		°Ñ¼Æ­È
 function GoToURL(FieldName, FieldValue) {
     var URL;
     URL = SetURLField(URL, FieldName, FieldValue)
     location.href = URL;
 }
 
-//è·³è½¬åˆ°æŸé¡µ
-//å‚æ•°ï¼šå‚è®­å‚æ•°
-//		å‚æ•°å€¼
+//¸õÂà¨ì¬Y­¶
+//°Ñ¼Æ¡G°Ñ°V°Ñ¼Æ
+//		°Ñ¼Æ­È
 function GoToURLByGet(FieldName, FieldValue) {
-    //1\å®šä¹‰å˜é‡
+    //1\©w¸qÅÜ¶q
     var URL;
     URL = location.href;
 
-    //2\è·å–åœ°å€å‚æ•°
+    //2\Àò¨ú¦a§}°Ñ¼Æ
     URL = SetURLField(URL, "page", "1");
     URL = SetURLField(URL, FieldName, FieldValue);
 
-    //3\é€’äº¤æ•°æ®
+    //3\»¼¥æ¼Æ¾Ú
 }
 
-//è®¾ç½®åœ°å€æ çš„å‚æ•°
+//³]¸m¦a§}Äæªº°Ñ¼Æ
 function SetURLField(URL, FieldName, FieldValue) {
-    //1\æŠŠå½“å‰çš„è¶…é“¾æ¥åœ°å€å–å‡ºæ¥
+    //1\§â·í«eªº¶WÃì±µ¦a§}¨ú¥X¨Ó
     var FindPlace;
-    //2\å¦‚æœï¼Ÿå·åé¢æ²¡æœ‰å­—ç¬¦ä¸²,åˆ™åœ¨?åé¢æ·»åŠ æŸ¥è¯¢çš„å­—æ®µ 
+    //2\¦pªG¡H¸¹«á­±¨S¦³¦r²Å¦ê,«h¦b?«á­±²K¥[¬d¸ßªº¦r¬q 
     FindPlace = URL.indexOf("?");
 
     if (FindPlace == -1) {
         URL += "?" + FieldName + "=" + FieldValue;
     }
     else {
-        //3\å¦‚æœ?åé¢æœ‰æŸ¥è¯¢å­—ç¬¦ä¸²,åˆ™æ£€æµ‹æœ‰æ²¡æœ‰è¯¥å­—æ®µï¼Œå¦‚æœæœ‰ï¼Œåˆ™é‡æ–°ä»˜å€¼
+        //3\¦pªG?«á­±¦³¬d¸ß¦r²Å¦ê,«hÀË´ú¦³¨S¦³¸Ó¦r¬q¡A¦pªG¦³¡A«h­«·s¥I­È
         var search = FieldName + "=";
         var offset = URL.indexOf(search);
         if (offset != -1) {
@@ -383,8 +383,8 @@ function SetURLField(URL, FieldName, FieldValue) {
     return URL;
 }
 
-//è¯»å–åœ°å€æ çš„å‚æ•°å€¼
-//å‚æ•°ï¼šå‚æ•°åç§°
+//Åª¨ú¦a§}Äæªº°Ñ¼Æ­È
+//°Ñ¼Æ¡G°Ñ¼Æ¦WºÙ
 function readURLParameter(FieldName) {
     var search = FieldName + "=";
     var FieldValue = "";
@@ -403,15 +403,15 @@ function readURLParameter(FieldName) {
     return FieldValue;
 }
 
-//ç”¨æˆ·ç™»é™†
+//¥Î¤áµn³°
 function LoginCheck(_username, _password) {
     var url = window.location;
     if (_username == undefined || _username.length == 0) {
-        $a("è¯·è¾“å…¥ç”¨æˆ·å", "é”™è¯¯æç¤º", "txtUserName");
+        $a("½Ğ¿é¤J¥Î¤á¦W", "¿ù»~´£¥Ü", "txtUserName");
         return;
     }
     if (_password == undefined || _password.length == 0) {
-        $a("è¯·è¾“å…¥å¯†ç ", "é”™è¯¯æç¤º", "txtPassword");
+        $a("½Ğ¿é¤J±K½X", "¿ù»~´£¥Ü", "txtPassword");
         return;
     }
     $.post("/ajax.ashx?action=logincheck&t=" + Math.random(), {

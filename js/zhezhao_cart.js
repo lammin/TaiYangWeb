@@ -2,7 +2,7 @@
     $.extend($.fn, {
         mask: function(msg, maskDivClass) {
 
-            // å‚æ•° 
+            // °Ñ¼Æ 
             var op = {
                 opacity: 0.8,
                 z: 10000,
@@ -17,7 +17,7 @@
                 original = this;
                 position = original.position();
             }
-            // åˆ›å»ºä¸€ä¸ª Mask å±‚ï¼Œè¿½åŠ åˆ°å¯¹è±¡ä¸­ 
+            // ³Ğ«Ø¤@­Ó Mask ¼h¡A°l¥[¨ì¹ï¹³¤¤ 
             var maskDiv = $('<div class="maskdivgen"> </div>');
             maskDiv.appendTo(original);
             var maskWidth = original.clientWidth;
@@ -55,7 +55,7 @@
                 });
             }
             maskDiv.fadeIn('fast', function() {
-                // æ·¡å…¥æ·¡å‡ºæ•ˆæœ
+                // ²H¤J²H¥X®ÄªG
                 $(this).fadeTo('fast', op.opacity);
             })
             return maskDiv;
@@ -87,7 +87,7 @@ function GetSession2()
            var s3=r.Sum;
            if (s3=="0")
            {
-               alert("æ‚¨çš„è´­ç‰©è½¦ä¸­æ²¡æœ‰å•†å“ï¼ï¼");
+               alert("±zªºÁÊª«¨®¤¤¨S¦³°Ó«~¡I¡I");
                return;
            }
            if (s2 != "0" && s2 != "undefined")
@@ -103,7 +103,7 @@ function GetSession2()
 }
 
 function DisplayLoginMsgBox() {
-    $(document).mask(''); //å…¨å±å¹•é®ç½©
+    $(document).mask(''); //¥ş«Ì¹õ¾B¸n
 //    if(event.keyCode==13)
 //    {
 //       document.getElementById("btn1").click;

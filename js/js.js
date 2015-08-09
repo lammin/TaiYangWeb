@@ -7,19 +7,19 @@ $(document).ready(function() {
 });
 
 //function Click(){ 
-//    alert('æ¬¢è¿æ‚¨ï¼'); 
+//    alert('Åwªï±z¡I'); 
 //    window.event.returnValue=false; 
 //} 
 //document.oncontextmenu=Click;
 
-//ç¦æ­¢é¼ æ ‡å³é”®
+//¸T¤î¹«¼Ğ¥kÁä
 //document.oncontextmenu=new Function("event.returnValue=false"); 
 //document.onselectstart=new Function("event.returnValue=false"); 
 //document.oncontextmenu=function(e){            
 //	return false;       
 //}
 
-//æ›´æ¢æ˜¾ç¤ºæ ·å¼
+//§ó´«Åã¥Ü¼Ë¦¡
 function setTab(name,cursel,n){
     for(i=1;i<=n;i++){
         var menu=document.getElementById(name+i);
@@ -29,7 +29,7 @@ function setTab(name,cursel,n){
     }
 }
 
-//å­—ä½“å¤§å°è½¬æ¢
+//¦rÅé¤j¤pÂà´«
 function doZoom(size) { 
     document.getElementById('zoom').style.fontSize = size + 'px'; 
 }
