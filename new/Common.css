@@ -1,0 +1,148 @@
+@charset "utf-8";
+body { color: #000; font: 12px/1.231 Verdana, Arial, Helvetica, sans-serif ""; font-family: "細明體"; 
+} /*網站字體顏色*/
+img{
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+}
+.l{
+	float: left;
+}
+.bodys { color: #000; font: 12px/1.231 Verdana, Arial, Helvetica, sans-serif ""; font-family: "細明體"; background-repeat: repeat; 
+} /*網站字體顏色*/
+a { color:#666; text-decoration:none;  blr:expression(this.onFocus=this.blur())}  /*for ie f6n.net*/
+a:focus{outline:0;} /*for ff f6n.net*/
+a:hover { color: #034B9D; text-decoration: none; }
+p {text-align:justify; text-justify:inter-ideograph; white-space: normal; letter-spacing: normal; word-spacing:10px; }
+.vam { vertical-align:middle;}
+.clear{clear:both; height:0; line-height:0; font-size:0; overflow:hidden;}
+.tr { text-align:right;}
+.tl { text-align:left;}
+.center { text-align:center;}
+.fl { float:left;}
+.fr { float:right;}
+
+/* -- 購物車外部框架 -- */
+.cart_header , .cart_content , .cart_footer { width:760px; margin:0 auto;}
+
+
+
+/* -- 頁面整體佈局 -- */
+.header , .content , .footer {
+	width: 960px;
+	margin: 0 auto;
+}
+.content { }
+.left { width:201px; float:left; overflow:hidden;}
+.left2 { width:670px; float:left; overflow:hidden;}
+.left3 { width:754px; float:left; overflow:hidden; color:#666;}
+.lefttop { background:url(left_top_img.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/left_top_img.gif*/ no-repeat; height:3px; font-size:0; overflow:hidden;}
+.left2top { background:url(left2_top_img.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/left2_top_img.gif*/ no-repeat; height:3px; font-size:0; overflow:hidden;}
+.leftbot { background:url(left_bot_img.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/left_bot_img.gif*/ no-repeat; height:3px; font-size:0; overflow:hidden;  margin-bottom:10px;}
+.left2bot { background:url(right_bot2_img.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/right_bot2_img.gif*/ no-repeat; height:3px; font-size:0; overflow:hidden; margin-bottom:10px; }
+
+.right { width:754px; float:left; display:inline; margin-left:5px; overflow:hidden;}
+.right2 { width:275px;  float:right; overflow:hidden;}
+.right3 { width:201px; float:right; overflow:hidden; color:#666;}
+.righttop { background:url(right_top_img.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/right_top_img.gif*/ no-repeat; height:3px; font-size:0; overflow:hidden;}
+.right2top { background:url(right2_top_img.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/right2_top_img.gif*/ no-repeat; height:3px; font-size:0; overflow:hidden;}
+.rightbot { background:url(right_bot_img.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/right_bot_img.gif*/ no-repeat; height:3px; font-size:0; overflow:hidden; margin-bottom:10px;}
+.right2bot { background:url(left_bot2_img.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/left_bot2_img.gif*/ no-repeat; height:3px; font-size:0; overflow:hidden; margin-bottom:10px;}
+
+.right_main { width: 752px; padding-bottom: 15px; overflow: hidden; background: #fff; 
+}
+.right2_main { width: 273px; padding-bottom: 15px; overflow: hidden; background-color: #F3F3F3; }
+.left2_main { width: 668px; padding-bottom: 15px; overflow: hidden; background-color: #F3F3F3; }
+
+
+
+/**頭部**/
+.topbar { background:url(topbar.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/topbar.gif*/ repeat-x; line-height:30px; }
+.top_con { width:900px; margin:0 auto;}
+.top_con a { margin:0 4px;}
+.top_con a.cur { color:#575757; text-decoration:none;}
+.top_con a:hover.cur { color:#3366FF; text-decoration:underline;}
+.top_call { font-size:14px; font-weight:bold; margin-left:15px; margin-right:25px; }
+.top_con_nav a { color:#575757;}
+.top_con_nav a:hover{ color:#3366FF;}
+
+/*頭部開始*/
+  /*這裡有一處頭部背景圖 去掉了*/
+.headers { background:url() no-repeat center top}
+/*.top{ height: 102px; width: 960px; 
+}*/
+.nav {  height:25px; color:#616161; line-height:25px;}
+.nav span{ float:right;}
+.nav a { color:#616161; padding:0 6px;}
+.logo { float:left; padding-top:10px;}
+.logo img{ height: 65px; }
+.zi1 { float:left; padding:17px 0 0 116px;}
+.tel { float:right; padding:29px 0 0 53px; font:13px "微軟雅黑","細明體";color:#1054a4; background:url(ico2.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/Common/ico2.gif*/ no-repeat 30px 58px; text-align:right}
+.tel span { background:url(ico3.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/Common/ico3.gif*/ no-repeat; width:57px; height:21px; text-align:center;color:#fff; display:inline-block; font:12px "細明體"; line-height:16px; margin-left:9px;}
+.tel p { font:14px "微軟雅黑"; color:#fff;}
+.tel p q {font:24px Arial; color:#FE0002;}
+
+
+.menu { height: 45px; line-height: 45px; background-image: url(menu_bj.png)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/Common/menu_bj.png*/; background-repeat: repeat-x; width: 100%; }
+.menu li { float:left; background:url(menu_Fgx.png)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/Common/menu_Fgx.png*/ no-repeat right top; height:45px; line-height:45px;}
+.menu li a {
+	color: #fff;
+	line-height: 45px;
+	padding: 0 19px;
+	font-family: "微軟雅黑";
+	font-size: 13px;
+}
+.menu li a:hover {
+	background:url(ico4.png)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/Common/ico4.png*/ repeat-x;
+	display:block;
+}
+.menu .cur a {
+	background:url(index-26.htm)/*tpa=http://www.kstyjz.com/*Img/Common/ico4.png*/*/ repeat-x;
+	display:block;
+}
+.menu .cur a:hover {
+	background:url(ico4.png)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/Common/ico4.png*/ repeat-x;
+	display:block;
+}
+.menu .nones { background:none}
+
+
+.search { padding:12px 0 0 31px; height:40px;}
+.ss1 .k1 { background:url(k1.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/Common/k1.gif*/ no-repeat; width:198px; height:25px; line-height:25px; display:inline-block; padding-left:29px; color:#4a4c51; border:0; margin-right:8px;}
+.ss2 { float:left; width:614px; padding:6px 0 0 13px; color:#7ba0a9; height:20px; line-height:20px; overflow:hidden}
+.ss2 a { color:#7ba0a9; padding:0 6px;}
+/*頭部結束*/
+/*底部開始*/
+.footers{
+	padding-top:29px;
+	background-color:;
+	background-image: url(foot_bj.png)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/Common/foot_bj.png*/;
+	background-repeat: repeat-x;
+}
+.footer{ background:url(foot_bj2.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/Common/foot_bj2.gif*/ no-repeat center top; padding:31px 0 5px;}
+.foot_logo { float:left; padding-left:119px;}
+.bos03 {
+	width:750px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.foot_menu {
+	height:22px;
+	color:#fff;
+	margin-right: auto;
+	margin-left: auto;
+}
+.foot_menu a { color:#fff; font-weight:bold; padding:0 5px;} 
+.wenz1 {
+	padding:4px 0 0 5px;
+	color:#CCC;
+	line-height:24px;
+}
+/*底部結束*/
+
+.fh {
+	background-image: url(blackpo.png)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/Common/blackpo.png*/;
+	background-repeat: no-repeat;
+	}

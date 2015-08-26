@@ -1,0 +1,139 @@
+body{ font-family: tahoma,arial,²Ó©úÅé; font-size: 12px; color: #333; }
+body,div,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,span,button,input,textarea,th,td,img{ margin: 0; padding: 0; }
+h1,h2,h3{ font-weight:normal;}
+ol,ul,li {list-style:none;}
+img{border:0;}
+a{ color:#333;text-decoration:none;}
+a:hover { color: #3b639f; text-decoration: none; }
+.main-wrap a:hover img{ border:1px solid #507253;}
+.container{ background-color:#fff; width:980px; margin:0 auto;}
+/*top*/
+.top{ width: 960px; margin: 0 auto; height: 102px; line-height: 30px; border-bottom: #e0e0e0 1px solid; }
+.top .intro{ display:inline; float:left; font-size:12px;}
+.top ul{ float:right;}
+.top li{ float:left; margin-right:8px;}
+/* header */ 
+#header{ width:960px; margin:0 auto;padding-top:8px; height:66px; border-bottom:#e0e0e0 1px solid}
+#header .logo{ float:left; width:150px; height:60px;}
+#header .menus{ float:right;_margin-left:15px;}
+.top_menu {height: 56px; padding-top: 1px}
+.top_menu li { background:url(bg.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Css/bg.gif*/ no-repeat right -50px;width: 148px; float: left; height: 56px}
+.top_menu div {line-height: 28px; width: 32px; margin-right:10px; overflow:hidden; display:inline; float: left; height: 28px;}
+.top_menu a {font-size: 14px}
+.top_menu span{width:43px; height:56px; float:left; margin:0 8px 0 13px; display:inline;}
+.top_menu .last{height: 56px;width: 198px;float: left; background:none;}
+.top1{  background:url(bg.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Css/bg.gif*/ left top no-repeat;}
+.top2{  background:url(bg.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Css/bg.gif*/ -43px top no-repeat;}
+.top3{  background:url(bg.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Css/bg.gif*/ -86px top no-repeat;}
+.top4{  background:url(bg.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Css/bg.gif*/ -129px top no-repeat;}
+.top5{  background:url(bg.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Css/bg.gif*/ -172px top no-repeat;}
+/* search */
+#con-search{ width:960px; margin:10px auto 0; height:40px; background:url(bg.png)/*tpa=http://www.kstyjz.com/templets/qiye/Css/bg.png*/ #eff6f0 no-repeat top left; overflow:hidden;}
+.search{ float:left; margin:10px 0 0 58px; display:inline;}
+.search .textbox{ height:18px; line-height:18px;width:180px; color:#aaa; border:1px solid #e3e2d5;}
+.search .btn{ width:60px; height:21px;margin-left:0;*margin-left:4px; cursor:pointer; border:none; background:url(bg.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Css/bg.gif*/ no-repeat -216px top; text-indent:-9999px;}
+.show{ float:right; margin:0 15px 0; width:590px; display:inline;}
+.show li{ float:left; margin-right:12px; height:20px; line-height:20px;}
+.show li.lead{ float:right; margin-right:0;}
+.show strong{ color:#3b639f;}
+.show span{ color:#f24444;}
+/* main-wrap */
+.main-wrap{ width:960px; margin:10px auto 0; overflow:hidden;}
+.main-left{ float:left; width:706px; border:1px solid #ccd5cd;}
+.main-right{ float:right; width:240px;background:#f8fbf7; border:1px solid #ccd5cd;}
+/* topnews */
+.topnews{ float:left; width:338px; height:290px; border:1px solid #ccd5cd; overflow:hidden;}
+.topnews .today{ margin:7px 0 7px 12px; font-size:14px; color:#3f5441; font-weight:bold;}
+.topnews .ttitle{ float:left; width:235px; font-size:16px; font-weight:bold; margin:5px 0 0 8px; height:23px; line-height:23px; overflow:hidden; text-align:center; }
+.topnews .ttitle a{ color:#e96161;}
+.topnews h3 a,.topnews h3 a:visited{ color:#e96161;}
+.topnews h3 a:hover{ color:#e96161;}
+.topnews img{ float:left; width:69px; height:69px; padding:1px; margin-left:12px; border:1px solid #e3e2d5; overflow:hidden;}
+.topnews p{ float:left; width:235px; text-indent:2em; margin:2px 0 3px 8px; color:#666; line-height:18px; overflow:hidden;}
+.topnews ul{ float:left; width:317px; padding:6px 12px 0 11px;}
+.topnews li{ height:22px; line-height:22px; overflow:hidden;}
+.topnews li span{ color:#999; float:right;}
+.topnews a{ color:#333;}
+.topnews a:hover{ color:#3b639f; }
+/* ad */
+.index_top_ad{width:960px; margin:0 auto 0 auto;}
+.index-ad{ float:left; width:336px; margin:0 10px; padding:5px 10px 5px 10px;border:1px solid #ccd5cd; overflow:hidden;}
+.index-ad a:hover img{ border:none;}
+.index-ad1,.index-ad2{width:960px; margin:0 auto;}
+/*news*/
+.news{ float:left; width:240px; height:290px; overflow:hidden; border:1px solid #ccd5cd; background-color:#f8fbf7; }
+.news ul{ margin:10px;}
+.news li{ height:23px; line-height:23px; overflow:hidden;}
+/* cats */
+.category-nav{ height:29px; background:url(nav-bg.png)/*tpa=http://www.kstyjz.com/templets/qiye/Css/nav-bg.png*/ repeat-x;}
+.category-nav div{ float:left; width:150px; height:22px; padding-top:6px; border-bottom:1px solid #e9e9de; border-right:1px solid #e9e9de; text-align:center; font-size:12px; font-weight:bold; color:#3f5441; background:url(nav-bg.png)/*tpa=http://www.kstyjz.com/templets/qiye/Css/nav-bg.png*/ repeat-x 0 -30px;}
+.category-nav div a{ color:#3f5441; }
+.category-nav div a:hover{ color:#3f5441; }
+.category-nav ul{ float:right; width:510px; margin-top:5px; height:21px; line-height:21px; overflow:hidden;}
+.category-nav li{ float:left; margin-right:15px; display:inline;}
+.category{ margin:8px 12px 9px 2px; overflow:hidden;}
+.category-item{ float:left; width:336px; margin-left:10px; display:inline; background:url(nav-bg.png)/*tpa=http://www.kstyjz.com/templets/qiye/Css/nav-bg.png*/ repeat-x 0 -63px;}
+.category-item h2{ font-size:12px; font-weight:bold; margin:8px 0 2px 10px;}
+.category-item h2 a{ color:#507253;}
+.category-item h2 a:hover{ color:#507253; }
+.category-item li{ height:25px; line-height:25px; color:#666; padding-left:5px; overflow:hidden;}
+.category-item li span{ color:#999; margin:0px 5px; float:right;}
+.category-item a.item-color{ color:#c33e00;}
+.category-item-top{ margin:8px 5px 5px; overflow:hidden;}
+.category-item-top img{ float:left; width:120px; height:90px; margin-right:10px; padding:2px; border:1px solid #e3e2d5;}
+.category-item-top div{ float:left; width:188px; height:15px; margin:10px 0 8px; font-size:12px; overflow:hidden; font-weight:bold;}
+.category-item-top div a{ color:#3f5441; }
+.category-item-top div a:hover{ color:#3b639f; }
+.category-item-top p{ float:left; _margin-bottom:12px; width:186px; text-indent:2em; color:#666; line-height:18px; overflow:hidden;}
+/* sidebar */
+.main-right div{ padding:11px 0 0 12px;_padding-top:9px; line-height:23px;}
+.main-right div span{ margin-right:10px;  padding:3px;}
+.main-right h2{ height:21px; font-size:12px; font-weight:bold; background:url(nav-bg.png)/*tpa=http://www.kstyjz.com/templets/qiye/Css/nav-bg.png*/ repeat-x; color:#3f5441; padding:8px 0 0 12px;}
+.main-right h2 a{ color:#3f5441; }
+.main-right h2 a:hover{ color:#3f5441; }
+.main-right ul{ margin:5px 12px 10px; }
+.main-right li{ height:23px; line-height:23px; padding-left:8px; background:url(bg.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Css/bg.gif*/ no-repeat -328px 0px; overflow:hidden;}
+.main-right-pic{ width:220px; margin:12px auto; *margin:13px auto; _margin:12px auto; height:110px; overflow:hidden;}
+/*subcats*/
+.subcats{width:958px; border:1px solid #ccd5cd; overflow:hidden;}
+.subcats-nav{height:29px; line-height:29px; padding:0 15px; font-size:14px; font-weight:bold; background:url(nav-bg.png)/*tpa=http://www.kstyjz.com/templets/qiye/Css/nav-bg.png*/ repeat-x; overflow:hidden;}
+.subcats ul{ padding:0 10px;}
+.subcats div ul li{ float:left; margin:3px 8px 0 0; white-space:nowrap; height:21px; line-height:21px;}
+/* friendlink */
+#friendlink-wrap{ width:958px; margin:10px auto 0; padding-bottom:5px; border:1px solid #ccd5cd; overflow:hidden;}
+.friendlink-nav{ height:29px; background:url(nav-bg.png)/*tpa=http://www.kstyjz.com/templets/qiye/Css/nav-bg.png*/ repeat-x; font-weight:bold; overflow:hidden;}
+.friendlink-nav .ftitle{ float:left; margin:7px 0 0 12px; display:inline; font-size:14px; color:#3F5441;}
+.friendlink-nav ul{ float:left; width:886px;}
+.friendlink-nav-right{ float:right; margin:8px 15px 0;}
+.friendlink-nav-left{ float:left; margin:8px 15px 0;}
+.friendlink{ margin:5px 0 0 10px;}
+.friendlink li{ float:left; margin:3px 8px 0 0; white-space:nowrap; height:21px; line-height:21px;}
+#friendlink-wrap a{ color:#333;}
+#friendlink-wrap a:hover{ color:#3b639f; }
+/* special */
+#special-wrap{ width:958px; margin:12px auto 0; padding-bottom:5px; background:#fdfdfd; border:1px solid #ccd5cd; overflow:hidden;}
+.special-nav{ height:25px; line-height:25px; padding:0 15px; border-bottom:1px dashed #ccd5cd; overflow:hidden;}
+.special-nav div{ float:left; width:68px; font-size:14px; color:#3f5441; font-weight:bold;}
+.special-nav ul{ float:left; overflow:hidden;}
+.special-nav li{ float:left; margin-left:10px;}
+.special{ margin:3px 0 0 10px;}
+.special ul{}
+.special li{ float:left; margin:3px 8px 0 0; white-space:nowrap; height:21px; line-height:21px;}
+#special-wrap a{ color:#333;}
+#special-wrap a:hover{ color:#3b639f;}
+/* footer */
+#footer{ width:960px; margin:12px auto 0; padding:8px 0; border-top:1px solid #ccd5cd; line-height:22px; text-align:center; overflow:hidden;}
+/*child-nav*/
+#topnavo {	width: 960px; height: 35px; padding-left: 4px; background: url(bg.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Css/bg.gif*/ no-repeat 0 -58px; margin:0 auto; overflow:hidden;}
+#topnavi {	background: url(bg.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Css/bg.gif*/ no-repeat right -155px;padding-right: 4px;}
+#topmenu {	height: 35px;background: url(bg.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Css/bg.gif*/ #73b104 repeat-x left -110px;}
+#topmenu ul {list-style-position:outside;margin:0 0 0 10px;}
+#topnav li {	float:left;	height:35px;background: url(bg.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Css/bg.gif*/  no-repeat -153px -58px;}
+#topnav li.home{ background:none;}
+#topnav li a {cursor:pointer; color:#fff;	display:block;	float:left;	height:43px;}
+#topnav li a:hover{ color:#fff;}
+#topnav li a span {	float:left;	font-size:14px;	line-height:16px;	padding:12px 8px 10px 10px;	}
+#topnav li a span:hover{ text-decoration:underline;}
+/*#topnav li .nav_on { background: url(bg.gif)  no-repeat -146px -58px;}*/
+#topnav li .nav_on span { color:#333;	font-weight:bold;	padding:12px 10px 17px 10px;background: url(bg.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Css/bg.gif*/ repeat-x #e6eae3 -5px -58px;}
+/* main-wrap */

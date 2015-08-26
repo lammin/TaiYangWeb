@@ -1,0 +1,163 @@
+@charset "utf-8";
+/* CSS Document */
+.mt10 { margin-top:10px}
+.mt11 { margin-top:11px}
+.mt12 { margin-top: 12px; }
+.mt14 { margin-top:14px}
+.mt15 { margin-top:15px}
+.pfl { padding-left:10px;}
+.flash1 { height:296px; background:url(ico1.png)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/Index/ico1.png*/ no-repeat center bottom;}
+.banners { height:280px; overflow:hidden; margin:0 auto; width:960px;}
+.banners img{ width:960px; height:280px;}
+
+.fenl { float: left; width: 210px; padding-top: 16px; }
+.fenl .tit { background:url(tit1.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/Index/tit1.gif*/ no-repeat; height:36px; font:18px Arial; color:#fff; line-height:36px; padding-left:19px;}
+.fenl .tit a { font:14px "·L³n¶®¶Â"; color:#fff; line-height:36px; padding-left:6px;}
+.fenl .nr { height: 520px; padding: 11px 17px 0; overflow: hidden; background-color: #F3F3F3; }
+.fenl .nr h4 a{ display: block; background: url(ico3.png)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/Index/ico3.png*/ no-repeat; height: 28px; padding-left: 15px; margin-bottom: 6px; color: #FFFFFF; line-height: 28px; font-size: 12px; font-weight: normal }
+.fenl .nr h4 a:hover, .fenl .nr .cur a { background:url(ico3_hd.png)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/Index/ico3_hd.png*/ no-repeat; display:block; text-decoration:none}
+.fenl .nr li a { display:block; height:30px; line-height:30px; padding-left:29px; color:#727272; background:url(ico4.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/Index/ico4.gif*/ no-repeat 16px 14px}
+.ico01 { background:url(ico2-1.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/Index/ico2.gif*/ no-repeat; height:2px; font-size:0; line-height:0}
+
+.pro { float: right; width: 745px; padding-top: 16px; 
+}
+.pro .tit { height: 36px; padding-right: 17px; background-repeat: repeat; background-image: url(ipx.jpg)/*tpa=http://www.kstyjz.com/templets/qiye/ipx.jpg*/; 
+}
+.pro .tit li { float:left; width:138px; height:36px; line-height:36px; text-align:center;}
+.pro .tit li a { color:#282828;font:14px "·L³n¶®¶Â"; line-height:36px;}
+.pro .tit li a:hover, .pro .tit .cur a { background:url(ico5.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/Index/ico5.gif*/ no-repeat; display:block;color:#fff;}
+.pro .tit span a { float:right; padding-left:11px; background:url(ico6.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/Index/ico6.gif*/ no-repeat 0 12px; font:12px Arial; color:#494949; line-height:28px; text-decoration:underline;}
+.pro .nr { height: 526px; padding-top: 5px; padding-left: 8px; 
+}
+.pro .nr dl {
+	float: left;
+	width: 140px;
+	padding-left: 5px;
+	height: 170px;
+}
+.pro .nr dt { font-size:0; line-height:0}
+.pro .nr dt img {
+	width: 134px;
+	height: 134px;
+}
+.pro .nr dd {
+	color: #6c6c6c;
+	line-height: 22px;
+	padding-top: 0px;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 4px;
+}
+.pro .nr dd a { display:block; height:26px; line-height:26px; color:#131313; overflow:hidden; margin-bottom:5px;}
+.ico02 { background:url(ico7.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/Index/ico7.gif*/ no-repeat; height:2px; font-size:0; line-height:0}
+
+.tu1 img { width:960px; height:101px;}
+
+.hezuo { float:left; width:210px;}
+.hezuo .tit { background:url(tit1.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/Index/tit1.gif*/ no-repeat; height:36px; font:18px Arial; color:#fff; line-height:36px; padding-left:19px;}
+.hezuo .tit a { font:14px "·L³n¶®¶Â"; color:#fff; line-height:36px; padding-left:6px;}
+.hezuo .nr { height:255px; background:#fff; padding:19px 0 0 15px; overflow:hidden}
+.hezuo .nr li { float:left; font-size:0; line-height:0; padding:0 10px 10px 0}
+.hezuo .nr li img { width:83px; height:51px; border:1px solid #dfdfdf;}
+
+.lingy { float:right; width:740px;}
+.lingy .tit a{background:url(tit2.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/Index/tit2.gif*/ no-repeat; height:36px; padding-left:16px; color:#282828;font:14px "·L³n¶®¶Â";line-height:36px; display:block}
+.lingy .nr { height:266px; background:#fff; padding-top:8px;}
+.lingy .nr dl { float:left; width:120px; height:114px; padding:12px 0 0 25px;}
+.lingy .nr dt { font-size:0; line-height:0; width:104px; height:76px; background:url(ico8.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/Index/ico8.gif*/ no-repeat; padding:8px;}
+.lingy .nr dd a { display:block; text-align:center; height:22px; color:#515050; line-height:22px; overflow:hidden;}
+
+.about { float:left; width:670px;}
+.ico03 { background:url(ico9.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/Index/ico9.gif*/ no-repeat; height:2px; font-size:0; line-height:0}
+.ico04 { background:url(ico9.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/Index/ico9.gif*/ no-repeat; height:2px; font-size:0; line-height:0}
+.about .nr { height:263px; background:#fff; padding-left:15px;}
+.about .nr h4 { font:18px Arial; color:#fe0002; height:48px; line-height:48px; margin-bottom:2px}
+.about .nr h4 a { color:#545454;font:14px "·L³n¶®¶Â"; line-height:48px; padding-left:6px;}
+.about .nr dl {}
+.about .nr dt { float:left; font-size:0; line-height:0}
+.about .nr dt img { width:290px; height:197px;}
+.about .nr dd { float:left; width:328px; padding-left:17px; color:#707070; line-height:26px;}
+.about .nr dd strong { color:#1e222a; font-weight:bold}
+.about .nr dd a { color:#fe0002;}
+
+.rongy { float:right; width:280px;}
+.ico05 { background:url(ico11.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/Index/ico11.gif*/ no-repeat; height:2px; font-size:0; line-height:0}
+.ico06 { background:url(ico11.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/Index/ico11.gif*/ no-repeat; height:2px; font-size:0; line-height:0}
+.rongy .nr { height:258px; background:#fff url(ico13.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/Index/ico13.gif*/ no-repeat 0 216px; padding:5px 14px 0 12px;}
+.rongy .nr h4 { height:38px; font:18px Arial; color:#fe0002; line-height:38px; border-bottom:1px dotted #a0a0a0; margin-bottom:16px;}
+.rongy .nr h4 a { color:#545454;font:14px "·L³n¶®¶Â"; line-height:38px; padding-left:6px;}
+.jiao1 { padding-top:56px;}
+.rongy .nr dl { float:left; width:195px; padding-left:14px;}
+.rongy .nr dt { font-size:0; line-height:0}
+.rongy .nr dt img { width:195px; height:136px;}
+.rongy .nr dd { text-align:center; padding-top:34px; height:26px; line-height:26px; color:#666666; overflow:hidden}
+
+.tuand { height: 240px; overflow: hidden; background-repeat: no-repeat; padding-top: 0; padding-right: 0px; padding-bottom: 0; padding-left: 0px; background-color: #F3F3F3; 
+}
+.tuand h4 a{ text-align: left; height: 15px; color: #1e222a; display: block; padding-right: 0; padding-left: 50px; padding-bottom: 15px; font-family: "·L³n¶®¶Â"; font-size: 16px; line-height: 28px; padding-top: 2px; margin-left: 22px; margin-right: 25px; margin-top: 8px; margin-bottom: 8px; background-image: url(ipx.jpg)/*tpa=http://www.kstyjz.com/templets/qiye/ipx.jpg*/; background-repeat: repeat; }
+.jiao2 { padding-top: 50px; }
+.bos01 { float: left; width: 900px; }
+.bos01 dl { float: left; width: 220px; padding-right: 8px; padding-left: 5px; }
+.bos01 dt { font-size:0; line-height:0}
+.bos01 dt img { width: 200px; height: 144px; padding: 1px; }
+.bos01 dd { text-align:center; height:24px; line-height:24px; color:#676767; padding-top:5px;}
+
+.jisu {
+	float: left;
+	width: 320px;
+}
+.ico07{ background:url(ico15.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/Index/ico15.gif*/ no-repeat; height:2px; font-size:0; line-height:0}
+.ico08{ background:url(ico16.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/Index/ico16.gif*/ no-repeat; height:2px; font-size:0; line-height:0}
+.jisu .nr { height: 330px; padding-top: 10px; padding-right: 5px; padding-bottom: 0; padding-left: 5px; background-color: #F3F3F3; 
+}
+.jisu .nr h4 { height: 30px; color: #fe0002; line-height: 30px; padding-left: 6px; margin-bottom: 6px; margin-right: 10px; margin-left: 10px; font-family: Arial; font-size: 14px; background-image: url(ipx.jpg)/*tpa=http://www.kstyjz.com/templets/qiye/ipx.jpg*/; background-repeat: repeat; }
+.jisu .nr h4 a { color: #545454; font: 14px "·L³n¶®¶Â"; line-height: 30px; padding-left: 6px; background-color: #CCC; padding-right: 0px; }
+.jisu .nr ul { padding-bottom:12px; border-bottom:1px solid #e5e5e5;}
+.jisu .nr li a { overflow:hidden; display:block; height:28px; line-height:28px; color:#727171; padding-left:21px; background:url(ico17.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/Index/ico17.gif*/ no-repeat 9px 11px}
+.jisu .nr span a{
+	float:right;
+	padding-left:13px;
+	color:#333;
+	background:url(ico06.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/Index/ico06.gif*/ no-repeat 0 10px;
+	height:24px;
+	text-decoration:underline;
+	font:12px Arial;
+	line-height:24px;
+}
+.jisu .nr a q { color:#3b3b3b; padding-right:8px;}
+.jisu .nr a:hover { color:#1e222a; text-decoration:underline}
+
+.went {
+	float: right;
+	width: 300px;
+}
+.went .nr { height: 330px; padding-right: 11px; padding-bottom: 0; padding-left: 11px; padding-top: 10px; background-color: #F3F3F3; }
+.went .nr h4 { height: 30px; color: #fe0002; line-height: 30px; padding-left: 6px; margin-bottom: 6px; margin-bottom: 8px; font-family: Arial; font-size: 14px; margin-right: 5px; margin-left: 5px; background-image: url(ipx.jpg)/*tpa=http://www.kstyjz.com/templets/qiye/ipx.jpg*/; background-repeat: repeat; }
+.went .nr h4 a { color: #545454; line-height: 30px; padding-left: 6px; font-family: "·L³n¶®¶Â"; font-size: 14px; }
+.went .nr .dls01{ }
+.went .nr dl { padding:5px 0 5px 8px;}
+.went .nr dt a{ display:block; padding-left:24px; background:url(ico18.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/Index/ico18.gif*/ no-repeat 0 3px; height:24px; line-height:24px; color:#505052}
+.went .nr dd { padding-left:24px; background:url(ico19.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/Index/ico19.gif*/ no-repeat 0 8px; padding-top:5px; line-height:22px; color:#868688}
+.bos02 { height: 260px; border-bottom: 1px solid #e5e5e5 }
+.went .nr span a{
+	float:right;
+	padding-left:13px;
+	color:#333;
+	background:url(ico06.gif)/*tpa=http://www.kstyjz.com/templets/qiye/Skins/Default/Img/Index/ico06.gif*/ no-repeat 0 10px;
+	height:24px;
+	text-decoration:underline;
+	font:12px Arial;
+	line-height:24px;
+}
+
+.link { height: 120px; padding-right: 12px; padding-bottom: 0; padding-left: 12px; background-color: #F3F3F3; }
+.link h4 { height: 30px; color: #333; line-height: 30px; font-family: Arial; font-size: 16px; padding-bottom: 10px; background-image: url(ipx.jpg)/*tpa=http://www.kstyjz.com/templets/qiye/ipx.jpg*/; background-repeat: repeat; 
+}
+.link h4 a {
+	color:#333;
+	font:14px "·L³n¶®¶Â";
+	line-height:41px;
+	padding-left:6px;
+}
+.link .nr { clear:#7e7e7e; line-height:22px;}
+.link .nr a { color:#7e7e7e; padding:0 14px;}
